@@ -7,19 +7,64 @@ using UnityEngine.TestTools;
 using DeathIsOnlyTheBeginning;
 public class CharacterTests
 {
-    
+
     [UnityTest]
     public IEnumerator CharacterShouldDieWhenTimeIsUp()
     {
+
+        yield return LoadScene();
+        GameObject characterObject = GetSut();
+        yield return new WaitForSeconds(2);
+        AssertCharacterIsDead(characterObject);
+    }
+
+    [UnityTest]
+    public IEnumerator WhenCharacterReceivesDamageItsHitpointsShouldDeclineWithTheGivenAmount()
+    {
+        yield return LoadScene();
+
+        Character character = GetSUTComponen<Character>();
+        character.ReceiveDamage(10);
+
+        Assert.AreEqual(90, character.HitPoints);
+    }
+
+    [UnityTest]
+    public IEnumerator CharacterShouldDieWhenHpIsZeroOrLess()
+    {
+        yield return LoadScene();
+        GameObject characterObject = GetSut();
+        Character character = GetSUTComponen<Character>();
+
+        character.ReceiveDamage(100);
+        yield return null;
+
+        AssertCharacterIsDead(characterObject);
+    }
+
+    private IEnumerator LoadScene()
+    {
         AsyncOperation loadSceneTask = SceneManager.LoadSceneAsync(0);
         yield return loadSceneTask;
+    }
 
-        GameObject characterObject = GameObject.FindGameObjectWithTag("SUT");
-        Assert.NotNull(characterObject, "character was never initiated");
-        Character characterComponent  = characterObject.GetComponent<Character>();
+    private GameObject GetSut()
+    {
+        GameObject sut = GameObject.FindGameObjectWithTag("SUT");
+        Assert.NotNull(sut, "character was never initiated");
+        return sut;
+    }
 
-        yield return new WaitForSeconds(2);
+    private T GetSUTComponen<T>()
+    {
+        T component = GetSut().GetComponent<T>();
+        Assert.NotNull(component, "Component not found on SUT");
+        return component;
+    }
 
-        Assert.IsTrue(characterObject == null);
+
+    private static void AssertCharacterIsDead(GameObject characterObject)
+    {
+        Assert.IsTrue(characterObject == null, "Expected character to die, but didn't");
     }
 }
