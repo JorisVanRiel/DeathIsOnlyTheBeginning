@@ -8,6 +8,7 @@ namespace DeathIsOnlyTheBeginning
     public class Monster : MonoBehaviour
     {
         [SerializeField] int hitPoints;
+        [SerializeField] Item lootItem;
 
         private void Update()
         {
@@ -17,7 +18,7 @@ namespace DeathIsOnlyTheBeginning
             }
         }
 
-        public double HitPoints { get { return hitPoints;  } }
+        public int HitPoints { get { return hitPoints;  } }
 
         public void ReceiveDamage(int amount)
         {
@@ -26,6 +27,8 @@ namespace DeathIsOnlyTheBeginning
 
         private void Die()
         {
+            GameObject.Instantiate(lootItem);
+            lootItem.transform.position = transform.position;
             GameObject.Destroy(gameObject);
         }
     }

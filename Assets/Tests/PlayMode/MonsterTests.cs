@@ -11,7 +11,7 @@ public class MonsterTests
     public IEnumerator WhenMonsterReceivesDamageItsHitpointsShouldDeclineWithTheGivenAmount()
     {
         yield return LoadScene();
-        Monster monster = GetSUTComponen<Monster>();
+        Monster monster = GetSUTComponent<Monster>();
 
         monster.ReceiveDamage(5);
 
@@ -23,11 +23,28 @@ public class MonsterTests
     {
         yield return LoadScene();
         GameObject monsterObject = GetSut();
-        Monster monster = GetSUTComponen<Monster>();
+        Monster monster = GetSUTComponent<Monster>();
         monster.ReceiveDamage(100);
         yield return null;
         AssertCharacterIsDead(monsterObject);
     }
+
+    [UnityTest]
+    public IEnumerator MonsterShouldDropLootOnItsLocationWhenItDies()
+    {
+        yield return LoadScene();
+        Monster monster = GetSUTComponent<Monster>();
+        Vector3 monsterLocation = monster.transform.position;
+        
+        monster.ReceiveDamage(monster.HitPoints);
+        yield return null;
+        
+        Item item = GameObject.FindObjectOfType<Item>();
+        Assert.NotNull(item, "No item is dropped");
+        Vector3 itemLocation = item.transform.position;
+        Assert.AreEqual(monsterLocation, itemLocation);
+    }
+
 
     private IEnumerator LoadScene()
     {
@@ -42,7 +59,7 @@ public class MonsterTests
         return sut;
     }
 
-    private T GetSUTComponen<T>()
+    private T GetSUTComponent<T>()
     {
         T component = GetSut().GetComponent<T>();
         Assert.NotNull(component, $"Component {typeof(T)} not found on SUT");
