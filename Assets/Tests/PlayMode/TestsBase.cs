@@ -7,7 +7,7 @@ public class TestsBase
 {
     protected IEnumerator LoadScene(int number)
     {
-        AsyncOperation loadSceneTask = SceneManager.LoadSceneAsync();
+        AsyncOperation loadSceneTask = SceneManager.LoadSceneAsync(number);
         yield return loadSceneTask;
     }
 
