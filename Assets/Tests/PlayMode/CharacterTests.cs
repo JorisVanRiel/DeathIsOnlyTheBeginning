@@ -5,14 +5,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
 using DeathIsOnlyTheBeginning;
-public class CharacterTests
+public class CharacterTests : TestsBase
 {
+
+    private const int testScene = 0;
 
     [UnityTest]
     public IEnumerator CharacterShouldDieWhenTimeIsUp()
     {
-
-        yield return LoadScene();
+        yield return LoadScene(testScene);
         GameObject characterObject = GetSut();
         yield return new WaitForSeconds(2);
         AssertCharacterIsDead(characterObject);
@@ -21,9 +22,9 @@ public class CharacterTests
     [UnityTest]
     public IEnumerator WhenCharacterReceivesDamageItsHitpointsShouldDeclineWithTheGivenAmount()
     {
-        yield return LoadScene();
+        yield return LoadScene(testScene);
 
-        Character character = GetSUTComponen<Character>();
+        Character character = GetSutComponent<Character>();
         character.ReceiveDamage(10);
 
         Assert.AreEqual(90, character.HitPoints);
@@ -32,37 +33,16 @@ public class CharacterTests
     [UnityTest]
     public IEnumerator CharacterShouldDieWhenHpIsZeroOrLess()
     {
-        yield return LoadScene();
+        yield return LoadScene(testScene);
         GameObject characterObject = GetSut();
-        Character character = GetSUTComponen<Character>();
+        Character character = GetSutComponent<Character>();
 
         character.ReceiveDamage(100);
         yield return null;
 
         AssertCharacterIsDead(characterObject);
     }
-
-    private IEnumerator LoadScene()
-    {
-        AsyncOperation loadSceneTask = SceneManager.LoadSceneAsync(0);
-        yield return loadSceneTask;
-    }
-
-    private GameObject GetSut()
-    {
-        GameObject sut = GameObject.FindGameObjectWithTag("SUT");
-        Assert.NotNull(sut, "character was never initiated");
-        return sut;
-    }
-
-    private T GetSUTComponen<T>()
-    {
-        T component = GetSut().GetComponent<T>();
-        Assert.NotNull(component, "Component not found on SUT");
-        return component;
-    }
-
-
+    
     private static void AssertCharacterIsDead(GameObject characterObject)
     {
         Assert.IsTrue(characterObject == null, "Expected character to die, but didn't");
