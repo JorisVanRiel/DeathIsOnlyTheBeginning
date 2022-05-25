@@ -7,7 +7,7 @@ using UnityEngine.TestTools;
 using DeathIsOnlyTheBeginning;
 public class MonsterTests : TestsBase
 {
-    private const int testScene = 0;
+    private const int testScene = 1;
 
     [UnityTest]
     public IEnumerator WhenMonsterReceivesDamageItsHitpointsShouldDeclineWithTheGivenAmount()
