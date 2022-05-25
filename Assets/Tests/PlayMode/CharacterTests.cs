@@ -7,13 +7,12 @@ using UnityEngine.TestTools;
 using DeathIsOnlyTheBeginning;
 public class CharacterTests : TestsBase
 {
-
-    private const int testScene = 0;
+    private const int characterTestScene = 0;
 
     [UnityTest]
     public IEnumerator CharacterShouldDieWhenTimeIsUp()
     {
-        yield return LoadScene(testScene);
+        yield return LoadScene(characterTestScene);
         GameObject characterObject = GetSut();
         yield return new WaitForSeconds(2);
         AssertCharacterIsDead(characterObject);
@@ -22,7 +21,7 @@ public class CharacterTests : TestsBase
     [UnityTest]
     public IEnumerator WhenCharacterReceivesDamageItsHitpointsShouldDeclineWithTheGivenAmount()
     {
-        yield return LoadScene(testScene);
+        yield return LoadScene(characterTestScene);
 
         Character character = GetSutComponent<Character>();
         character.ReceiveDamage(10);
@@ -33,7 +32,7 @@ public class CharacterTests : TestsBase
     [UnityTest]
     public IEnumerator CharacterShouldDieWhenHpIsZeroOrLess()
     {
-        yield return LoadScene(testScene);
+        yield return LoadScene(characterTestScene);
         GameObject characterObject = GetSut();
         Character character = GetSutComponent<Character>();
 

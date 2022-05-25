@@ -14,7 +14,7 @@ public class TestsBase
     protected GameObject GetSut()
     {
         GameObject sut = GameObject.FindGameObjectWithTag("SUT");
-        Assert.NotNull(sut, "character was never initiated");
+        Assert.NotNull(sut, "Subject Under Test was never initiated");
         return sut;
     }
 

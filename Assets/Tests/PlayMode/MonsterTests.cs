@@ -7,12 +7,12 @@ using UnityEngine.TestTools;
 using DeathIsOnlyTheBeginning;
 public class MonsterTests : TestsBase
 {
-    private const int testScene = 1;
+    private const int monsterTestScene = 1;
 
     [UnityTest]
     public IEnumerator WhenMonsterReceivesDamageItsHitpointsShouldDeclineWithTheGivenAmount()
     {
-        yield return LoadScene(testScene);
+        yield return LoadScene(monsterTestScene);
         Monster monster = GetSutComponent<Monster>();
 
         monster.ReceiveDamage(5);
@@ -23,7 +23,7 @@ public class MonsterTests : TestsBase
     [UnityTest]
     public IEnumerator MonsterShouldDieWhenHpIsZeroOrLess()
     {
-        yield return LoadScene(testScene);
+        yield return LoadScene(monsterTestScene);
         GameObject monsterObject = GetSut();
         Monster monster = GetSutComponent<Monster>();
         monster.ReceiveDamage(100);
@@ -34,7 +34,7 @@ public class MonsterTests : TestsBase
     [UnityTest]
     public IEnumerator MonsterShouldDropLootOnItsLocationWhenItDies()
     {
-        yield return LoadScene(testScene);
+        yield return LoadScene(monsterTestScene);
         Monster monster = GetSutComponent<Monster>();
         Vector3 monsterLocation = monster.transform.position;
         
