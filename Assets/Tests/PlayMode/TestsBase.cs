@@ -21,7 +21,14 @@ public class TestsBase
     protected T GetSutComponent<T>()
     {
         T component = GetSut().GetComponent<T>();
-        Assert.NotNull(component, "Component not found on SUT");
+        Assert.NotNull(component, $"Component {typeof(T)} not found on SUT");
         return component;
+    }
+
+    protected bool IsWithinTollerance(float expected, float actual, float tollerance = 0.001f)
+    {
+        bool isWithinTollerance = actual > expected - tollerance;
+        isWithinTollerance = isWithinTollerance && actual < expected + tollerance;
+        return isWithinTollerance;
     }
 }
