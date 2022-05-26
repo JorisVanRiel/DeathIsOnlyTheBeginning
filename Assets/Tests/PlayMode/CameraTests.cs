@@ -31,18 +31,5 @@ public class CameraTests : TestsBase
         AssertAreAproximatelyEqual(startDistance, finalDistance, "The relative position between camera and object it follows should not change.");
     }
 
-    private void AssertAreAproximatelyEqual(Vector3 expected, Vector3 actual, string message, float tollerance = 0.001f)
-    {
-        bool areEqual = IsWithinTollerance(expected.x, actual.x, tollerance);
-        areEqual = areEqual && IsWithinTollerance(expected.y, actual.y, tollerance);
-        areEqual = areEqual && IsWithinTollerance(expected.y, actual.y, tollerance);
-        if (!areEqual) Assert.Fail($"{message}\nExpected: {expected}\nActual: {actual}");
-    }
-
-    private bool IsWithinTollerance(float expected, float actual, float tollerance)
-    {
-        bool isWithinTollerance = actual > expected - tollerance;
-        isWithinTollerance = isWithinTollerance && actual < expected + tollerance;
-        return isWithinTollerance;
-    }
+    
 }

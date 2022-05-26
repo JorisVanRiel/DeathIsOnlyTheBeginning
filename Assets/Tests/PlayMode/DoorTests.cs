@@ -15,12 +15,12 @@ public class DoorTests : TestsBase
     {
         yield return LoadScene(3);
         DoorController door = GetSutComponent<DoorController>();
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        GameObject player = GetObjectWithTag("Player");
 
         door.Open();
         yield return new WaitForSeconds(waitingTime);
         Assert.IsTrue(IsWithinTollerance(0f, door.transform.position.y), "Door opend while player not near.");
-        
+
         player.transform.position = door.transform.position - new Vector3(1f, 0, 1f);
         yield return new WaitForSeconds(waitingTime);
         player.transform.position = door.transform.position - new Vector3(5f, 0, 5f);
@@ -28,8 +28,7 @@ public class DoorTests : TestsBase
         door.Open();
         yield return new WaitForSeconds(waitingTime);
         Assert.IsTrue(IsWithinTollerance(0f, door.transform.position.y), "Door opend while player not near.");
-        
-        Assert.IsNotNull(player, "no object tagger Player in scene.");
+
         player.transform.position = door.transform.position - new Vector3(1f, 0, 1f);
         yield return new WaitForSeconds(waitingTime);
         door.Open();

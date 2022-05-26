@@ -25,7 +25,29 @@ public class TestsBase
         return component;
     }
 
-    protected bool IsWithinTollerance(float expected, float actual, float tollerance = 0.001f)
+    protected GameObject GetObjectWithTag(string tag)
+    {
+        GameObject player = GameObject.FindGameObjectWithTag(tag);
+        Assert.IsNotNull(player, $"no object tagged with {tag} in scene.");
+        return player;
+    }
+
+    protected T GetComponentFromObjectWithTag<T>(string tag)
+    {
+        T result = GetObjectWithTag(tag).GetComponent<T>();
+        Assert.IsNotNull(result, $"Component {typeof(T)} not found on object tagged {tag}");
+        return result;
+    }
+
+    protected void AssertAreAproximatelyEqual(Vector3 expected, Vector3 actual, string message, float tollerance = 0.01f)
+    {
+        bool areEqual = IsWithinTollerance(expected.x, actual.x, tollerance);
+        areEqual = areEqual && IsWithinTollerance(expected.y, actual.y, tollerance);
+        areEqual = areEqual && IsWithinTollerance(expected.y, actual.y, tollerance);
+        if (!areEqual) Assert.Fail($"{message}\nExpected: {expected}\nActual: {actual}");
+    }
+
+    protected bool IsWithinTollerance(float expected, float actual, float tollerance = 0.01f)
     {
         bool isWithinTollerance = actual > expected - tollerance;
         isWithinTollerance = isWithinTollerance && actual < expected + tollerance;
