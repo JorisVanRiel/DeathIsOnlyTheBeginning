@@ -14,10 +14,33 @@ namespace DeathIsOnlyTheBeginning
         [SerializeField] Item lootItem;
         [SerializeField] Character target;
         [SerializeReference] List<DoorController> doorsInRoom;
+        [SerializeField] int attackStrength;
+        [SerializeField] float attackTime;
+        [SerializeField] float attackDistance;
+
+        private float timeOflastAttack;
+
         private void Update()
         {
             if(hitPoints <= 0) Die();
             Move();
+            Attack();
+        }
+
+        private void Attack()
+        {
+            if (!CanAttakcTarget()) return;
+
+            target.ReceiveDamage(attackStrength);
+            timeOflastAttack = Time.time;
+        }
+        private bool CanAttakcTarget()
+        {
+            if (timeOflastAttack + attackTime > Time.time) return false;
+            if (target == null) return false;
+            if(Vector3.Distance(transform.position, target.transform.position) > attackDistance) return false;
+            return true;
+
         }
 
         public int HitPoints { get { return hitPoints;  } }

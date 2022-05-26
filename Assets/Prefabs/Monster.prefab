@@ -49,7 +49,11 @@ MonoBehaviour:
   hitPoints: 10
   lootItem: {fileID: 5714904599662736433, guid: f7cba35b32748264eb2ae875920d3ce9, type: 3}
   target: {fileID: 0}
-  speed: 0
+  doorsInRoom:
+  - {fileID: 0}
+  attackStrength: 1
+  attackTime: 1
+  attackDistance: 4
 --- !u!195 &6732537559920154541
 NavMeshAgent:
   m_ObjectHideFlags: 0

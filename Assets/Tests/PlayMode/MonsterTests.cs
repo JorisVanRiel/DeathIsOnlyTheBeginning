@@ -11,7 +11,10 @@ public class MonsterTests : TestsBase
 {
     private const int monsterTestScene = 1;
     private const int monsterWithCharacterTestScene = 4;
+    private const int monsterAttackCharacterTestScene = 5;
     private const float waitingTime = 0.1f;
+    private Vector3 positionInHallway = new Vector3(5, 0, 10);
+
 
     [UnityTest]
     public IEnumerator WhenMonsterReceivesDamageItsHitpointsShouldDeclineWithTheGivenAmount()
@@ -82,6 +85,43 @@ public class MonsterTests : TestsBase
         yield return new WaitForSeconds(waitingTime);
 
         AssertAreAproximatelyEqual(monsterLocation, monster.transform.position, "Monster moved before door was opened");
+    }
+
+    [UnityTest]
+    public IEnumerator MonsterShouldAttackPlayerWhenInAttackingDistance()
+    {
+        yield return LoadScene(monsterAttackCharacterTestScene);
+        Character character = GetComponentFromObjectWithTag<Character>("Player");
+        int hpStart = character.HitPoints;
+        yield return new WaitForSeconds(1f);
+        Assert.Less(character.HitPoints, hpStart, "monster dealt no damage to player.");
+    }
+
+    [UnityTest]
+    public IEnumerator MonsterShouldNoLongerAttackPlayerWhenPlayerGetOutOfReach()
+    {
+        yield return LoadScene(monsterAttackCharacterTestScene);
+        Character character = GetComponentFromObjectWithTag<Character>("Player");
+        int hpStart = character.HitPoints;
+        yield return new WaitForSeconds(2f);
+        Assert.Less(character.HitPoints, hpStart, "Character in attacking distance should get damage.");
+        character.transform.position = positionInHallway;
+        yield return new WaitForSeconds(waitingTime);
+        hpStart = character.HitPoints;
+        yield return new WaitForSeconds(2);
+        Assert.AreEqual(hpStart, character.HitPoints, "Character received damage while out of reach");
+
+            
+    }
+
+    [UnityTest]
+    public IEnumerator MonstersAttackShouldBeSperatedByAttackTime()
+    {
+        yield return LoadScene(monsterAttackCharacterTestScene);
+        Character character = GetComponentFromObjectWithTag<Character>("Player");
+        int hpStart = character.HitPoints;
+        yield return new WaitForSeconds(1f);
+        Assert.AreEqual(hpStart-1, character.HitPoints );
     }
 
     private static void AssertCharacterIsDead(GameObject characterObject)
