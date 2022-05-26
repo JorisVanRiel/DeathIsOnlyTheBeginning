@@ -16,7 +16,10 @@ Also this character inherrits als the stuf you stored in a special box.
 
 The game is over, when you die and have less points then your previous run
 
-## Assetpack used
+## Assetpack used (All free from the unity asset store)
 Ultimate Low Poly Dungeon by Broken Vector
 https://assetstore.unity.com/packages/3d/environments/dungeons/ultimate-low-poly-dungeon-143535
+
+Lowpoly Medieval Priest - St Patrick - Free Pack by Polytope Studio
+https://assetstore.unity.com/packages/3d/characters/humanoids/lowpoly-medieval-priest-st-patrick-free-pack-164796
 

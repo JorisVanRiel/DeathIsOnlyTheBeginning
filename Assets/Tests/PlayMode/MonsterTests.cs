@@ -110,8 +110,6 @@ public class MonsterTests : TestsBase
         hpStart = character.HitPoints;
         yield return new WaitForSeconds(2);
         Assert.AreEqual(hpStart, character.HitPoints, "Character received damage while out of reach");
-
-            
     }
 
     [UnityTest]
@@ -121,7 +119,7 @@ public class MonsterTests : TestsBase
         Character character = GetComponentFromObjectWithTag<Character>("Player");
         int hpStart = character.HitPoints;
         yield return new WaitForSeconds(1f);
-        Assert.AreEqual(hpStart-1, character.HitPoints );
+        Assert.AreEqual(hpStart-1, character.HitPoints);
     }
 
     private static void AssertCharacterIsDead(GameObject characterObject)
