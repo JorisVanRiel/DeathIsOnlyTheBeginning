@@ -60,18 +60,15 @@ namespace DeathIsOnlyTheBeginning
 
         private void Move()
         {
-
             if (!doorsInRoom.Any(d => d.IsOpen)) return;
-            
+            this.transform.LookAt(target.transform.position);
+
             NavMeshAgent agent = GetComponent<NavMeshAgent>();
             agent.SetDestination(target.transform.position);
             Vector3 velocity = agent.velocity;
             Vector3 localVelocity = transform.InverseTransformDirection(velocity);
             float speed = localVelocity.z;
             GetComponent<Animator>().SetFloat("Speed", speed);
-
-
-
         }
 
     }

@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 6e9df58ef205d4a4aa632fc813ce8038, type: 2}
---- !u!54 &45967223 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 6732537560585797032, guid: a229bc89c64296648a2e7da304bbe9e5, type: 3}
-  m_PrefabInstance: {fileID: 6732537559955535537}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &277406885
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -380,21 +375,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.8
   m_Center: {x: 0, y: 0.5, z: 0}
---- !u!138 &594038184
-FixedJoint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 594038179}
-  m_ConnectedBody: {fileID: 45967223}
-  m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
 --- !u!54 &594038185
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
 using DeathIsOnlyTheBeginning;
+using UnityEngine.AI;
+
 public class CharacterTests : TestsBase
 {
     private const int characterTestScene = 0;
@@ -70,10 +72,10 @@ public class CharacterTests : TestsBase
         yield return new WaitForSeconds(defaultWaitingTime);
         int hpAfterFirstAttack = monster.HitPoints;
         Assert.Less(hpAfterFirstAttack, startHp, "Did not deal damage when close");
-        monster.transform.position = outOfRange;
+        monster.GetComponent<NavMeshAgent>().Warp(outOfRange);
         yield return new WaitForSeconds(defaultWaitingTime);
         character.Attack(monster);
-        yield return new WaitForSeconds(defaultWaitingTime);
+        //yield return new WaitForSeconds(defaultWaitingTime);
         Assert.AreEqual(hpAfterFirstAttack, monster.HitPoints, "Character dealt damage while monster out of attack range");
     }
     private static void AssertCharacterIsDead(GameObject characterObject)
