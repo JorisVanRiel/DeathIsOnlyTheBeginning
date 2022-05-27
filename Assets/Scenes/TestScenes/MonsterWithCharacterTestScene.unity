@@ -930,6 +930,10 @@ PrefabInstance:
       value: Monster
       objectReference: {fileID: 0}
     - target: {fileID: 6732537559920154538, guid: a229bc89c64296648a2e7da304bbe9e5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 667393087}
+    - target: {fileID: 6732537559920154538, guid: a229bc89c64296648a2e7da304bbe9e5, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 667393087}

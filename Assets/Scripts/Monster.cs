@@ -12,11 +12,12 @@ namespace DeathIsOnlyTheBeginning
     {
         [SerializeField] int hitPoints;
         [SerializeField] Item lootItem;
-        [SerializeField] Character target;
+        [SerializeField] Character player;
         [SerializeReference] List<DoorController> doorsInRoom;
         [SerializeField] int attackStrength;
         [SerializeField] float attackTime;
         [SerializeField] float attackDistance;
+        [SerializeField] int xpValue;
 
         private float timeOflastAttack;
 
@@ -31,15 +32,15 @@ namespace DeathIsOnlyTheBeginning
         {
             if (!CanAttakcTarget()) return;
 
-            target.ReceiveDamage(attackStrength);
+            player.ReceiveDamage(attackStrength);
             timeOflastAttack = Time.time;
         }
 
         private bool CanAttakcTarget()
         {
             if (timeOflastAttack + attackTime > Time.time) return false;
-            if (target == null) return false;
-            if(Vector3.Distance(transform.position, target.transform.position) > attackDistance) return false;
+            if (player == null) return false;
+            if(Vector3.Distance(transform.position, player.transform.position) > attackDistance) return false;
             return true;
 
         }
@@ -54,6 +55,7 @@ namespace DeathIsOnlyTheBeginning
         private void Die()
         {
             GameObject.Instantiate(lootItem);
+            player.ReceiveXp(xpValue);
             lootItem.transform.position = transform.position;
             GameObject.Destroy(gameObject);
         }
@@ -61,10 +63,10 @@ namespace DeathIsOnlyTheBeginning
         private void Move()
         {
             if (!doorsInRoom.Any(d => d.IsOpen)) return;
-            this.transform.LookAt(target.transform.position);
+            this.transform.LookAt(player.transform.position);
 
             NavMeshAgent agent = GetComponent<NavMeshAgent>();
-            agent.SetDestination(target.transform.position);
+            agent.SetDestination(player.transform.position);
             Vector3 velocity = agent.velocity;
             Vector3 localVelocity = transform.InverseTransformDirection(velocity);
             float speed = localVelocity.z;

@@ -9,6 +9,7 @@ namespace DeathIsOnlyTheBeginning
     {        
         [SerializeField] float timeToLife = 300;
         [SerializeField] int hitPoints = 100;
+        [SerializeField] CharacterSheet characterSheet;
         [field: SerializeField] public int AttackDamage { get; set; }
         [field: SerializeField] public int AttackRange { get; set; }
 
@@ -38,6 +39,11 @@ namespace DeathIsOnlyTheBeginning
                 monster.ReceiveDamage(AttackDamage);
             }
             
+        }
+
+        internal void ReceiveXp(int xpValue)
+        {
+            characterSheet.experiencePoints += xpValue;
         }
     }
 }

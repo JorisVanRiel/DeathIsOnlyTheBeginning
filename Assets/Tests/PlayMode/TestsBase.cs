@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class TestsBase
 {
+    private float defaultWaitingTime = .1f;
+
     protected IEnumerator LoadScene(int number)
     {
         AsyncOperation loadSceneTask = SceneManager.LoadSceneAsync(number);
@@ -52,5 +54,10 @@ public class TestsBase
         bool isWithinTollerance = actual > expected - tollerance;
         isWithinTollerance = isWithinTollerance && actual < expected + tollerance;
         return isWithinTollerance;
+    }
+
+    protected IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(defaultWaitingTime);
     }
 }

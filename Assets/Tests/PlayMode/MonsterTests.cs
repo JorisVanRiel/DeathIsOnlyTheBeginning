@@ -35,7 +35,7 @@ public class MonsterTests : TestsBase
         Monster monster = GetSutComponent<Monster>();
         monster.ReceiveDamage(100);
         yield return null;
-        AssertCharacterIsDead(monsterObject);
+        AssertMonsterIsDead(monsterObject);
     }
 
     [UnityTest]
@@ -51,7 +51,7 @@ public class MonsterTests : TestsBase
         Item item = GameObject.FindObjectOfType<Item>();
         Assert.NotNull(item, "No item is dropped");
         Vector3 itemLocation = item.transform.position;
-        Assert.AreEqual(monsterLocation, itemLocation);
+        AssertAreAproximatelyEqual(monsterLocation, itemLocation, "Item did not drop on monster location", 0.1f);
     }
 
     [UnityTest]
@@ -122,9 +122,24 @@ public class MonsterTests : TestsBase
         Assert.AreEqual(hpStart-1, character.HitPoints);
     }
 
-    private static void AssertCharacterIsDead(GameObject characterObject)
+    [UnityTest]
+    public IEnumerator WhenMonsterDiesItShouldAddExperiencePointsToCharactersTotal()
     {
-        Assert.IsTrue(characterObject == null, "Expected monster to die, but didn't");
-        
+        yield return LoadScene(monsterTestScene);
+        ScriptableObjectProvider provider = GetComponentFromObjectWithTag<ScriptableObjectProvider>("Provider");
+        CharacterSheet sheet = provider.Get<CharacterSheet>();
+        GameObject monsterObject = GetSut();
+        int startXp = sheet.experiencePoints;
+
+        Monster monster = GetSutComponent<Monster>();
+        monster.ReceiveDamage(monster.HitPoints);
+        yield return Wait();
+        AssertMonsterIsDead(monsterObject);
+        Assert.Greater(sheet.experiencePoints, startXp, "No experiensce points added to sheet.");
+    }
+
+    private static void AssertMonsterIsDead(GameObject monsterObject)
+    {
+        Assert.IsTrue(monsterObject == null, "Expected monster to die, but didn't");
     }
 }
