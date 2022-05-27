@@ -125,5 +125,6 @@ public class MonsterTests : TestsBase
     private static void AssertCharacterIsDead(GameObject characterObject)
     {
         Assert.IsTrue(characterObject == null, "Expected monster to die, but didn't");
+        
     }
 }
