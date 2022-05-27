@@ -35,11 +35,6 @@ namespace DeathIsOnlyTheBeginning
             timeOflastAttack = Time.time;
         }
 
-        internal void ReceiveDamage(object attackDamage)
-        {
-            throw new NotImplementedException();
-        }
-
         private bool CanAttakcTarget()
         {
             if (timeOflastAttack + attackTime > Time.time) return false;
@@ -65,11 +60,18 @@ namespace DeathIsOnlyTheBeginning
 
         private void Move()
         {
-            if (doorsInRoom.Any(d => d.IsOpen))
-            {
-                NavMeshAgent agent = GetComponent<NavMeshAgent>();
-                agent.SetDestination(target.transform.position);
-            }
+
+            if (!doorsInRoom.Any(d => d.IsOpen)) return;
+            
+            NavMeshAgent agent = GetComponent<NavMeshAgent>();
+            agent.SetDestination(target.transform.position);
+            Vector3 velocity = agent.velocity;
+            Vector3 localVelocity = transform.InverseTransformDirection(velocity);
+            float speed = localVelocity.z;
+            GetComponent<Animator>().SetFloat("Speed", speed);
+
+
+
         }
 
     }
