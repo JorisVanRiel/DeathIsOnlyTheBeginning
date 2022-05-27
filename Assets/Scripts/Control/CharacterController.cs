@@ -6,15 +6,26 @@ namespace DeathIsOnlyTheBeginning.Controlls
 
     public class CharacterController : MonoBehaviour
     {
-        [SerializeField] float speed;
+        [SerializeField] float rotationSpeed;
 
-        // Update is called once per frame
+        private Animator animator;
+        private void Awake()
+        {
+            animator = GetComponent<Animator>();
+        }
+
+
         void Update()
         {
-            this.transform.position= new Vector3(
-                this.transform.position.x + Input.GetAxis("Horizontal") * Time.deltaTime * speed,
-                this.transform.position.y,
-                this.transform.position.z + Input.GetAxis("Vertical") * Time.deltaTime * speed);
+            animator.SetFloat("Speed", Input.GetAxis("Vertical"));
+            if (Input.GetAxis("Horizontal") > 0.1)
+            {
+                this.transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
+            }
+            if (Input.GetAxis("Horizontal") < -0.1)
+            {
+                this.transform.Rotate(Vector3.up, -rotationSpeed * Time.deltaTime);
+            }
         }
     }
 }
