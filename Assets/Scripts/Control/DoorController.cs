@@ -8,8 +8,6 @@ namespace DeathIsOnlyTheBeginning.Controlls
     {
         private bool characterIsNear = false;
         private bool isOpen = false;
-
-
         public bool IsOpen { get { return isOpen; } }
 
         void Update()

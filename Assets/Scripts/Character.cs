@@ -6,9 +6,11 @@ namespace DeathIsOnlyTheBeginning
     using UnityEngine;
 
     public class Character : MonoBehaviour
-    {
+    {        
         [SerializeField] float timeToLife = 300;
         [SerializeField] int hitPoints = 100;
+        [field: SerializeField] public int AttackDamage { get; set; }
+        [field: SerializeField] public int AttackRange { get; set; }
 
         public int HitPoints { get { return this.hitPoints; } }
 
@@ -27,6 +29,15 @@ namespace DeathIsOnlyTheBeginning
         public void ReceiveDamage(int amount)
         {
             hitPoints -= amount;
+        }
+
+        public void Attack(Monster monster)
+        {
+            if(Vector3.Distance(transform.position, monster.transform.position) < AttackRange)
+            {
+                monster.ReceiveDamage(AttackDamage);
+            }
+            
         }
     }
 }

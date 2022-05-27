@@ -457,6 +457,10 @@ PrefabInstance:
       value: Main Camera
       objectReference: {fileID: 0}
     - target: {fileID: 5361821413799748380, guid: fa55215dda36314439df091975662a1d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5361821413799748380, guid: fa55215dda36314439df091975662a1d, type: 3}
       propertyPath: objectToFollow
       value: 
       objectReference: {fileID: 2053886386}
@@ -465,32 +469,44 @@ PrefabInstance:
       value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5361821413799748381, guid: fa55215dda36314439df091975662a1d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5361821413799748381, guid: fa55215dda36314439df091975662a1d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5361821413799748381, guid: fa55215dda36314439df091975662a1d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5361821413799748381, guid: fa55215dda36314439df091975662a1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.936714
+      value: -4.907789
       objectReference: {fileID: 0}
     - target: {fileID: 5361821413799748381, guid: fa55215dda36314439df091975662a1d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 28.385063
+      value: 15.007889
       objectReference: {fileID: 0}
     - target: {fileID: 5361821413799748381, guid: fa55215dda36314439df091975662a1d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.168171
+      value: 4.2940674
       objectReference: {fileID: 0}
     - target: {fileID: 5361821413799748381, guid: fa55215dda36314439df091975662a1d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.8226072
+      value: -0.85208535
       objectReference: {fileID: 0}
     - target: {fileID: 5361821413799748381, guid: fa55215dda36314439df091975662a1d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.56860816
+      value: -0.52337456
       objectReference: {fileID: 0}
     - target: {fileID: 5361821413799748381, guid: fa55215dda36314439df091975662a1d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0012070836
+      value: 0.004724998
       objectReference: {fileID: 0}
     - target: {fileID: 5361821413799748381, guid: fa55215dda36314439df091975662a1d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0008666292
+      value: -0.0027095117
       objectReference: {fileID: 0}
     - target: {fileID: 5361821413799748381, guid: fa55215dda36314439df091975662a1d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -766,64 +782,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 572093822, guid: 181694275ec692d4c93158b81cd40156, type: 3}
-      propertyPath: m_Constraints
-      value: 112
-      objectReference: {fileID: 0}
-    - target: {fileID: 590957352054935888, guid: 181694275ec692d4c93158b81cd40156, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 590957352054935888, guid: 181694275ec692d4c93158b81cd40156, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 590957352054935888, guid: 181694275ec692d4c93158b81cd40156, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 680128580399821664, guid: 181694275ec692d4c93158b81cd40156, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: cf22fb42c2a8a6c4c9cee9044bd25f88, type: 2}
-    - target: {fileID: 680128580399821664, guid: 181694275ec692d4c93158b81cd40156, type: 3}
-      propertyPath: m_CullingMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 680128580399821664, guid: 181694275ec692d4c93158b81cd40156, type: 3}
-      propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'PT_Medieval_Hips'\n\tTransform 'PT_Medieval_Head'\n\tTransform
-        'PT_Medieval_RightHandMiddle1'\n\tTransform 'PT_Medieval_LeftForeArm'\n\tTransform
-        'PT_Medieval_LeftHandRing1'\n\tTransform 'PT_Medieval_RightHandThumb1'\n\tTransform
-        'PT_Medieval_RightLeg'\n\tTransform 'PT_Medieval_LeftShoulder'\n\tTransform
-        'PT_Medieval_LeftLeg'\n\tTransform 'PT_Medieval_LeftHandIndex2'\n\tand more
-        ...\n\tFrom animation clip 'Walking'"
-      objectReference: {fileID: 0}
-    - target: {fileID: 680128580399821664, guid: 181694275ec692d4c93158b81cd40156, type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5229312500486921793, guid: 181694275ec692d4c93158b81cd40156, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5229312500486921793, guid: 181694275ec692d4c93158b81cd40156, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5229312500486921793, guid: 181694275ec692d4c93158b81cd40156, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5229312500486921793, guid: 181694275ec692d4c93158b81cd40156, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5229312500486921793, guid: 181694275ec692d4c93158b81cd40156, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -11.45
       objectReference: {fileID: 0}
     - target: {fileID: 5229312500486921793, guid: 181694275ec692d4c93158b81cd40156, type: 3}
       propertyPath: m_LocalPosition.y
@@ -831,7 +796,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5229312500486921793, guid: 181694275ec692d4c93158b81cd40156, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 9.85
       objectReference: {fileID: 0}
     - target: {fileID: 5229312500486921793, guid: 181694275ec692d4c93158b81cd40156, type: 3}
       propertyPath: m_LocalRotation.w
@@ -865,24 +830,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerCharacter
       objectReference: {fileID: 0}
-    - target: {fileID: 5713759577462211445, guid: 181694275ec692d4c93158b81cd40156, type: 3}
-      propertyPath: m_Height
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5713759577462211445, guid: 181694275ec692d4c93158b81cd40156, type: 3}
-      propertyPath: m_Radius
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5713759577462211445, guid: 181694275ec692d4c93158b81cd40156, type: 3}
-      propertyPath: m_Center.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6301800394944924051, guid: 181694275ec692d4c93158b81cd40156, type: 3}
-      propertyPath: rotationSpeed
-      value: 90
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 680128580399821664, guid: 181694275ec692d4c93158b81cd40156, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 181694275ec692d4c93158b81cd40156, type: 3}
 --- !u!1 &2053886386 stripped
 GameObject:
@@ -900,26 +848,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f6fedd62889084e8c503972a86673f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &2053886394
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2053886386}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 9cc9b1ee63768c84db629d585bb88025, type: 3}
-  m_Controller: {fileID: 9100000, guid: cf22fb42c2a8a6c4c9cee9044bd25f88, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &5464059333731692231
 PrefabInstance:
   m_ObjectHideFlags: 0

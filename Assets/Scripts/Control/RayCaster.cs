@@ -11,10 +11,16 @@
     {
         public static RaycastHit GetMouseHit()
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Camera camera = GameObject.FindObjectOfType<Camera>();
+            Ray ray = camera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             Physics.Raycast(ray, out hit);
             return hit;
+        }
+
+        public static GameObject GetMouseHitGameObject()
+        {
+            return GetMouseHit().collider.gameObject;
         }
 
         public static bool MouseHitsAny()

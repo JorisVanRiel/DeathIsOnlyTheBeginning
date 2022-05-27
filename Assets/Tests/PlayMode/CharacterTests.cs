@@ -8,6 +8,10 @@ using DeathIsOnlyTheBeginning;
 public class CharacterTests : TestsBase
 {
     private const int characterTestScene = 0;
+    private const int characterAttackTestScene = 6;
+    private float defaultWaitingTime = .1f;
+    private Vector3 outOfRange = new Vector3(1, 0, 20);
+
 
     [UnityTest]
     public IEnumerator CharacterShouldDieWhenTimeIsUp()
@@ -42,6 +46,36 @@ public class CharacterTests : TestsBase
         AssertCharacterIsDead(characterObject);
     }
     
+
+    [UnityTest]
+    public IEnumerator CharacterSchouldDealDamageWhenAttackingMonster()
+    {
+        yield return LoadScene(characterAttackTestScene);
+        Character character = GetSutComponent<Character>();
+        Monster monster = GetComponentFromObjectWithTag<Monster>("Monster");
+        int startHp = monster.HitPoints;
+        character.Attack(monster);
+        yield return new WaitForSeconds(defaultWaitingTime);
+        Assert.Less(monster.HitPoints, startHp);
+    }
+
+    [UnityTest]
+    public IEnumerator CharacterShouldNotDealDamageWhenAttackingMonsterIsOutOfRange()
+    {
+        yield return LoadScene(characterAttackTestScene);
+        Character character = GetSutComponent<Character>();
+        Monster monster = GetComponentFromObjectWithTag<Monster>("Monster");
+        int startHp = monster.HitPoints;
+        character.Attack(monster);
+        yield return new WaitForSeconds(defaultWaitingTime);
+        int hpAfterFirstAttack = monster.HitPoints;
+        Assert.Less(hpAfterFirstAttack, startHp, "Did not deal damage when close");
+        monster.transform.position = outOfRange;
+        yield return new WaitForSeconds(defaultWaitingTime);
+        character.Attack(monster);
+        yield return new WaitForSeconds(defaultWaitingTime);
+        Assert.AreEqual(hpAfterFirstAttack, monster.HitPoints, "Character dealt damage while monster out of attack range");
+    }
     private static void AssertCharacterIsDead(GameObject characterObject)
     {
         Assert.IsTrue(characterObject == null, "Expected character to die, but didn't");

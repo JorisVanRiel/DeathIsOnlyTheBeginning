@@ -34,6 +34,12 @@ namespace DeathIsOnlyTheBeginning
             target.ReceiveDamage(attackStrength);
             timeOflastAttack = Time.time;
         }
+
+        internal void ReceiveDamage(object attackDamage)
+        {
+            throw new NotImplementedException();
+        }
+
         private bool CanAttakcTarget()
         {
             if (timeOflastAttack + attackTime > Time.time) return false;

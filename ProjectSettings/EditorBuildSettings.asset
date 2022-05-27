@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestScenes/MonsterAttackingCharacterTestScene.unity
     guid: f3ad367cbc9349e49bdfdde5e5941446
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/CharacterAttackingMonsterTestScene.unity
+    guid: b3a6e07a3250cbf41801d588ecc159cf
   m_configObjects: {}

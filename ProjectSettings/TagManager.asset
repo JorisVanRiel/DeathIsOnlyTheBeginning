@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SUT
   - Door
+  - Monster
   layers:
   - Default
   - TransparentFX
