@@ -23,3 +23,6 @@ https://assetstore.unity.com/packages/3d/environments/dungeons/ultimate-low-poly
 Lowpoly Medieval Priest - St Patrick - Free Pack by Polytope Studio
 https://assetstore.unity.com/packages/3d/characters/humanoids/lowpoly-medieval-priest-st-patrick-free-pack-164796
 
+Skeleton Outlaw by Kevin Iglesias
+https://assetstore.unity.com/packages/3d/characters/humanoids/fantasy/skeleton-outlaw-130946
+
