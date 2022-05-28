@@ -129,13 +129,13 @@ public class MonsterTests : TestsBase
         ScriptableObjectProvider provider = GetComponentFromObjectWithTag<ScriptableObjectProvider>("Provider");
         CharacterSheet sheet = provider.Get<CharacterSheet>();
         GameObject monsterObject = GetSut();
-        int startXp = sheet.experiencePoints;
+        int startXp = sheet.ExperiencePoints;
 
         Monster monster = GetSutComponent<Monster>();
         monster.ReceiveDamage(monster.HitPoints);
         yield return Wait();
         AssertMonsterIsDead(monsterObject);
-        Assert.Greater(sheet.experiencePoints, startXp, "No experiensce points added to sheet.");
+        Assert.Greater(sheet.ExperiencePoints, startXp, "No experiensce points added to sheet.");
     }
 
     private static void AssertMonsterIsDead(GameObject monsterObject)

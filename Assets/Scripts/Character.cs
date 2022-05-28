@@ -43,7 +43,7 @@ namespace DeathIsOnlyTheBeginning
 
         internal void ReceiveXp(int xpValue)
         {
-            characterSheet.experiencePoints += xpValue;
+            characterSheet.AddExperiencePoints(xpValue);
         }
     }
 }
