@@ -6,9 +6,12 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Character Sheet")]
 public class CharacterSheet : ScriptableObject
 {
-    private int experiencePoints;
-    private int attack;
-    private int defence;
+    [SerializeField] int startingAttack = 10;
+    [SerializeField] int startingDefence = 2;
+
+    [SerializeField] int experiencePoints;
+    [SerializeField] int attack;
+    [SerializeField] int defence;
 
     public int ExperiencePoints { get { return experiencePoints; } }
     public int Attack { get { return attack; } }
@@ -22,5 +25,21 @@ public class CharacterSheet : ScriptableObject
     public void Reset()
     {
         experiencePoints = 0;
+        attack = startingAttack;
+        defence = startingDefence;
+    }
+
+    public void AttackUp()
+    {
+        if (experiencePoints < attack) return;
+        experiencePoints -= attack;
+        attack++;
+    }
+
+    public void DefenceUp()
+    {
+        if(experiencePoints < defence) return;
+        experiencePoints -= defence;
+        defence++;
     }
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -197,6 +197,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6321437847465297498, guid: 66bf750aa2e8e3e4aa5aeb824b61c508, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AttackUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6321437847465297498, guid: 66bf750aa2e8e3e4aa5aeb824b61c508, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CharacterSheet, DeathIsOnyTheBeginning
+      objectReference: {fileID: 0}
+    - target: {fileID: 6321437847465297498, guid: 66bf750aa2e8e3e4aa5aeb824b61c508, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6321437847917824151, guid: 66bf750aa2e8e3e4aa5aeb824b61c508, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -284,6 +296,34 @@ PrefabInstance:
     - target: {fileID: 6321437847917824155, guid: 66bf750aa2e8e3e4aa5aeb824b61c508, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6321437848060624268, guid: 66bf750aa2e8e3e4aa5aeb824b61c508, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6321437848060624268, guid: 66bf750aa2e8e3e4aa5aeb824b61c508, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6321437848060624268, guid: 66bf750aa2e8e3e4aa5aeb824b61c508, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 7bc03c4a5ce307f49bd5703dc00c064f, type: 2}
+    - target: {fileID: 6321437848060624268, guid: 66bf750aa2e8e3e4aa5aeb824b61c508, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6321437848060624268, guid: 66bf750aa2e8e3e4aa5aeb824b61c508, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DefenceUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6321437848060624268, guid: 66bf750aa2e8e3e4aa5aeb824b61c508, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CharacterSheet, DeathIsOnyTheBeginning
+      objectReference: {fileID: 0}
+    - target: {fileID: 6321437848060624268, guid: 66bf750aa2e8e3e4aa5aeb824b61c508, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66bf750aa2e8e3e4aa5aeb824b61c508, type: 3}

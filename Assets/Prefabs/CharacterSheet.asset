@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b523b94ecf5738040aea5a864c602968, type: 3}
   m_Name: CharacterSheet
   m_EditorClassIdentifier: 
-  experiencePoints: 3
-  attack: 2
-  defence: 1
+  startingAttack: 10
+  startingDefence: 2

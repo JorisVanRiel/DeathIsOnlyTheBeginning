@@ -8,23 +8,97 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PixelRect:
+    serializedVersion: 2
+    x: 2560
+    y: 197
+    width: 1920
+    height: 1032
+  m_ShowMode: 0
+  m_Title: Game
+  m_RootView: {fileID: 4}
+  m_MinSize: {x: 200, y: 221}
+  m_MaxSize: {x: 4000, y: 4021}
+  m_Maximized: 1
+--- !u!114 &2
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 1024
-    y: 240
-    width: 1920
-    height: 989
+    x: 0
+    y: 43
+    width: 2560
+    height: 1349
   m_ShowMode: 4
-  m_Title: Scene
-  m_RootView: {fileID: 2}
+  m_Title: Test Runner
+  m_RootView: {fileID: 5}
   m_MinSize: {x: 875, y: 350}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
---- !u!114 &2
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: GameView
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1920
+    height: 1032
+  m_MinSize: {x: 200, y: 221}
+  m_MaxSize: {x: 4000, y: 4021}
+  m_ActualView: {fileID: 19}
+  m_Panes:
+  - {fileID: 19}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &4
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 3}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1920
+    height: 1032
+  m_MinSize: {x: 200, y: 221}
+  m_MaxSize: {x: 4000, y: 4021}
+  vertical: 0
+  controlID: 239
+--- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,22 +111,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 3}
-  - {fileID: 5}
-  - {fileID: 4}
+  - {fileID: 6}
+  - {fileID: 8}
+  - {fileID: 7}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
-    height: 989
+    width: 2560
+    height: 1349
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &3
+--- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -69,12 +143,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
+    width: 2560
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
---- !u!114 &4
+--- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90,12 +164,12 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 969
-    width: 1920
+    y: 1329
+    width: 2560
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
---- !u!114 &5
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -108,18 +182,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 6}
+  - {fileID: 9}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1920
-    height: 939
+    width: 2560
+    height: 1299
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 49060
---- !u!114 &6
+  controlID: 125
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,19 +206,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 7}
-  - {fileID: 12}
+  - {fileID: 10}
+  - {fileID: 15}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
-    height: 939
+    width: 2560
+    height: 1299
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 49061
---- !u!114 &7
+  controlID: 126
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,19 +231,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 8}
   - {fileID: 11}
+  - {fileID: 14}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1169
-    height: 939
+    width: 1559
+    height: 1299
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 49068
---- !u!114 &8
+  controlID: 127
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -182,19 +256,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 9}
-  - {fileID: 10}
+  - {fileID: 12}
+  - {fileID: 13}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1169
-    height: 644
+    width: 1559
+    height: 891
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 49069
---- !u!114 &9
+  controlID: 128
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -211,16 +285,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 234
-    height: 644
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 15}
+    width: 312
+    height: 891
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 15}
+  - {fileID: 17}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &10
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -235,19 +309,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 234
+    x: 312
     y: 0
-    width: 935
-    height: 644
+    width: 1247
+    height: 891
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 18}
   m_Panes:
-  - {fileID: 16}
-  - {fileID: 17}
+  - {fileID: 18}
   m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &11
+  m_LastSelected: 0
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -257,25 +330,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 644
-    width: 1169
-    height: 295
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 18}
+    y: 891
+    width: 1559
+    height: 408
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 21}
   m_Panes:
-  - {fileID: 18}
-  - {fileID: 19}
   - {fileID: 20}
-  m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &12
+  - {fileID: 21}
+  - {fileID: 22}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -285,64 +358,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: PropertyEditor
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1169
+    x: 1559
     y: 0
-    width: 751
-    height: 939
-  m_MinSize: {x: 275, y: 100}
+    width: 1001
+    height: 1299
+  m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 13}
+  m_ActualView: {fileID: 16}
   m_Panes:
-  - {fileID: 21}
-  - {fileID: 14}
-  - {fileID: 22}
-  - {fileID: 13}
-  m_Selected: 3
+  - {fileID: 23}
+  - {fileID: 16}
+  - {fileID: 24}
+  m_Selected: 1
   m_LastSelected: 0
---- !u!114 &13
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 13961, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 275, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: SkillPanel
-    m_Image: {fileID: 7853449062886713960, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: SkillScreenScene/Canvas/SkillPanel
-  m_Pos:
-    serializedVersion: 2
-    x: 1169
-    y: 73
-    width: 750
-    height: 918
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-  m_ObjectsLockedBeforeSerialization: []
-  m_InstanceIDsLockedBeforeSerialization: 
-  m_PreviewResizer:
-    m_CachedPref: 154
-    m_ControlHash: 1412526313
-    m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
-  m_GlobalObjectId: GlobalObjectId_V1-2-e27265b4b1ac2a645a95691410747637-1282156422-0
-  m_InspectorMode: 0
---- !u!114 &14
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -371,7 +405,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 49289
+    ID: 1757
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -396,14 +430,14 @@ MonoBehaviour:
     oldSplitSize: 0
   m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
-    m_Window: {fileID: 14}
+    m_Window: {fileID: 16}
     m_NewResultList:
     - id: 1004
       uniqueId: '[DeathIsOnlyTheBeinning][suite]'
       name: DeathIsOnlyTheBeinning
       fullName: DeathIsOnlyTheBeinning
       resultStatus: 1
-      duration: 2.7008812
+      duration: 0.2811014
       messages: 
       output: 
       stacktrace: 
@@ -419,7 +453,7 @@ MonoBehaviour:
       name: PlayMode.dll
       fullName: C:/Dev/Game/DeathIsOnlyTheBeginning/Library/ScriptAssemblies/PlayMode.dll
       resultStatus: 1
-      duration: 2.5085678
+      duration: 0.1242169
       messages: 
       output: 
       stacktrace: 
@@ -435,7 +469,7 @@ MonoBehaviour:
       name: CameraTests
       fullName: CameraTests
       resultStatus: 1
-      duration: 0.272407
+      duration: 0.2876214
       messages: 
       output: 
       stacktrace: 
@@ -451,7 +485,7 @@ MonoBehaviour:
       name: CameraShouldHaveAFixedRelativePostionToObjectItFollows
       fullName: CameraTests.CameraShouldHaveAFixedRelativePostionToObjectItFollows
       resultStatus: 1
-      duration: 0.2451116
+      duration: 0.2612639
       messages: 
       output: 
       stacktrace: 
@@ -463,12 +497,198 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: PlayMode.dll/[PlayMode][CameraTests][suite]
+    - id: 1003
+      uniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
+      name: CharacterSheetTests
+      fullName: CharacterSheetTests
+      resultStatus: 1
+      duration: 0.1114412
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1024
+      parentUniqueId: '[PlayMode][C:/Dev/Game/DeathIsOnlyTheBeginning/Library/ScriptAssemblies/PlayMode.dll][suite]'
+    - id: 1004
+      uniqueId: PlayMode.dll/CharacterSheetTests/[PlayMode][CharacterSheetTests.AddExperienceShouldAddTheAmountOfExperience]
+      name: AddExperienceShouldAddTheAmountOfExperience
+      fullName: CharacterSheetTests.AddExperienceShouldAddTheAmountOfExperience
+      resultStatus: 1
+      duration: 0.0716916
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
+    - id: 1006
+      uniqueId: PlayMode.dll/CharacterSheetTests/[PlayMode][CharacterSheetTests.AttackUpShouldAddOnePointToTheAttack]
+      name: AttackUpShouldAddOnePointToTheAttack
+      fullName: CharacterSheetTests.AttackUpShouldAddOnePointToTheAttack
+      resultStatus: 1
+      duration: 0.1126269
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
+    - id: 1007
+      uniqueId: PlayMode.dll/CharacterSheetTests/[PlayMode][CharacterSheetTests.AttackUpShouldCostExperiencePointsEqualToCurrentValue]
+      name: AttackUpShouldCostExperiencePointsEqualToCurrentValue
+      fullName: CharacterSheetTests.AttackUpShouldCostExperiencePointsEqualToCurrentValue
+      resultStatus: 1
+      duration: 0.0899303
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
+    - id: 1008
+      uniqueId: PlayMode.dll/CharacterSheetTests/[PlayMode][CharacterSheetTests.AttackUpShouldDoNothingWhenExperiencePointsAreLessThenAttackValue]
+      name: AttackUpShouldDoNothingWhenExperiencePointsAreLessThenAttackValue
+      fullName: CharacterSheetTests.AttackUpShouldDoNothingWhenExperiencePointsAreLessThenAttackValue
+      resultStatus: 1
+      duration: 0.0739513
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
+    - id: 1007
+      uniqueId: PlayMode.dll/CharacterSheetTests/[PlayMode][CharacterSheetTests.DefenceUpShouldAddOnePointToDefence]
+      name: DefenceUpShouldAddOnePointToDefence
+      fullName: CharacterSheetTests.DefenceUpShouldAddOnePointToDefence
+      resultStatus: 1
+      duration: 0.0799768
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
+    - id: 1010
+      uniqueId: PlayMode.dll/CharacterSheetTests/[PlayMode][CharacterSheetTests.DefenceUpShouldCostExperiencePointsEqualToCurrentValue]
+      name: DefenceUpShouldCostExperiencePointsEqualToCurrentValue
+      fullName: CharacterSheetTests.DefenceUpShouldCostExperiencePointsEqualToCurrentValue
+      resultStatus: 1
+      duration: 0.0843679
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
+    - id: 1009
+      uniqueId: PlayMode.dll/CharacterSheetTests/[PlayMode][CharacterSheetTests.DefenceUpShouldDoNothingWhenExperiencePointsAreLessThenDefenceValue]
+      name: DefenceUpShouldDoNothingWhenExperiencePointsAreLessThenDefenceValue
+      fullName: CharacterSheetTests.DefenceUpShouldDoNothingWhenExperiencePointsAreLessThenDefenceValue
+      resultStatus: 1
+      duration: 0.0702573
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
+    - id: 1007
+      uniqueId: PlayMode.dll/CharacterSheetTests/[PlayMode][CharacterSheetTests.ResetShouldSetAttackToTheStartingAttackValue]
+      name: ResetShouldSetAttackToTheStartingAttackValue
+      fullName: CharacterSheetTests.ResetShouldSetAttackToTheStartingAttackValue
+      resultStatus: 1
+      duration: 0.0850622
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
+    - id: 1008
+      uniqueId: PlayMode.dll/CharacterSheetTests/[PlayMode][CharacterSheetTests.ResetShouldSetDefenceToTheStartingDefenceValue]
+      name: ResetShouldSetDefenceToTheStartingDefenceValue
+      fullName: CharacterSheetTests.ResetShouldSetDefenceToTheStartingDefenceValue
+      resultStatus: 1
+      duration: 0.0694004
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
+    - id: 1004
+      uniqueId: PlayMode.dll/CharacterSheetTests/[PlayMode][CharacterSheetTests.ResetShouldSetExperiencePointsToZero]
+      name: ResetShouldSetExperiencePointsToZero
+      fullName: CharacterSheetTests.ResetShouldSetExperiencePointsToZero
+      resultStatus: 1
+      duration: 0.0490182
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
     - id: 1001
       uniqueId: PlayMode.dll/[PlayMode][CharacterTests][suite]
       name: CharacterTests
       fullName: CharacterTests
       resultStatus: 1
-      duration: 2.9058132
+      duration: 2.9390645
       messages: 
       output: 
       stacktrace: 
@@ -484,7 +704,7 @@ MonoBehaviour:
       name: CharacterSchouldDealDamageWhenAttackingMonster
       fullName: CharacterTests.CharacterSchouldDealDamageWhenAttackingMonster
       resultStatus: 1
-      duration: 0.285834
+      duration: 0.3957114
       messages: 
       output: 
       stacktrace: 
@@ -501,7 +721,7 @@ MonoBehaviour:
       name: CharacterShouldDieWhenHpIsZeroOrLess
       fullName: CharacterTests.CharacterShouldDieWhenHpIsZeroOrLess
       resultStatus: 1
-      duration: 0.0875417
+      duration: 0.0771794
       messages: 
       output: 
       stacktrace: 
@@ -518,7 +738,7 @@ MonoBehaviour:
       name: CharacterShouldDieWhenTimeIsUp
       fullName: CharacterTests.CharacterShouldDieWhenTimeIsUp
       resultStatus: 1
-      duration: 2.074613
+      duration: 2.060082
       messages: 
       output: 
       stacktrace: 
@@ -535,7 +755,7 @@ MonoBehaviour:
       name: CharacterShouldNotDealDamageWhenAttackingMonsterIsOutOfRange
       fullName: CharacterTests.CharacterShouldNotDealDamageWhenAttackingMonsterIsOutOfRange
       resultStatus: 1
-      duration: 0.3628995
+      duration: 0.3247614
       messages: 
       output: 
       stacktrace: 
@@ -552,7 +772,7 @@ MonoBehaviour:
       name: WhenCharacterReceivesDamageItsHitpointsShouldDeclineWithTheGivenAmount
       fullName: CharacterTests.WhenCharacterReceivesDamageItsHitpointsShouldDeclineWithTheGivenAmount
       resultStatus: 1
-      duration: 0.0645246
+      duration: 0.055991
       messages: 
       output: 
       stacktrace: 
@@ -569,7 +789,7 @@ MonoBehaviour:
       name: DoorTests
       fullName: DoorTests
       resultStatus: 1
-      duration: 0.9529303
+      duration: 1.2351592
       messages: 
       output: 
       stacktrace: 
@@ -585,7 +805,7 @@ MonoBehaviour:
       name: DoorShouldOnlyOpenOnce
       fullName: DoorTests.DoorShouldOnlyOpenOnce
       resultStatus: 1
-      duration: 0.5197313
+      duration: 0.5067258
       messages: 
       output: 
       stacktrace: 
@@ -602,7 +822,7 @@ MonoBehaviour:
       name: DoorShouldOnlyOpenWhenPlayerIsNear
       fullName: DoorTests.DoorShouldOnlyOpenWhenPlayerIsNear
       resultStatus: 1
-      duration: 0.9176254
+      duration: 0.695988
       messages: 
       output: 
       stacktrace: 
@@ -619,7 +839,7 @@ MonoBehaviour:
       name: MonsterTests
       fullName: MonsterTests
       resultStatus: 1
-      duration: 2.4948719
+      duration: 1.2570876
       messages: 
       output: 
       stacktrace: 
@@ -635,7 +855,7 @@ MonoBehaviour:
       name: MonstersAttackShouldBeSperatedByAttackTime
       fullName: MonsterTests.MonstersAttackShouldBeSperatedByAttackTime
       resultStatus: 1
-      duration: 1.1397634
+      duration: 1.2299339
       messages: 
       output: 
       stacktrace: 
@@ -652,7 +872,7 @@ MonoBehaviour:
       name: MonsterShouldAttackPlayerWhenInAttackingDistance
       fullName: MonsterTests.MonsterShouldAttackPlayerWhenInAttackingDistance
       resultStatus: 1
-      duration: 1.0616622
+      duration: 1.109164
       messages: 
       output: 
       stacktrace: 
@@ -669,7 +889,7 @@ MonoBehaviour:
       name: MonsterShouldDieWhenHpIsZeroOrLess
       fullName: MonsterTests.MonsterShouldDieWhenHpIsZeroOrLess
       resultStatus: 1
-      duration: 0.075621
+      duration: 0.1059085
       messages: 
       output: 
       stacktrace: 
@@ -686,7 +906,7 @@ MonoBehaviour:
       name: MonsterShouldDropLootOnItsLocationWhenItDies
       fullName: MonsterTests.MonsterShouldDropLootOnItsLocationWhenItDies
       resultStatus: 1
-      duration: 0.0850606
+      duration: 0.0990935
       messages: 
       output: 
       stacktrace: 
@@ -703,7 +923,7 @@ MonoBehaviour:
       name: MonsterShouldMoveTowardsPlayerWhenDoorIsOpenend
       fullName: MonsterTests.MonsterShouldMoveTowardsPlayerWhenDoorIsOpenend
       resultStatus: 1
-      duration: 0.2943144
+      duration: 0.3412656
       messages: 
       output: 
       stacktrace: 
@@ -720,7 +940,7 @@ MonoBehaviour:
       name: MonsterShouldNoLongerAttackPlayerWhenPlayerGetOutOfReach
       fullName: MonsterTests.MonsterShouldNoLongerAttackPlayerWhenPlayerGetOutOfReach
       resultStatus: 1
-      duration: 4.1940155
+      duration: 4.2108493
       messages: 
       output: 
       stacktrace: 
@@ -737,7 +957,7 @@ MonoBehaviour:
       name: MonsterShouldStayInPositionBeforeDoorIsOpenend
       fullName: MonsterTests.MonsterShouldStayInPositionBeforeDoorIsOpenend
       resultStatus: 1
-      duration: 0.1864471
+      duration: 0.2100525
       messages: 
       output: 
       stacktrace: 
@@ -754,7 +974,7 @@ MonoBehaviour:
       name: WhenMonsterDiesItShouldAddExperiencePointsToCharactersTotal
       fullName: MonsterTests.WhenMonsterDiesItShouldAddExperiencePointsToCharactersTotal
       resultStatus: 1
-      duration: 2.467862
+      duration: 0.1953567
       messages: 
       output: 
       stacktrace: 
@@ -771,7 +991,7 @@ MonoBehaviour:
       name: WhenMonsterReceivesDamageItsHitpointsShouldDeclineWithTheGivenAmount
       fullName: MonsterTests.WhenMonsterReceivesDamageItsHitpointsShouldDeclineWithTheGivenAmount
       resultStatus: 1
-      duration: 0.0498614
+      duration: 0.0634217
       messages: 
       output: 
       stacktrace: 
@@ -783,13 +1003,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1005
       parentUniqueId: PlayMode.dll/[PlayMode][MonsterTests][suite]
-    m_ResultText: WhenMonsterDiesItShouldAddExperiencePointsToCharactersTotal (2.468s)
+    m_ResultText: DefenceUpShouldCostExperiencePointsEqualToCurrentValue (0.084s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 4c1a2338
-      m_LastClickedID: 941824588
-      m_ExpandedIDs: 7c88c49026d4879ac130d19dcde102d158f80e33d7a1566effffff7f
+      m_SelectedIDs: dd8c2a8f
+      m_LastClickedID: -1893036835
+      m_ExpandedIDs: 7c88c49026d4879ac130d19dcde102d18e785d0758f80e33d7a1566effffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -817,7 +1037,7 @@ MonoBehaviour:
       - Uncategorized
     m_SelectedOption: 0
   m_EditModeTestListGUI:
-    m_Window: {fileID: 14}
+    m_Window: {fileID: 16}
     m_NewResultList:
     - id: 1000
       uniqueId: '[DeathIsOnlyTheBeinning][suite]'
@@ -867,7 +1087,7 @@ MonoBehaviour:
       selectedCategoryMask: 0
       availableCategories:
       - Uncategorized
---- !u!114 &15
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -889,8 +1109,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 233
-    height: 623
+    width: 311
+    height: 870
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -898,25 +1118,25 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 52d2f4ff
-      m_LastClickedID: -732590
-      m_ExpandedIDs: f6daf4ffd6faf4ff24fbf4ffba00f5ffbe00f5ffca00f5ff0802f5ff4802f5ff8202f5ff4807f5ff3a0df5ff0015f5ff3a15f5ffdc43f5ff224af5ff5c4af5ff7c51f5ffba58f5ff1e5ff5ff4664f5ff9664f5ff1280f5ff6e85f5ffbe85f5ff3aa1f5ff58a7f5ffa8a7f5ff24c3f5ff7cc8f5ffccc8f5ff5ce4f5ff8ce8f5ffdce8f5ff02eef5ff8ef5f5ffdef5f5ff04fbf5ff400af6ff900af6ff0c26f6ffe42ef6ff342ff6ffcc40f6ff8c48f6ff5a4ff6ffaa4ff6ff4461f6ff866af6ffd66af6ff5672f6ff3e79f6ff8e79f6ff0e81f6ffc687f6ff1688f6ff968ff6ff9a93f6ffda94f6ff1e95f6ff6a98f6ffba98f6ff3aa0f6fffca7f6fff0adf6ff40aef6ffdabff6ffdac3f6ff2ac4f6ff78c8f6ff4ad1f6ff9ad1f6ff7ed5f6ff7cd9f6ffccd9f6ffb0ddf6ff72e0f6ffc2e0f6ff42e8f6ff2eebf6ff7eebf6fffef2f6ffdcf5f6ff2cf6f6ff922cf7ffae40f7fffe40f7ffb443f7ff6a47f7ffba47f7ff704af7fffc50f7ff4c51f7fffc53f7ff7658f7ffc658f7ff745bf7ff8463f7ffd463f7ff7e66f7ff6e7df7ff4c88f7ff628ff7ff4ca2f7ff5ca6f7ffaca6f7ff2caef7ffd0b6f7ff20b7f7ff9ebef7ff68ccf7ff78d5f7ffced5f7ff78ddf7ff64e9f7ff1aedf7ff70edf7ff1af5f7ff70fef7ffc6fef7ff7006f8ff2810f8ff7e10f8ff2818f8ff1c23f8ff7223f8ff162bf8ffb03ef8ff063ff8ffb845f8ffda46f8ffd64ef8ff2c4ff8ffd256f8fffa5ef8ff505ff8ff0e67f8ff5e6ef8ffb46ef8ff5e76f8ff7080f8ffc680f8ff7088f8ff0291f8ff5891f8fffc98f8ff86a1f8ffdca1f8ff86a9f8ffdeb5f8ff94b9f8ffeab9f8ff94c1f8ffdec8f8ff34c9f8ffe4d0f8ff64d8f8ffbad8f8ff64e0f8ffbce8f8ff12e9f8ffbcf0f8ff12f8f8ff68f8f8ffc0fcf8ff2a04f9ff8004f9ff2a0cf9ff4c14f9ffa214f9ff601cf9ffb023f9ff0624f9ffc42bf9ff5233f9ffa833f9ff523bf9ff7a48f9ffd048f9ffee51f9ff5a5af9ffb05af9ffba63f9ff3a6bf9ff906bf9ff9c74f9ff007cf9ff567cf9ff56bff9ffe6cff9ff3cd0f9ff42d9f9ffc0e0f9ff16e1f9ff1ceaf9ff9af1f9fff0f1f9ff7227faff146dfbffd06dfbffec6dfbfff06dfbfff06efbff306ffbff746ffbffca70fbffd6b5fbff24b9fbffa6bafbffbebefbff08bffbff2cc5fbff22c8fbff6cc8fbff3201fcff7005fcffba05fcffbc09fcff7e13fcffc813fcffca17fcff681dfcffb21dfcffb821fcffe424fcff382afcff822afcff8e2efcffa833fcfff233fcffcc51fcffe656fcff3057fcff3a5efcff5463fcff9e63fcff1677fcff387cfcff827cfcff8880fcffa285fcffec85fcff6a8afcffb48ffcfffe8ffcff7c94fcff9699fcffe099fcff06a0fcffe6abfcff30acfcff54b2fcff4eb8fcff98b8fcffbcbefcff38c4fcff9ec9fcffa6d4fcff5adcfcffc6e3fcff10e4fcff3aeafcff86f3fcffd0f3fcfff4f9fcff700afdffba0afdffde10fdff8218fdfff819fdff421afdff6620fdffb627fdff0028fdff262efdff1834fdff6034fdffd434fdff8045fdff3652fdffe461fdffc07ffdffe082fdff7e85fdff70a0fdff7ad9fdff22e7fdffd803feff8607feff6e08feff7a18feff4a36feff5436feff9236feff4e3efeff38fbffffc6540100e05401002e56010042560100b2560100cc560100747c01008e7c010088920100468f02006cac0200b2b2020030b4020062b8020006c0020028c00200
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: c219ffff121affff7e1bffff241dffff741dffffe01efffffe1fffff4e20ffffba21ffffe424ffff3425ffffa026ffff2629ffff6e29ffffe229ffff0a2bffff5a2bffffc62cffff222dffff722dffffde2effff8430ffffd430ffff4032ffff1034ffff6034ffffcc35ffff1637ffff6637ffffd238ffffe43affff343bffffa03cfffff23dffff423effffae3fffffe440ffff3441ffffa042fffff643ffff4644ffffb245ffffa047fffff047ffff5c49ffff7a4affffca4affffae4cffffd44fffff2450fffff051ffff6852ffffb852ffff2454ffff9655ffffe655ffff5257ffff7859ffffc859ffff345bffff5e5cffffae5cffff1a5effff4c5fffff9c5fffff0861ffff6c61ffffbc61ffff7063ffff4e68ffff9e68ffff0a6affff586bffffa86bffff146dffff7870ffffc870ffff3e78ffffaa78fffffa78ffff88c5ffff34c6ffff84c6fffff0c7ffff7ac9ffffcac9ffff36cbffff04cfffff4ccfffffc0cfffffccd1ffff1cd2ffff88d3fffffed6ffff4ed7ffffbed8ffff14e3ffff3af6ffff38fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Title
-        m_OriginalName: Title
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 180240
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 9}
+        m_ClientGUIView: {fileID: 12}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -924,7 +1144,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &16
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -944,10 +1164,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 234
+    x: 312
     y: 73
-    width: 933
-    height: 623
+    width: 1245
+    height: 870
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1144,14 +1364,14 @@ MonoBehaviour:
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
-  m_2DMode: 0
+  m_2DMode: 1
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.3766013, y: 4.1312675, z: 11.189188}
+    m_Target: {x: 592.61176, y: 360.25763, z: -0.72714067}
     speed: 2
-    m_Value: {x: 1.3766013, y: 4.1312675, z: 11.189188}
+    m_Value: {x: 592.61176, y: 360.25763, z: -0.72714067}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1180,17 +1400,17 @@ MonoBehaviour:
       m_Size: {x: 0, y: 0}
     yGrid:
       m_Fade:
-        m_Target: 1
+        m_Target: 0
         speed: 2
-        m_Value: 1
+        m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
     zGrid:
       m_Fade:
-        m_Target: 0
+        m_Target: 1
         speed: 2
-        m_Value: 0
+        m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -1198,17 +1418,17 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.52716845, y: 0.018675184, z: -0.011523965, w: -0.84966564}
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: -0.5283746, y: 0.017381756, z: -0.010757585, w: -0.8487653}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10.872965
+    m_Target: 1178.0924
     speed: 2
-    m_Value: 10.872965
+    m_Value: 1178.0924
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_CameraSettings:
     m_Speed: 0.76062
     m_SpeedNormalized: 0.38
@@ -1222,14 +1442,14 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.24936964, y: 0.04884396, z: -0.012545576, w: -0.96725744}
+  m_LastSceneViewRotation: {x: -0.52716845, y: 0.018675184, z: -0.011523965, w: -0.84966564}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &17
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1249,10 +1469,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 312
-    y: 73
-    width: 1245
-    height: 870
+    x: 2560
+    y: 197
+    width: 1920
+    height: 1011
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1290,7 +1510,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1299,29 +1519,29 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1245
-      height: 849
-    m_Scale: {x: 0.6484375, y: 0.6484375}
-    m_Translation: {x: 622.5, y: 424.49997}
+      width: 1920
+      height: 990
+    m_Scale: {x: 0.9166667, y: 0.9166667}
+    m_Translation: {x: 960, y: 495}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -960
-      y: -654.6506
-      width: 1920
-      height: 1309.3011
+      x: -1047.2727
+      y: -540
+      width: 2094.5454
+      height: 1080
     m_MinimalGUI: 1
-  m_defaultScale: 0.6484375
-  m_LastWindowPixelSize: {x: 1245, y: 870}
+  m_defaultScale: 0.9166667
+  m_LastWindowPixelSize: {x: 1920, y: 1011}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &18
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1342,9 +1562,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 717
-    width: 1168
-    height: 274
+    y: 964
+    width: 1558
+    height: 387
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1362,22 +1582,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Tests/PlayMode/Helpers
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Tests/PlayMode/Helpers
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Dev\Game\DeathIsOnlyTheBeginning
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 02520000
-    m_LastClickedID: 20994
-    m_ExpandedIDs: 00000000be510000c0510000c2510000c4510000c6510000c851000004520000085200006e5b0000fa4a0100624d0100784d0100fc540100b06f01008218020000ca9a3b
+    m_SelectedIDs: 6e560000
+    m_LastClickedID: 22126
+    m_ExpandedIDs: 000000003a5600003c5600003e56000040560000425600004456000046560000485600004a5600004c5600004e5600005056000052560000545600005656000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1393,7 +1613,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 11}
+      m_ClientGUIView: {fileID: 14}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -1405,7 +1625,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000be510000c0510000c2510000c4510000c6510000c851000004520000fa4a0100624d0100784d0100fc540100b06f010000ca9a3b
+    m_ExpandedIDs: 000000003a5600003c5600003e56000040560000425600004456000046560000485600004a5600004c5600004e56000050560000525600005456000056560000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1436,20 +1656,20 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c62300009aee0000a8ee00003807010072540100fa170200
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: CharacterSheetTestScene
+      m_OriginalName: CharacterSheetTestScene
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 24870
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 11}
+      m_ClientGUIView: {fileID: 14}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1461,7 +1681,7 @@ MonoBehaviour:
     m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &19
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1489,7 +1709,7 @@ MonoBehaviour:
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
---- !u!114 &20
+--- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1621,7 +1841,7 @@ MonoBehaviour:
   m_CurrentEditor: 1
   m_LayerEditor:
     m_SelectedLayerIndex: 0
---- !u!114 &21
+--- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1655,14 +1875,14 @@ MonoBehaviour:
     m_CachedPref: 526
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -732590
+  m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &22
+--- !u!114 &24
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
