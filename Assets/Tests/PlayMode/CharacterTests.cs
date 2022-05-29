@@ -24,6 +24,23 @@ public class CharacterTests : TestsBase
     }
 
     [UnityTest]
+    public IEnumerator WhenCharacterDiesItShouldFireDieEvent()
+    {
+        yield return LoadScene(characterTestScene);
+        Character character = GetSutComponent<Character>();
+        bool fired = false;
+        character.CharacterDied.AddListener(() => fired = true);
+
+        yield return new WaitForSeconds(2);
+        Assert.IsTrue(fired, "Event characterDied not fired");
+    }
+
+    private void HandleDeath()
+    {
+
+    }
+
+    [UnityTest]
     public IEnumerator WhenCharacterReceivesDamageItsHitpointsShouldDeclineWithTheGivenAmount()
     {
         yield return LoadScene(characterTestScene);

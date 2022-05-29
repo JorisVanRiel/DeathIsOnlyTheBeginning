@@ -108,6 +108,22 @@ public class GameManagerTests : TestsBase
         Assert.IsFalse(gameManager.SkillScreen.activeInHierarchy, "SkillScreen Should be disabled after character respawn");
     }
 
+    [UnityTest]
+    public IEnumerator GameManagerShouldRespawnCharacterOnRespawn()
+    {
+        yield return LoadScene(gameManagerTestScene);
+        GameManager gameManager = GetSutComponent<GameManager>();
+        gameManager.HandleCharacterDeath();
+        yield return Wait();
+
+        gameManager.RespawnCharacter();
+        yield return Wait();
+
+        GameObject character = GameObject.FindGameObjectWithTag("Character");
+
+        Assert.IsTrue(character != null, "Character should be instantiated.");
+    }
+
     private IEnumerator AssertObjectWithTagIsInstantiatedAtAwake(string tag)
     {
         yield return LoadScene(gameManagerTestScene);

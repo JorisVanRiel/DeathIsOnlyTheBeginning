@@ -4,12 +4,18 @@ namespace DeathIsOnlyTheBeginning
     using System.Collections;
     using System.Collections.Generic;
     using UnityEngine;
+    using UnityEngine.Events;
 
     public class Character : MonoBehaviour
     {        
         [SerializeField] float timeToLife = 300;
         [SerializeField] int hitPoints = 100;
         [SerializeField] CharacterSheet characterSheet;
+
+
+        public  UnityEvent CharacterDied = new UnityEvent();  
+        
+        
         [field: SerializeField] public int AttackDamage { get; set; }
         [field: SerializeField] public int AttackRange { get; set; }
 
@@ -24,6 +30,7 @@ namespace DeathIsOnlyTheBeginning
 
         private void Die()
         {
+            if (CharacterDied != null) CharacterDied.Invoke();
             GameObject.Destroy(this.gameObject);
         }
 

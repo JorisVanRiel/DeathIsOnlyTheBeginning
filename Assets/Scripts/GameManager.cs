@@ -1,3 +1,4 @@
+using DeathIsOnlyTheBeginning;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ public class GameManager : MonoBehaviour
 
     private GameObject titleScreen;
     private GameObject skillScreen;
+    private Character character;
 
     public GameObject SkillScreen { get => skillScreen; }
 
@@ -28,7 +30,8 @@ public class GameManager : MonoBehaviour
     {
         characterSheet.Reset();
         titleScreen.SetActive(false);
-        Instantiate(characterPrefab);
+        InstantiateCharacter();
+
     }
 
     public void HandleCharacterDeath()
@@ -39,5 +42,14 @@ public class GameManager : MonoBehaviour
     public void RespawnCharacter()
     {
         skillScreen.SetActive(false);
+        InstantiateCharacter();
+       
     }
+
+    private void InstantiateCharacter()
+    {
+        character = Instantiate(characterPrefab).GetComponent<Character>();
+        character.CharacterDied.AddListener(HandleCharacterDeath);
+    }
+
 }

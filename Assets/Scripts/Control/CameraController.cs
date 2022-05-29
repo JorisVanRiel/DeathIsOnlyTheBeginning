@@ -12,11 +12,14 @@ public class CameraController : MonoBehaviour
 
     private void Start()
     {
-            distance =  this.transform.position - objectToFollow.transform.position;
+        if (objectToFollow == null) return;
+        distance =  this.transform.position - objectToFollow.transform.position;
     }
 
     private void Update()
     {
+        if (objectToFollow == null) return;
+
         this.transform.position = objectToFollow.transform.position + distance;
     }
 
