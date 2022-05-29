@@ -8,6 +8,7 @@ namespace DeathIsOnlyTheBeginning.Controlls
     {
         [SerializeField] float rotationSpeed;
         [SerializeField] Character character;
+        [SerializeField] GameObject explosion;
 
         private Animator animator;
         private void Awake()
@@ -38,6 +39,7 @@ namespace DeathIsOnlyTheBeginning.Controlls
                     {
                         character.Attack(monster);
                         animator.SetTrigger("Attack");
+                        Instantiate(explosion).transform.position = monster.transform.position;
                     }
                 };
             }

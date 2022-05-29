@@ -26,3 +26,6 @@ https://assetstore.unity.com/packages/3d/characters/humanoids/lowpoly-medieval-p
 Skeleton Outlaw by Kevin Iglesias
 https://assetstore.unity.com/packages/3d/characters/humanoids/fantasy/skeleton-outlaw-130946
 
+3D Games Effects Pack Free by Creepy Cat
+https://assetstore.unity.com/packages/vfx/particles/3d-games-effects-pack-free-42285
+
