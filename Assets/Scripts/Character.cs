@@ -48,7 +48,7 @@ namespace DeathIsOnlyTheBeginning
 
         }
 
-        private bool CanAttack(Monster monster)
+        public bool CanAttack(Monster monster)
         {
             if(Time.time - timeOfLastAttack < timeBetweenAttacks) return false;
             if (Vector3.Distance(transform.position, monster.transform.position) > AttackRange) return false;

@@ -34,7 +34,11 @@ namespace DeathIsOnlyTheBeginning.Controlls
                 if (RayCaster.MouseHitObjectWithTag("Monster"))
                 {
                     Monster monster = RayCaster.GetMouseHitGameObject().GetComponent<Monster>();
-                    character.Attack(monster);
+                    if (character.CanAttack(monster))
+                    {
+                        character.Attack(monster);
+                        animator.SetTrigger("Attack");
+                    }
                 };
             }
             
