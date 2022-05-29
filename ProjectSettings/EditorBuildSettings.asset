@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestScenes/CharacterSheetTestScene.unity
     guid: 0ccf681edef998f47af7aebd1f89245e
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/GameManagerTestScene.unity
+    guid: 85c2a57d130b72445a457baa9559a8af
   m_configObjects: {}

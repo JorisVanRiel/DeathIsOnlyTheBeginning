@@ -17,6 +17,9 @@ public class CharacterSheet : ScriptableObject
     public int Attack { get { return attack; } }
     public int Defence { get { return defence; } }
 
+    public int StartingDefence { get => startingDefence; }
+    public int StartingAttack { get => startingAttack; }
+
     public void AddExperiencePoints(int amount)
     {
         experiencePoints += amount;
@@ -26,7 +29,7 @@ public class CharacterSheet : ScriptableObject
     {
         experiencePoints = 0;
         attack = startingAttack;
-        defence = startingDefence;
+        defence = StartingDefence;
     }
 
     public void AttackUp()

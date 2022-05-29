@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingAttack: 10
   startingDefence: 2
+  experiencePoints: 1
+  attack: 19
+  defence: 8
