@@ -10,13 +10,12 @@ namespace DeathIsOnlyTheBeginning
     {        
         [SerializeField] float timeToLife = 300;
         [SerializeField] int hitPoints = 100;
+        [SerializeField] float timeBetweenAttacks = 0.5f;
         [SerializeField] CharacterSheet characterSheet;
 
-
+        private float timeOfLastAttack;
         public  UnityEvent CharacterDied = new UnityEvent();  
         
-        
-        [field: SerializeField] public int AttackDamage { get; set; }
         [field: SerializeField] public int AttackRange { get; set; }
 
         public int HitPoints { get { return this.hitPoints; } }
@@ -41,11 +40,19 @@ namespace DeathIsOnlyTheBeginning
 
         public void Attack(Monster monster)
         {
-            if(Vector3.Distance(transform.position, monster.transform.position) < AttackRange)
+            if (CanAttack(monster))
             {
-                monster.ReceiveDamage(AttackDamage);
+                monster.ReceiveDamage(characterSheet.Attack);
+                timeOfLastAttack = Time.time;
             }
-            
+
+        }
+
+        private bool CanAttack(Monster monster)
+        {
+            if(Time.time - timeOfLastAttack < timeBetweenAttacks) return false;
+            if (Vector3.Distance(transform.position, monster.transform.position) > AttackRange) return false;
+            return true;
         }
 
         internal void ReceiveXp(int xpValue)

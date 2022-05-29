@@ -94,6 +94,37 @@ public class CharacterTests : TestsBase
         Assert.AreEqual(hpAfterFirstAttack, monster.HitPoints, "Character dealt damage while monster out of attack range");
     }
 
+    [UnityTest]
+    public IEnumerator CharacterShouldDealAmountOfDamageEqualToItsAttackValue()
+    {
+        yield return LoadScene(characterAttackTestScene);
+        Character character = GetSutComponent<Character>();
+        Monster monster = GetComponentFromObjectWithTag<Monster>("Monster");
+        int startHp = monster.HitPoints;
+        ScriptableObjectProvider provider = GetComponentFromObjectWithTag<ScriptableObjectProvider>("Provider");
+        CharacterSheet characterSheet = provider.Get<CharacterSheet>();
+        int attack =characterSheet.Attack;
+        character.Attack(monster);
+        Assert.AreEqual(startHp - attack, monster.HitPoints);
+    }
+
+    [UnityTest]
+    public IEnumerator CharacterShouldNotBeAbleToAttackForAPeriodOfTimeAfterAttacking()
+    {
+        yield return LoadScene(characterAttackTestScene);
+        Character character = GetSutComponent<Character>();
+        Monster monster = GetComponentFromObjectWithTag<Monster>("Monster");
+        int startHp = monster.HitPoints;
+        ScriptableObjectProvider provider = GetComponentFromObjectWithTag<ScriptableObjectProvider>("Provider");
+        CharacterSheet characterSheet = provider.Get<CharacterSheet>();
+        int attack = characterSheet.Attack;
+        character.Attack(monster);
+        int monsterHpAfterFirstAttack = monster.HitPoints;
+        yield return Wait();
+        character.Attack(monster);
+        Assert.AreEqual(monsterHpAfterFirstAttack, monster.HitPoints);
+    }
+
     private static void AssertCharacterIsDead(GameObject characterObject)
     {
         Assert.IsTrue(characterObject == null, "Expected character to die, but didn't");
