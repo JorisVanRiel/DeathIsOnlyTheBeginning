@@ -8,6 +8,10 @@ TagManager:
   - Door
   - Monster
   - Provider
+  - TitleScreen
+  - Dungeon
+  - Character
+  - SkillScreen
   layers:
   - Default
   - TransparentFX

@@ -1329,8 +1329,8 @@ GameObject:
   - component: {fileID: 6321437847917824153}
   - component: {fileID: 6321437847917824154}
   m_Layer: 5
-  m_Name: Canvas
-  m_TagString: Untagged
+  m_Name: SkillScreen
+  m_TagString: SkillScreen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
