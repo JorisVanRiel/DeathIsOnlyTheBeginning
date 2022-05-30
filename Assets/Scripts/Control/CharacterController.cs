@@ -1,5 +1,6 @@
 namespace DeathIsOnlyTheBeginning.Controlls
 {
+    using System;
     using System.Collections;
     using System.Collections.Generic;
     using UnityEngine;
@@ -24,8 +25,17 @@ namespace DeathIsOnlyTheBeginning.Controlls
 
         private void HandleMovement()
         {
-            HandleWalking();
-            HandleRotation();
+            Vector3 velocity = GetInputVector();
+            if (velocity.magnitude > 0)
+            {
+                HandleWalking(velocity);
+                HandleRotation(velocity);
+            }
+        }
+
+        private Vector3 GetInputVector()
+        {
+            return new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")); 
         }
 
         private void HandleAttack()
@@ -46,21 +56,15 @@ namespace DeathIsOnlyTheBeginning.Controlls
             
         }
 
-        private void HandleWalking()
+        private void HandleWalking(Vector3 velocity)
         {
-            animator.SetFloat("Speed", Input.GetAxis("Vertical"));
+            animator.SetFloat("Speed", velocity.magnitude);
         }
 
-        private void HandleRotation()
+        private void HandleRotation(Vector3 velocity)
         {
-            if (Input.GetAxis("Horizontal") > 0.1)
-            {
-                this.transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
-            }
-            if (Input.GetAxis("Horizontal") < -0.1)
-            {
-                this.transform.Rotate(Vector3.up, -rotationSpeed * Time.deltaTime);
-            }
+            Quaternion rotation = Quaternion.LookRotation(velocity, Vector3.up);
+            transform.rotation = rotation;
         }
 
 
