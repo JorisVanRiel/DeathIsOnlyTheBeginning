@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4486077789819729746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4486077789819729744}
+  - component: {fileID: 4486077789819729745}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: SUT
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4486077789819729744
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4486077789819729746}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 770.82635, y: 517.01056, z: -4.6543665}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4486077789819729745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4486077789819729746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d6a326156c65fc4391bfa36d56b1c9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterSheet: {fileID: 11400000, guid: 7bc03c4a5ce307f49bd5703dc00c064f, type: 2}
+  titleScreenPrefab: {fileID: 126951872629658074, guid: 09dcc0d728d307343b583752a14f0a76, type: 3}
+  dungeonPrefab: {fileID: 8217527543874356089, guid: d784e6ddaf74b6b4fb1675424536ca81, type: 3}
+  characterPrefab: {fileID: 5229312500486921794, guid: 181694275ec692d4c93158b81cd40156, type: 3}
+  skillScreenPrefab: {fileID: 6321437847917824155, guid: 66bf750aa2e8e3e4aa5aeb824b61c508, type: 3}

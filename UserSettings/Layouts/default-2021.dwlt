@@ -1,0 +1,2149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PixelRect:
+    serializedVersion: 2
+    x: 2560
+    y: 197
+    width: 1920
+    height: 1032
+  m_ShowMode: 0
+  m_Title: Game
+  m_RootView: {fileID: 4}
+  m_MinSize: {x: 200, y: 221}
+  m_MaxSize: {x: 4000, y: 4021}
+  m_Maximized: 1
+--- !u!114 &2
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PixelRect:
+    serializedVersion: 2
+    x: 0
+    y: 43
+    width: 2560
+    height: 1349
+  m_ShowMode: 4
+  m_Title: Project
+  m_RootView: {fileID: 5}
+  m_MinSize: {x: 875, y: 350}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_Maximized: 1
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: GameView
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1920
+    height: 1032
+  m_MinSize: {x: 200, y: 221}
+  m_MaxSize: {x: 4000, y: 4021}
+  m_ActualView: {fileID: 19}
+  m_Panes:
+  - {fileID: 19}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &4
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 3}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1920
+    height: 1032
+  m_MinSize: {x: 200, y: 221}
+  m_MaxSize: {x: 4000, y: 4021}
+  vertical: 0
+  controlID: 17
+--- !u!114 &5
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 6}
+  - {fileID: 8}
+  - {fileID: 7}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 2560
+    height: 1349
+  m_MinSize: {x: 875, y: 300}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_UseTopView: 1
+  m_TopViewHeight: 30
+  m_UseBottomView: 1
+  m_BottomViewHeight: 20
+--- !u!114 &6
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 2560
+    height: 30
+  m_MinSize: {x: 0, y: 0}
+  m_MaxSize: {x: 0, y: 0}
+  m_LastLoadedLayoutName: 
+--- !u!114 &7
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12042, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 1329
+    width: 2560
+    height: 20
+  m_MinSize: {x: 0, y: 0}
+  m_MaxSize: {x: 0, y: 0}
+--- !u!114 &8
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 9}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 30
+    width: 2560
+    height: 1299
+  m_MinSize: {x: 300, y: 200}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 1
+  controlID: 66
+--- !u!114 &9
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 10}
+  - {fileID: 15}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 2560
+    height: 1299
+  m_MinSize: {x: 300, y: 200}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 0
+  controlID: 67
+--- !u!114 &10
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 11}
+  - {fileID: 14}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1546
+    height: 1299
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 16192, y: 16192}
+  vertical: 1
+  controlID: 68
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 12}
+  - {fileID: 13}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1546
+    height: 800
+  m_MinSize: {x: 200, y: 100}
+  m_MaxSize: {x: 16192, y: 8096}
+  vertical: 0
+  controlID: 69
+--- !u!114 &12
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 505
+    height: 800
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 17}
+  m_Panes:
+  - {fileID: 17}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: SceneView
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 505
+    y: 0
+    width: 1041
+    height: 800
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 18}
+  m_Panes:
+  - {fileID: 18}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ProjectBrowser
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 800
+    width: 1546
+    height: 499
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 20}
+  m_Panes:
+  - {fileID: 20}
+  - {fileID: 21}
+  - {fileID: 22}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: InspectorWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 1546
+    y: 0
+    width: 1014
+    height: 1299
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 23}
+  m_Panes:
+  - {fileID: 23}
+  - {fileID: 16}
+  - {fileID: 24}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &16
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Test Runner
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1608
+    y: 73
+    width: 951
+    height: 1278
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_Spl:
+    ID: 145
+    splitterInitialOffset: 0
+    currentActiveSplitter: -1
+    realSizes:
+    - 906
+    - 302
+    relativeSizes:
+    - 0.75
+    - 0.25
+    minSizes:
+    - 32
+    - 32
+    maxSizes:
+    - 0
+    - 0
+    lastTotalSize: 1208
+    splitSize: 6
+    xOffset: 0
+    m_Version: 1
+    oldRealSizes: 
+    oldMinSizes: 
+    oldMaxSizes: 
+    oldSplitSize: 0
+  m_TestTypeToolbarIndex: 0
+  m_PlayModeTestListGUI:
+    m_Window: {fileID: 16}
+    m_NewResultList:
+    - id: 1004
+      uniqueId: '[DeathIsOnlyTheBeinning][suite]'
+      name: DeathIsOnlyTheBeinning
+      fullName: DeathIsOnlyTheBeinning
+      resultStatus: 1
+      duration: 1.5785784
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1004
+      uniqueId: '[PlayMode][C:/Dev/Game/DeathIsOnlyTheBeginning/Library/ScriptAssemblies/PlayMode.dll][suite]'
+      name: PlayMode.dll
+      fullName: C:/Dev/Game/DeathIsOnlyTheBeginning/Library/ScriptAssemblies/PlayMode.dll
+      resultStatus: 1
+      duration: 1.3394026
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[DeathIsOnlyTheBeinning][suite]'
+    - id: 1001
+      uniqueId: PlayMode.dll/[PlayMode][CameraTests][suite]
+      name: CameraTests
+      fullName: CameraTests
+      resultStatus: 1
+      duration: 0.3081448
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1013
+      parentUniqueId: '[PlayMode][C:/Dev/Game/DeathIsOnlyTheBeginning/Library/ScriptAssemblies/PlayMode.dll][suite]'
+    - id: 1002
+      uniqueId: PlayMode.dll/CameraTests/[PlayMode][CameraTests.CameraShouldHaveAFixedRelativePostionToObjectItFollows]
+      name: CameraShouldHaveAFixedRelativePostionToObjectItFollows
+      fullName: CameraTests.CameraShouldHaveAFixedRelativePostionToObjectItFollows
+      resultStatus: 1
+      duration: 0.2811513
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/[PlayMode][CameraTests][suite]
+    - id: 1003
+      uniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
+      name: CharacterSheetTests
+      fullName: CharacterSheetTests
+      resultStatus: 1
+      duration: 0.7038482
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1024
+      parentUniqueId: '[PlayMode][C:/Dev/Game/DeathIsOnlyTheBeginning/Library/ScriptAssemblies/PlayMode.dll][suite]'
+    - id: 1004
+      uniqueId: PlayMode.dll/CharacterSheetTests/[PlayMode][CharacterSheetTests.AddExperienceShouldAddTheAmountOfExperience]
+      name: AddExperienceShouldAddTheAmountOfExperience
+      fullName: CharacterSheetTests.AddExperienceShouldAddTheAmountOfExperience
+      resultStatus: 1
+      duration: 0.1160935
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
+    - id: 1006
+      uniqueId: PlayMode.dll/CharacterSheetTests/[PlayMode][CharacterSheetTests.AttackUpShouldAddOnePointToTheAttack]
+      name: AttackUpShouldAddOnePointToTheAttack
+      fullName: CharacterSheetTests.AttackUpShouldAddOnePointToTheAttack
+      resultStatus: 1
+      duration: 0.0572006
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
+    - id: 1007
+      uniqueId: PlayMode.dll/CharacterSheetTests/[PlayMode][CharacterSheetTests.AttackUpShouldCostExperiencePointsEqualToCurrentValue]
+      name: AttackUpShouldCostExperiencePointsEqualToCurrentValue
+      fullName: CharacterSheetTests.AttackUpShouldCostExperiencePointsEqualToCurrentValue
+      resultStatus: 1
+      duration: 0.0615909
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
+    - id: 1008
+      uniqueId: PlayMode.dll/CharacterSheetTests/[PlayMode][CharacterSheetTests.AttackUpShouldDoNothingWhenExperiencePointsAreLessThenAttackValue]
+      name: AttackUpShouldDoNothingWhenExperiencePointsAreLessThenAttackValue
+      fullName: CharacterSheetTests.AttackUpShouldDoNothingWhenExperiencePointsAreLessThenAttackValue
+      resultStatus: 1
+      duration: 0.0606721
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
+    - id: 1007
+      uniqueId: PlayMode.dll/CharacterSheetTests/[PlayMode][CharacterSheetTests.DefenceUpShouldAddOnePointToDefence]
+      name: DefenceUpShouldAddOnePointToDefence
+      fullName: CharacterSheetTests.DefenceUpShouldAddOnePointToDefence
+      resultStatus: 1
+      duration: 0.0649476
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
+    - id: 1010
+      uniqueId: PlayMode.dll/CharacterSheetTests/[PlayMode][CharacterSheetTests.DefenceUpShouldCostExperiencePointsEqualToCurrentValue]
+      name: DefenceUpShouldCostExperiencePointsEqualToCurrentValue
+      fullName: CharacterSheetTests.DefenceUpShouldCostExperiencePointsEqualToCurrentValue
+      resultStatus: 1
+      duration: 0.0619108
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
+    - id: 1009
+      uniqueId: PlayMode.dll/CharacterSheetTests/[PlayMode][CharacterSheetTests.DefenceUpShouldDoNothingWhenExperiencePointsAreLessThenDefenceValue]
+      name: DefenceUpShouldDoNothingWhenExperiencePointsAreLessThenDefenceValue
+      fullName: CharacterSheetTests.DefenceUpShouldDoNothingWhenExperiencePointsAreLessThenDefenceValue
+      resultStatus: 1
+      duration: 0.0551071
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
+    - id: 1007
+      uniqueId: PlayMode.dll/CharacterSheetTests/[PlayMode][CharacterSheetTests.ResetShouldSetAttackToTheStartingAttackValue]
+      name: ResetShouldSetAttackToTheStartingAttackValue
+      fullName: CharacterSheetTests.ResetShouldSetAttackToTheStartingAttackValue
+      resultStatus: 1
+      duration: 0.0579996
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
+    - id: 1008
+      uniqueId: PlayMode.dll/CharacterSheetTests/[PlayMode][CharacterSheetTests.ResetShouldSetDefenceToTheStartingDefenceValue]
+      name: ResetShouldSetDefenceToTheStartingDefenceValue
+      fullName: CharacterSheetTests.ResetShouldSetDefenceToTheStartingDefenceValue
+      resultStatus: 1
+      duration: 0.0623727
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
+    - id: 1004
+      uniqueId: PlayMode.dll/CharacterSheetTests/[PlayMode][CharacterSheetTests.ResetShouldSetExperiencePointsToZero]
+      name: ResetShouldSetExperiencePointsToZero
+      fullName: CharacterSheetTests.ResetShouldSetExperiencePointsToZero
+      resultStatus: 1
+      duration: 0.0665417
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
+    - id: 1001
+      uniqueId: PlayMode.dll/[PlayMode][CharacterTests][suite]
+      name: CharacterTests
+      fullName: CharacterTests
+      resultStatus: 1
+      duration: 5.252429
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: '[PlayMode][C:/Dev/Game/DeathIsOnlyTheBeginning/Library/ScriptAssemblies/PlayMode.dll][suite]'
+    - id: 1007
+      uniqueId: PlayMode.dll/CharacterTests/[PlayMode][CharacterTests.CharacterSchouldDealDamageWhenAttackingMonster]
+      name: CharacterSchouldDealDamageWhenAttackingMonster
+      fullName: CharacterTests.CharacterSchouldDealDamageWhenAttackingMonster
+      resultStatus: 1
+      duration: 0.2142239
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterTests][suite]
+    - id: 1021
+      uniqueId: PlayMode.dll/CharacterTests/[PlayMode][CharacterTests.CharacterShouldDealAmountOfDamageEqualToItsAttackValue]
+      name: CharacterShouldDealAmountOfDamageEqualToItsAttackValue
+      fullName: CharacterTests.CharacterShouldDealAmountOfDamageEqualToItsAttackValue
+      resultStatus: 1
+      duration: 0.0607523
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1014
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterTests][suite]
+    - id: 1003
+      uniqueId: PlayMode.dll/CharacterTests/[PlayMode][CharacterTests.CharacterShouldDieWhenHpIsZeroOrLess]
+      name: CharacterShouldDieWhenHpIsZeroOrLess
+      fullName: CharacterTests.CharacterShouldDieWhenHpIsZeroOrLess
+      resultStatus: 1
+      duration: 0.1101782
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterTests][suite]
+    - id: 1002
+      uniqueId: PlayMode.dll/CharacterTests/[PlayMode][CharacterTests.CharacterShouldDieWhenTimeIsUp]
+      name: CharacterShouldDieWhenTimeIsUp
+      fullName: CharacterTests.CharacterShouldDieWhenTimeIsUp
+      resultStatus: 1
+      duration: 2.0767145
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterTests][suite]
+    - id: 1022
+      uniqueId: PlayMode.dll/CharacterTests/[PlayMode][CharacterTests.CharacterShouldNotBeAbleToAttackForAPeriodOfTimeAfterAttacking]
+      name: CharacterShouldNotBeAbleToAttackForAPeriodOfTimeAfterAttacking
+      fullName: CharacterTests.CharacterShouldNotBeAbleToAttackForAPeriodOfTimeAfterAttacking
+      resultStatus: 1
+      duration: 0.2504976
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1014
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterTests][suite]
+    - id: 1008
+      uniqueId: PlayMode.dll/CharacterTests/[PlayMode][CharacterTests.CharacterShouldNotDealDamageWhenAttackingMonsterIsOutOfRange]
+      name: CharacterShouldNotDealDamageWhenAttackingMonsterIsOutOfRange
+      fullName: CharacterTests.CharacterShouldNotDealDamageWhenAttackingMonsterIsOutOfRange
+      resultStatus: 1
+      duration: 0.3400348
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterTests][suite]
+    - id: 1016
+      uniqueId: PlayMode.dll/CharacterTests/[PlayMode][CharacterTests.WhenCharacterDiesItShouldFireDieEvent]
+      name: WhenCharacterDiesItShouldFireDieEvent
+      fullName: CharacterTests.WhenCharacterDiesItShouldFireDieEvent
+      resultStatus: 1
+      duration: 2.1041336
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1014
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterTests][suite]
+    - id: 1003
+      uniqueId: PlayMode.dll/CharacterTests/[PlayMode][CharacterTests.WhenCharacterReceivesDamageItsHitpointsShouldDeclineWithTheGivenAmount]
+      name: WhenCharacterReceivesDamageItsHitpointsShouldDeclineWithTheGivenAmount
+      fullName: CharacterTests.WhenCharacterReceivesDamageItsHitpointsShouldDeclineWithTheGivenAmount
+      resultStatus: 1
+      duration: 0.05843
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterTests][suite]
+    - id: 1007
+      uniqueId: PlayMode.dll/[PlayMode][DoorTests][suite]
+      name: DoorTests
+      fullName: DoorTests
+      resultStatus: 1
+      duration: 1.2943543
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1013
+      parentUniqueId: '[PlayMode][C:/Dev/Game/DeathIsOnlyTheBeginning/Library/ScriptAssemblies/PlayMode.dll][suite]'
+    - id: 1009
+      uniqueId: PlayMode.dll/DoorTests/[PlayMode][DoorTests.DoorShouldOnlyOpenOnce]
+      name: DoorShouldOnlyOpenOnce
+      fullName: DoorTests.DoorShouldOnlyOpenOnce
+      resultStatus: 1
+      duration: 0.5268983
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: PlayMode.dll/[PlayMode][DoorTests][suite]
+    - id: 1008
+      uniqueId: PlayMode.dll/DoorTests/[PlayMode][DoorTests.DoorShouldOnlyOpenWhenPlayerIsNear]
+      name: DoorShouldOnlyOpenWhenPlayerIsNear
+      fullName: DoorTests.DoorShouldOnlyOpenWhenPlayerIsNear
+      resultStatus: 1
+      duration: 0.7273729
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: PlayMode.dll/[PlayMode][DoorTests][suite]
+    - id: 1023
+      uniqueId: PlayMode.dll/[PlayMode][GameManagerTests][suite]
+      name: GameManagerTests
+      fullName: GameManagerTests
+      resultStatus: 1
+      duration: 2.8150835
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1035
+      parentUniqueId: '[PlayMode][C:/Dev/Game/DeathIsOnlyTheBeginning/Library/ScriptAssemblies/PlayMode.dll][suite]'
+    - id: 1027
+      uniqueId: PlayMode.dll/GameManagerTests/[PlayMode][GameManagerTests.GameManagerShouldDisableSkillScreenOnAwak]
+      name: GameManagerShouldDisableSkillScreenOnAwak
+      fullName: GameManagerTests.GameManagerShouldDisableSkillScreenOnAwak
+      resultStatus: 1
+      duration: 0.2851466
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1023
+      parentUniqueId: PlayMode.dll/[PlayMode][GameManagerTests][suite]
+    - id: 1032
+      uniqueId: PlayMode.dll/GameManagerTests/[PlayMode][GameManagerTests.GameManagerShouldDisableSkillScreenOnRespawn]
+      name: GameManagerShouldDisableSkillScreenOnRespawn
+      fullName: GameManagerTests.GameManagerShouldDisableSkillScreenOnRespawn
+      resultStatus: 1
+      duration: 0.4260884
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1023
+      parentUniqueId: PlayMode.dll/[PlayMode][GameManagerTests][suite]
+    - id: 1025
+      uniqueId: PlayMode.dll/GameManagerTests/[PlayMode][GameManagerTests.GamemanagerShouldDisableTitleScreenOnStartGame]
+      name: GamemanagerShouldDisableTitleScreenOnStartGame
+      fullName: GameManagerTests.GamemanagerShouldDisableTitleScreenOnStartGame
+      resultStatus: 1
+      duration: 1.1127995
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1023
+      parentUniqueId: PlayMode.dll/[PlayMode][GameManagerTests][suite]
+    - id: 1028
+      uniqueId: PlayMode.dll/GameManagerTests/[PlayMode][GameManagerTests.GameManagerShouldInstantiatCharacterOnStartGame]
+      name: GameManagerShouldInstantiatCharacterOnStartGame
+      fullName: GameManagerTests.GameManagerShouldInstantiatCharacterOnStartGame
+      resultStatus: 1
+      duration: 0.0646469
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1023
+      parentUniqueId: PlayMode.dll/[PlayMode][GameManagerTests][suite]
+    - id: 1026
+      uniqueId: PlayMode.dll/GameManagerTests/[PlayMode][GameManagerTests.GameManagerShouldInstantiateSkillScreenOnAwake]
+      name: GameManagerShouldInstantiateSkillScreenOnAwake
+      fullName: GameManagerTests.GameManagerShouldInstantiateSkillScreenOnAwake
+      resultStatus: 1
+      duration: 0.094326
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1023
+      parentUniqueId: PlayMode.dll/[PlayMode][GameManagerTests][suite]
+    - id: 1034
+      uniqueId: PlayMode.dll/GameManagerTests/[PlayMode][GameManagerTests.GameManagerShouldRespawnCharacterOnRespawn]
+      name: GameManagerShouldRespawnCharacterOnRespawn
+      fullName: GameManagerTests.GameManagerShouldRespawnCharacterOnRespawn
+      resultStatus: 1
+      duration: 0.3463729
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1024
+      parentUniqueId: PlayMode.dll/[PlayMode][GameManagerTests][suite]
+    - id: 1024
+      uniqueId: PlayMode.dll/GameManagerTests/[PlayMode][GameManagerTests.GameManagerShouldShouldResetTheCharacterSheetOnStartGame]
+      name: GameManagerShouldShouldResetTheCharacterSheetOnStartGame
+      fullName: GameManagerTests.GameManagerShouldShouldResetTheCharacterSheetOnStartGame
+      resultStatus: 1
+      duration: 0.0655778
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1023
+      parentUniqueId: PlayMode.dll/[PlayMode][GameManagerTests][suite]
+    - id: 1031
+      uniqueId: PlayMode.dll/GameManagerTests/[PlayMode][GameManagerTests.GameManagerShouldShowSkillScreenWhenCharacterDies]
+      name: GameManagerShouldShowSkillScreenWhenCharacterDies
+      fullName: GameManagerTests.GameManagerShouldShowSkillScreenWhenCharacterDies
+      resultStatus: 1
+      duration: 0.2419884
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1023
+      parentUniqueId: PlayMode.dll/[PlayMode][GameManagerTests][suite]
+    - id: 1026
+      uniqueId: PlayMode.dll/GameManagerTests/[PlayMode][GameManagerTests.OnAwakeGameManagerShouldInstantiateDungeon]
+      name: OnAwakeGameManagerShouldInstantiateDungeon
+      fullName: GameManagerTests.OnAwakeGameManagerShouldInstantiateDungeon
+      resultStatus: 1
+      duration: 0.0602361
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1023
+      parentUniqueId: PlayMode.dll/[PlayMode][GameManagerTests][suite]
+    - id: 1025
+      uniqueId: PlayMode.dll/GameManagerTests/[PlayMode][GameManagerTests.OnAwakeGameManagerShouldInstantiateTitleScreen]
+      name: OnAwakeGameManagerShouldInstantiateTitleScreen
+      fullName: GameManagerTests.OnAwakeGameManagerShouldInstantiateTitleScreen
+      resultStatus: 1
+      duration: 0.097571
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1023
+      parentUniqueId: PlayMode.dll/[PlayMode][GameManagerTests][suite]
+    - id: 1005
+      uniqueId: PlayMode.dll/[PlayMode][MonsterTests][suite]
+      name: MonsterTests
+      fullName: MonsterTests
+      resultStatus: 1
+      duration: 1.3191274
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1008
+      parentUniqueId: '[PlayMode][C:/Dev/Game/DeathIsOnlyTheBeginning/Library/ScriptAssemblies/PlayMode.dll][suite]'
+    - id: 1017
+      uniqueId: PlayMode.dll/MonsterTests/[PlayMode][MonsterTests.MonstersAttackShouldBeSperatedByAttackTime]
+      name: MonstersAttackShouldBeSperatedByAttackTime
+      fullName: MonsterTests.MonstersAttackShouldBeSperatedByAttackTime
+      resultStatus: 1
+      duration: 1.2796074
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: PlayMode.dll/[PlayMode][MonsterTests][suite]
+    - id: 1016
+      uniqueId: PlayMode.dll/MonsterTests/[PlayMode][MonsterTests.MonsterShouldAttackPlayerWhenInAttackingDistance]
+      name: MonsterShouldAttackPlayerWhenInAttackingDistance
+      fullName: MonsterTests.MonsterShouldAttackPlayerWhenInAttackingDistance
+      resultStatus: 1
+      duration: 1.135454
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: PlayMode.dll/[PlayMode][MonsterTests][suite]
+    - id: 1007
+      uniqueId: PlayMode.dll/MonsterTests/[PlayMode][MonsterTests.MonsterShouldDieWhenHpIsZeroOrLess]
+      name: MonsterShouldDieWhenHpIsZeroOrLess
+      fullName: MonsterTests.MonsterShouldDieWhenHpIsZeroOrLess
+      resultStatus: 1
+      duration: 0.1121804
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: PlayMode.dll/[PlayMode][MonsterTests][suite]
+    - id: 1008
+      uniqueId: PlayMode.dll/MonsterTests/[PlayMode][MonsterTests.MonsterShouldDropLootOnItsLocationWhenItDies]
+      name: MonsterShouldDropLootOnItsLocationWhenItDies
+      fullName: MonsterTests.MonsterShouldDropLootOnItsLocationWhenItDies
+      resultStatus: 1
+      duration: 0.1154837
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: PlayMode.dll/[PlayMode][MonsterTests][suite]
+    - id: 1014
+      uniqueId: PlayMode.dll/MonsterTests/[PlayMode][MonsterTests.MonsterShouldMoveTowardsPlayerWhenDoorIsOpenend]
+      name: MonsterShouldMoveTowardsPlayerWhenDoorIsOpenend
+      fullName: MonsterTests.MonsterShouldMoveTowardsPlayerWhenDoorIsOpenend
+      resultStatus: 1
+      duration: 0.3494522
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: PlayMode.dll/[PlayMode][MonsterTests][suite]
+    - id: 1017
+      uniqueId: PlayMode.dll/MonsterTests/[PlayMode][MonsterTests.MonsterShouldNoLongerAttackPlayerWhenPlayerGetOutOfReach]
+      name: MonsterShouldNoLongerAttackPlayerWhenPlayerGetOutOfReach
+      fullName: MonsterTests.MonsterShouldNoLongerAttackPlayerWhenPlayerGetOutOfReach
+      resultStatus: 1
+      duration: 4.2305713
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: PlayMode.dll/[PlayMode][MonsterTests][suite]
+    - id: 1015
+      uniqueId: PlayMode.dll/MonsterTests/[PlayMode][MonsterTests.MonsterShouldStayInPositionBeforeDoorIsOpenend]
+      name: MonsterShouldStayInPositionBeforeDoorIsOpenend
+      fullName: MonsterTests.MonsterShouldStayInPositionBeforeDoorIsOpenend
+      resultStatus: 1
+      duration: 0.225939
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: PlayMode.dll/[PlayMode][MonsterTests][suite]
+    - id: 1021
+      uniqueId: PlayMode.dll/MonsterTests/[PlayMode][MonsterTests.WhenMonsterDiesItShouldAddExperiencePointsToCharactersTotal]
+      name: WhenMonsterDiesItShouldAddExperiencePointsToCharactersTotal
+      fullName: MonsterTests.WhenMonsterDiesItShouldAddExperiencePointsToCharactersTotal
+      resultStatus: 1
+      duration: 0.2160559
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: PlayMode.dll/[PlayMode][MonsterTests][suite]
+    - id: 1006
+      uniqueId: PlayMode.dll/MonsterTests/[PlayMode][MonsterTests.WhenMonsterReceivesDamageItsHitpointsShouldDeclineWithTheGivenAmount]
+      name: WhenMonsterReceivesDamageItsHitpointsShouldDeclineWithTheGivenAmount
+      fullName: MonsterTests.WhenMonsterReceivesDamageItsHitpointsShouldDeclineWithTheGivenAmount
+      resultStatus: 1
+      duration: 0.0767676
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: PlayMode.dll/[PlayMode][MonsterTests][suite]
+    m_ResultText: MonstersAttackShouldBeSperatedByAttackTime (1.280s)
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 4f363047
+      m_LastClickedID: 1194341967
+      m_ExpandedIDs: 58f80e33d7a1566effffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
+    m_SelectedOption: 0
+  m_EditModeTestListGUI:
+    m_Window: {fileID: 16}
+    m_NewResultList:
+    - id: 1000
+      uniqueId: '[DeathIsOnlyTheBeinning][suite]'
+      name: DeathIsOnlyTheBeinning
+      fullName: DeathIsOnlyTheBeinning
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    m_ResultText: 
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: d7a1566effffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
+--- !u!114 &17
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Hierarchy
+    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 73
+    width: 504
+    height: 779
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 920c0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: ea66f8ff4469f8ffc06af8ff3476f8ff6a8df8ff768df8fff28ef8ff428ff8ffc096f8ff849df8ffd49df8ffe625f9ffec2ff9ff3c30f9ffb837f9ff4441f9ff9441f9ff1049f9ff1255f9ff6255f9ffde5cf9ff8082f9ffd082f9ff4c8af9ff8a93f9ffda93f9ff5c9bf9ffbea1f9ff0ea2f9ff40c1f9ffbec7f9ff0ec8f9ff90cff9ff64dff9ffb4dff9fface7f9ff66f0f9ffb6f0f9ffa8f8f9ff06fff9ff56fff9ffc200faff980afaffe80afaff6812faff261dfaff761dfafff024faff2632faff7632faffea39faffb044faffe445faff3446faffa84dfaff5465faff5e65faff6a68faff9269faffe269faff2670faff7a72faffca72faffda77faff4e79faff9e79faffae7efaffc094faff3ab8faff3cb8faffecb9fafffec1fafff4d0faff44d1faff66d5faff6ad7faffbad7faffdadbfaffc2f6fafffaf6faff720dfbff0e0efbff220efbff7c13fbff9013fbff4c41fbff7647fbff8847fbff6e51fbffa05afbfff05afbff6662fbffbe68fbff0e69fbffd6dafbffbce3fbff0ce4fbff06e9fbff8cf0fbffdcf0fbffd6f5fbffcc01fcff1c02fcff1607fcff6c0efcffbc0efcffb613fcffb21dfcff021efcff703cfcff8a46fcffda46fcff4865fcff466dfcff966dfcff048cfcff0494fcff5494fcff4e99fcff28a2fcff78a2fcff72a7fcff08affcff58affcff52b4fcff28befcff78befcff72c3fcff4ccdfcff9ccdfcff38cffcff54d7fcffa4d7fcff1cdcfcfff0e9fcff40eafcffb8eefcff48f5fcff98f5fcff560dfdff9a1dfdffea1dfdffe833fdff123dfdfff23dfdff423efdffb645fdff0446fdff5446fdffc84dfdff224efdff724efdffe855fdff5a56fdffaa56fdff58b7fdff6eb8fdffbeb8fdff5acdfdfff2d3fdff42d4fdffb8d8fdff2ed9fdff7ed9fdfff4ddfdff08e1fdff58e1fdffcee5fdfff6e6fdff46e7fdffbcebfdffc402feff1403feff8a07feff3c0bfeff8c0bfeff6a19feffbc19feff0c1afeff4021feff7a22feffca22feffa830fefffa30feff4a31feffc235feff6a3bfeffba3bfeff004bfeff884cfeffd84cfeffaa51feff6453feffb453fefffa62feff886bfeffd86bfeffa46dfeff9a71feffea71feff6276feffbc76feff0c77feff827efeffd47efeff247ffeff08d9feff7ed9feffced9feff46defefff2dffeff42e0feff90e4feff86e7feffd6e7feff24ecfeffa8f4fefff8f4feff6ef9feff7003ffffc003ffff5a05ffff122cffffe23affff8a5effff6269ffffb269ffff4a6bffffca73ffff1a74ffffb675ffff5c7affffa47affff747bffff1c7dffff6c7dffffde7efffffaa6ffff2ea8ffff38a8ffffa2b9ffffe6beffff86c3ffff1ec8ffff6ec8ffffdac9ffff74ccffffc4ccffff30ceffff7acfffffcacfffff36d1ffffa0d3fffff0d3ffff5cd5ffff14d9ffff64d9ffffc0daffff60ddffffb0ddffff0cdfffff80e3ffffd0e3ffff2ce5ffffb8e9ffff08eaffff68ebffff8aedffffd2edffff46eeffff38fbffff5a67000026e3000098e40000
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 12}
+      m_SearchString: 
+    m_ExpandedScenes: []
+    m_CurrenRootInstanceID: 0
+    m_LockTracker:
+      m_IsLocked: 0
+    m_CurrentSortingName: TransformSorting
+  m_WindowGUID: 4c969a2b90040154d917609493e03593
+--- !u!114 &18
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Scene
+    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 505
+    y: 73
+    width: 1039
+    height: 779
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData:
+    - dockPosition: 0
+      containerId: overlay-toolbar__top
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: -101, y: -26}
+      snapCorner: 3
+      id: Tool Settings
+      index: 0
+      layout: 1
+    - dockPosition: 0
+      containerId: overlay-toolbar__top
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: -141, y: 149}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 1
+      id: unity-grid-and-snap-toolbar
+      index: 1
+      layout: 1
+    - dockPosition: 1
+      containerId: overlay-toolbar__top
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: 0, y: 25}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: unity-scene-view-toolbar
+      index: 0
+      layout: 1
+    - dockPosition: 1
+      containerId: overlay-toolbar__top
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 1
+      id: unity-search-toolbar
+      index: 1
+      layout: 1
+    - dockPosition: 0
+      containerId: overlay-container--left
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: 0, y: 25}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: unity-transform-toolbar
+      index: 0
+      layout: 2
+    - dockPosition: 0
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: 67.5, y: 86}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Orientation
+      index: 0
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Light Settings
+      index: 0
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Camera
+      index: 1
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Cloth Constraints
+      index: 2
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Cloth Collisions
+      index: 3
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Navmesh Display
+      index: 4
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Agent Display
+      index: 5
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Obstacle Display
+      index: 6
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Occlusion Culling
+      index: 7
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Physics Debugger
+      index: 8
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Scene Visibility
+      index: 9
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Particles
+      index: 10
+      layout: 4
+  m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
+  m_Gizmos: 1
+  m_OverrideSceneCullingMask: 6917529027641081856
+  m_SceneIsLit: 1
+  m_SceneLighting: 1
+  m_2DMode: 0
+  m_isRotationLocked: 0
+  m_PlayAudio: 0
+  m_AudioPlay: 0
+  m_Position:
+    m_Target: {x: 8.718745, y: -0.71494865, z: 11.9827175}
+    speed: 2
+    m_Value: {x: 8.718745, y: -0.71494865, z: 11.9827175}
+  m_RenderMode: 0
+  m_CameraMode:
+    drawMode: 0
+    name: Shaded
+    section: Shading Mode
+  m_ValidateTrueMetals: 0
+  m_DoValidateTrueMetals: 0
+  m_ExposureSliderValue: 0
+  m_SceneViewState:
+    m_AlwaysRefresh: 1
+    showFog: 1
+    showSkybox: 0
+    showFlares: 1
+    showImageEffects: 1
+    showParticleSystems: 1
+    showVisualEffectGraphs: 1
+    m_FxEnabled: 1
+  m_Grid:
+    xGrid:
+      m_Fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 0, y: 0}
+    yGrid:
+      m_Fade:
+        m_Target: 1
+        speed: 2
+        m_Value: 1
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 1, y: 1}
+    zGrid:
+      m_Fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 1, y: 1}
+    m_ShowGrid: 1
+    m_GridAxis: 1
+    m_gridOpacity: 0.5
+  m_Rotation:
+    m_Target: {x: 0.13983938, y: -0.8576809, z: 0.3128927, w: 0.38331646}
+    speed: 2
+    m_Value: {x: 0.13983905, y: -0.8576789, z: 0.31289196, w: 0.38331553}
+  m_Size:
+    m_Target: 10.114224
+    speed: 2
+    m_Value: 10.114224
+  m_Ortho:
+    m_Target: 0
+    speed: 2
+    m_Value: 0
+  m_CameraSettings:
+    m_Speed: 0.76062
+    m_SpeedNormalized: 0.38
+    m_SpeedMin: 0.001
+    m_SpeedMax: 2
+    m_EasingEnabled: 1
+    m_EasingDuration: 0.4
+    m_AccelerationEnabled: 1
+    m_FieldOfViewHorizontalOrVertical: 60
+    m_NearClip: 0.03
+    m_FarClip: 10000
+    m_DynamicClip: 1
+    m_OcclusionCulling: 0
+  m_LastSceneViewRotation: {x: 0.39980698, y: 0.0041202777, z: -0.0017976108, w: 0.9165911}
+  m_LastSceneViewOrtho: 0
+  m_ReplacementShader: {fileID: 0}
+  m_ReplacementString: 
+  m_SceneVisActive: 1
+  m_LastLockedObject: {fileID: 0}
+  m_ViewIsLockedToObject: 0
+--- !u!114 &19
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Game
+    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 2560
+    y: 197
+    width: 1920
+    height: 1011
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_SerializedViewNames: []
+  m_SerializedViewValues: []
+  m_PlayModeViewName: GameView
+  m_ShowGizmos: 0
+  m_TargetDisplay: 0
+  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+  m_TargetSize: {x: 1920, y: 1080}
+  m_TextureFilterMode: 0
+  m_TextureHideFlags: 61
+  m_RenderIMGUI: 1
+  m_EnterPlayModeBehavior: 0
+  m_UseMipMap: 0
+  m_VSyncEnabled: 0
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 03000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -960
+    m_HBaseRangeMax: 960
+    m_VBaseRangeMin: -540
+    m_VBaseRangeMax: 540
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 0
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 21
+      width: 1920
+      height: 990
+    m_Scale: {x: 1.092727, y: 1.092727}
+    m_Translation: {x: 945.9983, y: 512.57153}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -865.7225
+      y: -469.0756
+      width: 1757.072
+      height: 905.9903
+    m_MinimalGUI: 1
+  m_defaultScale: 0.9166667
+  m_LastWindowPixelSize: {x: 1920, y: 1011}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 01000000000000000000
+  m_XRRenderMode: 0
+  m_RenderTexture: {fileID: 0}
+--- !u!114 &20
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_TitleContent:
+    m_Text: Project
+    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 873
+    width: 1545
+    height: 478
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_SearchFilter:
+    m_NameFilter: 
+    m_ClassNames: []
+    m_AssetLabels: []
+    m_AssetBundleNames: []
+    m_VersionControlStates: []
+    m_SoftLockControlStates: []
+    m_ReferencingInstanceIDs: 
+    m_SceneHandles: 
+    m_ShowAllHits: 0
+    m_SkipHidden: 0
+    m_SearchArea: 1
+    m_Folders:
+    - Assets/Scripts/Control
+    m_Globs: []
+    m_OriginalText: 
+  m_ViewMode: 1
+  m_StartGridSize: 16
+  m_LastFolders:
+  - Assets/Scripts/Control
+  m_LastFoldersGridSize: 16
+  m_LastProjectPath: C:\Dev\Game\DeathIsOnlyTheBeginning
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: d44c0000
+    m_LastClickedID: 19668
+    m_ExpandedIDs: 000000003c4c00003e4c0000404c0000424c0000444c0000464c00004a4c00004c4c00004e4c0000504c0000524c0000544c0000564c0000bc4c0000c84c0000d4530000e8530000b054000000ca9a3b
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: Prefabs
+      m_OriginalName: Prefabs
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 19652
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 0
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 14}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_AssetTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 000000003c4c00003e4c0000404c0000424c0000444c0000464c0000484c00004a4c00004c4c00004e4c0000504c0000524c0000544c0000564c0000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_ListAreaState:
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c62300009aee0000a8ee00003807010072540100fa170200d8530000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: CharacterController
+      m_OriginalName: CharacterController
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 3218
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 0
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 14}
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+    m_NewAssetIndexInList: -1
+    m_ScrollPosition: {x: 0, y: 0}
+    m_GridSize: 16
+  m_SkipHiddenPackages: 0
+  m_DirectoriesAreaWidth: 207
+--- !u!114 &21
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Console
+    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 873
+    width: 1545
+    height: 478
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+--- !u!114 &22
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animator
+    m_Image: {fileID: -1673928668082335149, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 873
+    width: 1545
+    height: 478
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_ViewTransforms:
+    m_KeySerializationHelper:
+    - {fileID: -7006891536681554926, guid: cf22fb42c2a8a6c4c9cee9044bd25f88, type: 2}
+    - {fileID: -3109409237477843661, guid: cf22fb42c2a8a6c4c9cee9044bd25f88, type: 2}
+    - {fileID: 110700000, guid: 0ca7eafc6f555b741862212a56fd50e9, type: 2}
+    - {fileID: -4221736508000427073, guid: f0420361b77306a4a998cc49f796d1fa, type: 2}
+    - {fileID: -8373946582444007337, guid: f0420361b77306a4a998cc49f796d1fa, type: 2}
+    m_ValueSerializationHelper:
+    - e00: 0.11868898
+      e01: 0
+      e02: 0
+      e03: 325.0637
+      e10: 0
+      e11: 0.11868898
+      e12: 0
+      e13: 166.50153
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.9925284
+      e01: 0
+      e02: 0
+      e03: 347.52753
+      e10: 0
+      e11: 0.9925284
+      e12: 0
+      e13: 166.86446
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.31863728
+      e01: 0
+      e02: 0
+      e03: 564.3998
+      e10: 0
+      e11: 0.31863728
+      e12: 0
+      e13: 355.30463
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.9370198
+      e01: 0
+      e02: 0
+      e03: -224.11487
+      e10: 0
+      e11: 0.9370198
+      e12: 0
+      e13: 49.692352
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 1.067979
+      e01: 0
+      e02: 0
+      e03: 495.39877
+      e10: 0
+      e11: 1.067979
+      e12: 0
+      e13: 142.73654
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  m_PreviewAnimator: {fileID: 0}
+  m_AnimatorController: {fileID: 9100000, guid: cf22fb42c2a8a6c4c9cee9044bd25f88, type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: -7006891536681554926, guid: cf22fb42c2a8a6c4c9cee9044bd25f88, type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
+  stateMachineGraph: {fileID: 0}
+  stateMachineGraphGUI: {fileID: 0}
+  blendTreeGraph: {fileID: 0}
+  blendTreeGraphGUI: {fileID: 0}
+  m_AutoLiveLink: 1
+  m_MiniTool: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_CurrentEditor: 0
+  m_LayerEditor:
+    m_SelectedLayerIndex: 0
+--- !u!114 &23
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Inspector
+    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1546
+    y: 73
+    width: 1013
+    height: 1278
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
+  m_PreviewResizer:
+    m_CachedPref: 526
+    m_ControlHash: -371814159
+    m_PrefName: Preview_InspectorPreview
+  m_LastInspectedObjectInstanceID: -1
+  m_LastVerticalScrollValue: 0
+  m_GlobalObjectId: 
+  m_InspectorMode: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_PreviewWindow: {fileID: 0}
+--- !u!114 &24
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12141, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 300, y: 360}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Navigation
+    m_Image: {fileID: 1087843850482249999, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1608
+    y: 73
+    width: 951
+    height: 1278
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
