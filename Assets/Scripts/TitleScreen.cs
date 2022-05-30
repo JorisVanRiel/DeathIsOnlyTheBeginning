@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class TitleScreen : MonoBehaviour
 {
-    GameManager gameManager;
+    [SerializeField] GameObject credits;
+    [SerializeField] GameObject title;
 
+    private GameManager gameManager;
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>().GetComponent<GameManager>();
@@ -15,4 +17,17 @@ public class TitleScreen : MonoBehaviour
     {
         gameManager.StartGame();
     }
+
+    public void HandleBackButton()
+    {
+        credits.SetActive(false);
+        title.SetActive(true);
+    }
+
+    public void HandleCreditsButton()
+    {
+        credits.SetActive(true);
+        title.SetActive(false);
+    }
+
 }
