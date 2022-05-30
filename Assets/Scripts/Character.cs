@@ -35,7 +35,9 @@ namespace DeathIsOnlyTheBeginning
 
         public void ReceiveDamage(int amount)
         {
-            hitPoints -= amount;
+            int damage = amount - characterSheet.Defence;
+            if(damage < 1) damage = 1;
+            hitPoints -= damage;
         }
 
         public void Attack(Monster monster)

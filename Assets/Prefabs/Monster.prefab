@@ -50,6 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0332eb1b537d47247a09c3350260ea6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  monsterLevel: 2
   hitPoints: 10
   lootItem: {fileID: 5714904599662736433, guid: f7cba35b32748264eb2ae875920d3ce9, type: 3}
   player: {fileID: 0}

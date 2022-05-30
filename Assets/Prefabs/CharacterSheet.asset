@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: CharacterSheet
   m_EditorClassIdentifier: 
   startingAttack: 10
-  startingDefence: 2
+  startingDefence: 0
+  totalExperiencePoints: 0
   experiencePoints: 0
   attack: 10
-  defence: 2
+  defence: 0

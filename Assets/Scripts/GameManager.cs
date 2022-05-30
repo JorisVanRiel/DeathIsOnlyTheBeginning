@@ -19,6 +19,9 @@ public class GameManager : MonoBehaviour
     public GameObject SkillScreen { get => skillScreen; }
     public UnityEvent<Character> CharacterRespawn = new UnityEvent<Character>();
 
+    private int experienceLastRound;
+    private int totalExperienceLastRound;
+
     private void Awake()
     {
         titleScreen = Instantiate(titleScreenPrefab);
@@ -31,20 +34,33 @@ public class GameManager : MonoBehaviour
         characterSheet.Reset();
         titleScreen.SetActive(false);
         InstantiateCharacter();
-
+        experienceLastRound = 0;
+        totalExperienceLastRound = 0;
     }
 
     public void HandleCharacterDeath()
     {
+        
+        int experienceThisRound = characterSheet.TotalExperiencePoints - experienceLastRound;
+        if(experienceThisRound < experienceLastRound)
+        {
+            GameOver();
+            return;
+        }
+        experienceLastRound = experienceThisRound;
         skillScreen.SetActive(true);
+    }
+
+    private void GameOver()
+    {
+        titleScreen.GetComponent<TitleScreen>().ShowGamOver();
+        titleScreen.SetActive(true);
     }
 
     public void RespawnCharacter()
     {
         skillScreen.SetActive(false);
         InstantiateCharacter();
-       
-
     }
 
     private void InstantiateCharacter()

@@ -10,6 +10,9 @@ namespace DeathIsOnlyTheBeginning
 
     public class Monster : MonoBehaviour
     {
+
+        [SerializeField] int monsterLevel = 1;
+
         [SerializeField] int hitPoints;
         [SerializeField] Item lootItem;
         [SerializeField] Character player;
@@ -18,6 +21,8 @@ namespace DeathIsOnlyTheBeginning
         [SerializeField] float attackTime;
         [SerializeField] float attackDistance;
         [SerializeField] int xpValue;
+        
+
 
         [SerializeField] Room room;
 
@@ -29,6 +34,14 @@ namespace DeathIsOnlyTheBeginning
             audioSource = GetComponent<AudioSource>();
             GameObject.FindObjectOfType<GameManager>().CharacterRespawn.AddListener(SetCharacter);
             this.doorsInRoom = room.Doors;
+            hitPoints *= monsterLevel;
+            attackStrength *= monsterLevel * monsterLevel;
+            xpValue *= monsterLevel;
+
+
+
+
+
         }
 
         private void Update()
