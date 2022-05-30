@@ -49,6 +49,8 @@ public class GameManager : MonoBehaviour
     private void InstantiateCharacter()
     {
         character = Instantiate(characterPrefab).GetComponent<Character>();
+        CameraController controller = Camera.main.GetComponent<CameraController>();
+        controller.ObjectToFollow = character.gameObject;
         character.CharacterDied.AddListener(HandleCharacterDeath);
     }
 

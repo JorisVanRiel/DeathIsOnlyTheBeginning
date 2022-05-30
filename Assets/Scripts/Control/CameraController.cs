@@ -5,10 +5,14 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    [SerializeField] GameObject objectToFollow;
-    private Vector3 distance;
+    private GameObject objectToFollow;
 
-    public GameObject ObjectToFollow { get { return this.objectToFollow; } }
+    [SerializeField] Vector3 distance;
+
+    public GameObject ObjectToFollow { 
+        get { return this.objectToFollow; }
+        set { this.objectToFollow = value;}
+    }
 
     private void Start()
     {
