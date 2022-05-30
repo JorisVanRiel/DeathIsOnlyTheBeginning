@@ -19,13 +19,24 @@ namespace DeathIsOnlyTheBeginning
         [SerializeField] float attackDistance;
         [SerializeField] int xpValue;
 
+        [SerializeField] Room room;
+
         private float timeOflastAttack;
+        private AudioSource audioSource;
+
+        private void Start()
+        {
+            audioSource = GetComponent<AudioSource>();
+            GameObject.FindObjectOfType<GameManager>().CharacterRespawn.AddListener(SetCharacter);
+            this.doorsInRoom = room.Doors;
+        }
 
         private void Update()
         {
             if(hitPoints <= 0) Die();
             Move();
             Attack();
+
         }
 
         private void Attack()
@@ -34,6 +45,8 @@ namespace DeathIsOnlyTheBeginning
 
             player.ReceiveDamage(attackStrength);
             timeOflastAttack = Time.time;
+            audioSource.Play();
+
         }
 
         private bool CanAttakcTarget()
@@ -57,7 +70,7 @@ namespace DeathIsOnlyTheBeginning
             GameObject.Instantiate(lootItem);
             player.ReceiveXp(xpValue);
             lootItem.transform.position = transform.position;
-            GameObject.Destroy(gameObject);
+            this.gameObject.SetActive(false);
         }
 
         private void Move()
@@ -67,10 +80,16 @@ namespace DeathIsOnlyTheBeginning
 
             NavMeshAgent agent = GetComponent<NavMeshAgent>();
             agent.SetDestination(player.transform.position);
+            
             Vector3 velocity = agent.velocity;
             Vector3 localVelocity = transform.InverseTransformDirection(velocity);
             float speed = localVelocity.z;
             GetComponent<Animator>().SetFloat("Speed", speed);
+        }
+
+        private void SetCharacter(Character character)
+        {
+           player = character;
         }
 
     }

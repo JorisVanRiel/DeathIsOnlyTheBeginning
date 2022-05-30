@@ -11,10 +11,15 @@ namespace DeathIsOnlyTheBeginning.Controlls
         [SerializeField] Character character;
         [SerializeField] GameObject explosion;
 
+
+
         private Animator animator;
+        private AudioSource audioSource;
+
         private void Awake()
         {
             animator = GetComponent<Animator>();
+            audioSource = GetComponent<AudioSource>();
         }
 
         void Update()
@@ -50,6 +55,7 @@ namespace DeathIsOnlyTheBeginning.Controlls
                         character.Attack(monster);
                         animator.SetTrigger("Attack");
                         Instantiate(explosion).transform.position = monster.transform.position;
+                        audioSource.Play();
                     }
                 };
             }

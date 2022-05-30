@@ -29,3 +29,7 @@ https://assetstore.unity.com/packages/3d/characters/humanoids/fantasy/skeleton-o
 3D Games Effects Pack Free by Creepy Cat
 https://assetstore.unity.com/packages/vfx/particles/3d-games-effects-pack-free-42285
 
+Fantasy Sfx by Little Robot Sound Factory
+https://assetstore.unity.com/packages/audio/sound-fx/fantasy-sfx-32833
+
+

@@ -3,12 +3,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] CharacterSheet characterSheet;
     [SerializeField] GameObject titleScreenPrefab;
-    [SerializeField] GameObject dungeonPrefab;
     [SerializeField] GameObject characterPrefab;
     [SerializeField] GameObject skillScreenPrefab;
 
@@ -17,12 +17,12 @@ public class GameManager : MonoBehaviour
     private Character character;
 
     public GameObject SkillScreen { get => skillScreen; }
+    public UnityEvent<Character> CharacterRespawn = new UnityEvent<Character>();
 
     private void Awake()
     {
         titleScreen = Instantiate(titleScreenPrefab);
         skillScreen = Instantiate(skillScreenPrefab);
-        Instantiate(dungeonPrefab);
         skillScreen.SetActive(false);
     }
 
@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
         skillScreen.SetActive(false);
         InstantiateCharacter();
        
+
     }
 
     private void InstantiateCharacter()
@@ -52,6 +53,8 @@ public class GameManager : MonoBehaviour
         CameraController controller = Camera.main.GetComponent<CameraController>();
         controller.ObjectToFollow = character.gameObject;
         character.CharacterDied.AddListener(HandleCharacterDeath);
+        character.transform.position = Vector3.zero;
+        if (CharacterRespawn != null) CharacterRespawn.Invoke(character);
     }
 
 }
