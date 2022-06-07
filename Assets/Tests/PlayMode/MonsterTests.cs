@@ -67,7 +67,7 @@ public class MonsterTests : TestsBase
 
         yield return new WaitForSeconds(waitingTime);
         doorController.Open();
-        yield return new WaitForSeconds(waitingTime);
+        yield return new WaitForSeconds(1);
 
         monsterLocation = monster.transform.position;
         float finalDistance =Vector3.Distance(monsterLocation, playerLocation);
@@ -118,8 +118,17 @@ public class MonsterTests : TestsBase
         yield return LoadScene(monsterAttackCharacterTestScene);
         Character character = GetComponentFromObjectWithTag<Character>("Player");
         int hpStart = character.HitPoints;
-        yield return new WaitForSeconds(1f);
-        Assert.AreEqual(hpStart-1, character.HitPoints);
+        yield return new WaitForSeconds(.5f);
+        int afterFirstAttack = character.HitPoints;
+        Assert.Less(afterFirstAttack,hpStart);
+        yield return new WaitForSeconds(.1f);
+        int hpBetweenAttacks = character.HitPoints;
+        Assert.AreEqual(afterFirstAttack, hpBetweenAttacks);
+        yield return new WaitForSeconds(.6f);
+        int hpAfterSecondAttack = character.HitPoints;
+        Assert.Less(hpAfterSecondAttack, afterFirstAttack);
+
+
     }
 
     [UnityTest]

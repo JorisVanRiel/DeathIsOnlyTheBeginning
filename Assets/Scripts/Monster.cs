@@ -37,11 +37,6 @@ namespace DeathIsOnlyTheBeginning
             hitPoints *= monsterLevel;
             attackStrength *= monsterLevel * monsterLevel;
             xpValue *= monsterLevel;
-
-
-
-
-
         }
 
         private void Update()
@@ -49,7 +44,6 @@ namespace DeathIsOnlyTheBeginning
             if(hitPoints <= 0) Die();
             Move();
             Attack();
-
         }
 
         private void Attack()
@@ -59,7 +53,6 @@ namespace DeathIsOnlyTheBeginning
             player.ReceiveDamage(attackStrength);
             timeOflastAttack = Time.time;
             audioSource.Play();
-
         }
 
         private bool CanAttakcTarget()
@@ -68,7 +61,6 @@ namespace DeathIsOnlyTheBeginning
             if (player == null) return false;
             if(Vector3.Distance(transform.position, player.transform.position) > attackDistance) return false;
             return true;
-
         }
 
         public int HitPoints { get { return hitPoints;  } }
@@ -84,6 +76,7 @@ namespace DeathIsOnlyTheBeginning
             player.ReceiveXp(xpValue);
             lootItem.transform.position = transform.position;
             this.gameObject.SetActive(false);
+            Destroy(gameObject);
         }
 
         private void Move()

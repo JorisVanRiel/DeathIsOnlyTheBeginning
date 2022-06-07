@@ -122,7 +122,7 @@ public class CharacterSheetTests : TestsBase
         sheet.DefenceUp();
         sheet.Reset();
 
-        Assert.AreEqual(2, sheet.Defence);
+        Assert.AreEqual(sheet.StartingDefence, sheet.Defence);
     }
 
 

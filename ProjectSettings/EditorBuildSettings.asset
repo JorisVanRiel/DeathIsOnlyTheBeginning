@@ -5,31 +5,31 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TestScenes/CharacterTestScene.unity
     guid: 69f6c4f58f5a2d446bb7250a66ac1436
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TestScenes/MonsterTestScene.unity
     guid: a6ddbdefcd2b81b44a0a75080fdf3742
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TestScenes/CameraTestScene.unity
     guid: cc404f91f12813d4f90ec4073ccf8855
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TestScenes/DoorTestScene.unity
     guid: 96ca4e5d8ced7df4da36495b95628ceb
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TestScenes/MonsterWithCharacterTestScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TestScenes/MonsterAttackingCharacterTestScene.unity
     guid: f3ad367cbc9349e49bdfdde5e5941446
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TestScenes/CharacterAttackingMonsterTestScene.unity
     guid: b3a6e07a3250cbf41801d588ecc159cf
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TestScenes/CharacterSheetTestScene.unity
     guid: 0ccf681edef998f47af7aebd1f89245e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TestScenes/GameManagerTestScene.unity
     guid: 85c2a57d130b72445a457baa9559a8af
   - enabled: 1

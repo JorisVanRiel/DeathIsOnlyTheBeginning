@@ -8,30 +8,6 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PixelRect:
-    serializedVersion: 2
-    x: 2560
-    y: 197
-    width: 1920
-    height: 1032
-  m_ShowMode: 0
-  m_Title: Game
-  m_RootView: {fileID: 4}
-  m_MinSize: {x: 200, y: 221}
-  m_MaxSize: {x: 4000, y: 4021}
-  m_Maximized: 1
---- !u!114 &2
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -43,62 +19,12 @@ MonoBehaviour:
     width: 2560
     height: 1349
   m_ShowMode: 4
-  m_Title: Project
-  m_RootView: {fileID: 5}
+  m_Title: Scene
+  m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 350}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
---- !u!114 &3
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1920
-    height: 1032
-  m_MinSize: {x: 200, y: 221}
-  m_MaxSize: {x: 4000, y: 4021}
-  m_ActualView: {fileID: 19}
-  m_Panes:
-  - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &4
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 3}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1920
-    height: 1032
-  m_MinSize: {x: 200, y: 221}
-  m_MaxSize: {x: 4000, y: 4021}
-  vertical: 0
-  controlID: 17
---- !u!114 &5
+--- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,9 +37,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 6}
-  - {fileID: 8}
-  - {fileID: 7}
+  - {fileID: 3}
+  - {fileID: 5}
+  - {fileID: 4}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -126,7 +52,7 @@ MonoBehaviour:
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &6
+--- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
---- !u!114 &7
+--- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -169,7 +95,7 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
---- !u!114 &8
+--- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -182,7 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 9}
+  - {fileID: 6}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -192,8 +118,8 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 66
---- !u!114 &9
+  controlID: 44
+--- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -206,8 +132,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 10}
-  - {fileID: 15}
+  - {fileID: 7}
+  - {fileID: 12}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -217,8 +143,8 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 67
---- !u!114 &10
+  controlID: 45
+--- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -231,19 +157,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
+  - {fileID: 8}
   - {fileID: 11}
-  - {fileID: 14}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1546
+    width: 1460
     height: 1299
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 68
---- !u!114 &11
+  controlID: 46
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -256,19 +182,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 12}
-  - {fileID: 13}
+  - {fileID: 9}
+  - {fileID: 10}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1546
-    height: 800
+    width: 1460
+    height: 797
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 69
---- !u!114 &12
+  controlID: 47
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -285,16 +211,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 505
-    height: 800
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 17}
+    width: 372
+    height: 797
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 16}
   m_Panes:
-  - {fileID: 17}
+  - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &13
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -309,18 +235,19 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 505
+    x: 372
     y: 0
-    width: 1041
-    height: 800
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 18}
+    width: 1088
+    height: 797
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 18}
+  - {fileID: 17}
+  - {fileID: 14}
   m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &14
+  m_LastSelected: 1
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -336,19 +263,19 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 800
-    width: 1546
-    height: 499
+    y: 797
+    width: 1460
+    height: 502
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 20}
+  m_ActualView: {fileID: 18}
   m_Panes:
+  - {fileID: 18}
+  - {fileID: 19}
   - {fileID: 20}
-  - {fileID: 21}
-  - {fileID: 22}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &15
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -363,20 +290,141 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1546
+    x: 1460
     y: 0
-    width: 1014
+    width: 1100
     height: 1299
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 23}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 21}
   m_Panes:
-  - {fileID: 23}
-  - {fileID: 16}
-  - {fileID: 24}
+  - {fileID: 21}
+  - {fileID: 15}
+  - {fileID: 22}
+  - {fileID: 13}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &16
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12402, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 300, y: 150}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Services
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1970
+    y: 73
+    width: 589
+    height: 1278
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Game
+    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 372
+    y: 73
+    width: 1086
+    height: 776
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_SerializedViewNames: []
+  m_SerializedViewValues: []
+  m_PlayModeViewName: GameView
+  m_ShowGizmos: 0
+  m_TargetDisplay: 0
+  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+  m_TargetSize: {x: 960, y: 540}
+  m_TextureFilterMode: 0
+  m_TextureHideFlags: 61
+  m_RenderIMGUI: 1
+  m_EnterPlayModeBehavior: 0
+  m_UseMipMap: 0
+  m_VSyncEnabled: 1
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 07000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -480
+    m_HBaseRangeMax: 480
+    m_VBaseRangeMin: -270
+    m_VBaseRangeMax: 270
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 0
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 21
+      width: 1086
+      height: 755
+    m_Scale: {x: 1.6775252, y: 1.6775247}
+    m_Translation: {x: 543, y: 377.5}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -323.69113
+      y: -225.03395
+      width: 647.38226
+      height: 450.0679
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1086, y: 776}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 01000000000000000000
+  m_XRRenderMode: 0
+  m_RenderTexture: {fileID: 0}
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -396,16 +444,16 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1608
+    x: 1460
     y: 73
-    width: 951
+    width: 1099
     height: 1278
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 145
+    ID: 123
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -430,14 +478,14 @@ MonoBehaviour:
     oldSplitSize: 0
   m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
-    m_Window: {fileID: 16}
+    m_Window: {fileID: 15}
     m_NewResultList:
     - id: 1004
       uniqueId: '[DeathIsOnlyTheBeinning][suite]'
       name: DeathIsOnlyTheBeinning
       fullName: DeathIsOnlyTheBeinning
       resultStatus: 1
-      duration: 1.5785784
+      duration: 0.3395018
       messages: 
       output: 
       stacktrace: 
@@ -448,12 +496,12 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1004
+    - id: 1047
       uniqueId: '[PlayMode][C:/Dev/Game/DeathIsOnlyTheBeginning/Library/ScriptAssemblies/PlayMode.dll][suite]'
       name: PlayMode.dll
       fullName: C:/Dev/Game/DeathIsOnlyTheBeginning/Library/ScriptAssemblies/PlayMode.dll
       resultStatus: 1
-      duration: 1.3394026
+      duration: 0.146481
       messages: 
       output: 
       stacktrace: 
@@ -469,7 +517,7 @@ MonoBehaviour:
       name: CameraTests
       fullName: CameraTests
       resultStatus: 1
-      duration: 0.3081448
+      duration: 0.3205112
       messages: 
       output: 
       stacktrace: 
@@ -478,14 +526,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1013
+      parentId: 1047
       parentUniqueId: '[PlayMode][C:/Dev/Game/DeathIsOnlyTheBeginning/Library/ScriptAssemblies/PlayMode.dll][suite]'
     - id: 1002
       uniqueId: PlayMode.dll/CameraTests/[PlayMode][CameraTests.CameraShouldHaveAFixedRelativePostionToObjectItFollows]
       name: CameraShouldHaveAFixedRelativePostionToObjectItFollows
       fullName: CameraTests.CameraShouldHaveAFixedRelativePostionToObjectItFollows
       resultStatus: 1
-      duration: 0.2811513
+      duration: 0.300554
       messages: 
       output: 
       stacktrace: 
@@ -502,7 +550,7 @@ MonoBehaviour:
       name: CharacterSheetTests
       fullName: CharacterSheetTests
       resultStatus: 1
-      duration: 0.7038482
+      duration: 0.134834
       messages: 
       output: 
       stacktrace: 
@@ -511,14 +559,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1024
+      parentId: 1047
       parentUniqueId: '[PlayMode][C:/Dev/Game/DeathIsOnlyTheBeginning/Library/ScriptAssemblies/PlayMode.dll][suite]'
-    - id: 1004
+    - id: 1005
       uniqueId: PlayMode.dll/CharacterSheetTests/[PlayMode][CharacterSheetTests.AddExperienceShouldAddTheAmountOfExperience]
       name: AddExperienceShouldAddTheAmountOfExperience
       fullName: CharacterSheetTests.AddExperienceShouldAddTheAmountOfExperience
       resultStatus: 1
-      duration: 0.1160935
+      duration: 0.0901131
       messages: 
       output: 
       stacktrace: 
@@ -535,7 +583,7 @@ MonoBehaviour:
       name: AttackUpShouldAddOnePointToTheAttack
       fullName: CharacterSheetTests.AttackUpShouldAddOnePointToTheAttack
       resultStatus: 1
-      duration: 0.0572006
+      duration: 0.083037
       messages: 
       output: 
       stacktrace: 
@@ -552,7 +600,7 @@ MonoBehaviour:
       name: AttackUpShouldCostExperiencePointsEqualToCurrentValue
       fullName: CharacterSheetTests.AttackUpShouldCostExperiencePointsEqualToCurrentValue
       resultStatus: 1
-      duration: 0.0615909
+      duration: 0.0777142
       messages: 
       output: 
       stacktrace: 
@@ -569,7 +617,7 @@ MonoBehaviour:
       name: AttackUpShouldDoNothingWhenExperiencePointsAreLessThenAttackValue
       fullName: CharacterSheetTests.AttackUpShouldDoNothingWhenExperiencePointsAreLessThenAttackValue
       resultStatus: 1
-      duration: 0.0606721
+      duration: 0.0647803
       messages: 
       output: 
       stacktrace: 
@@ -581,12 +629,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1003
       parentUniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
-    - id: 1007
+    - id: 1013
       uniqueId: PlayMode.dll/CharacterSheetTests/[PlayMode][CharacterSheetTests.DefenceUpShouldAddOnePointToDefence]
       name: DefenceUpShouldAddOnePointToDefence
       fullName: CharacterSheetTests.DefenceUpShouldAddOnePointToDefence
       resultStatus: 1
-      duration: 0.0649476
+      duration: 0.0653166
       messages: 
       output: 
       stacktrace: 
@@ -603,7 +651,7 @@ MonoBehaviour:
       name: DefenceUpShouldCostExperiencePointsEqualToCurrentValue
       fullName: CharacterSheetTests.DefenceUpShouldCostExperiencePointsEqualToCurrentValue
       resultStatus: 1
-      duration: 0.0619108
+      duration: 0.0742713
       messages: 
       output: 
       stacktrace: 
@@ -620,7 +668,7 @@ MonoBehaviour:
       name: DefenceUpShouldDoNothingWhenExperiencePointsAreLessThenDefenceValue
       fullName: CharacterSheetTests.DefenceUpShouldDoNothingWhenExperiencePointsAreLessThenDefenceValue
       resultStatus: 1
-      duration: 0.0551071
+      duration: 0.0698916
       messages: 
       output: 
       stacktrace: 
@@ -632,12 +680,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1003
       parentUniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
-    - id: 1007
+    - id: 1011
       uniqueId: PlayMode.dll/CharacterSheetTests/[PlayMode][CharacterSheetTests.ResetShouldSetAttackToTheStartingAttackValue]
       name: ResetShouldSetAttackToTheStartingAttackValue
       fullName: CharacterSheetTests.ResetShouldSetAttackToTheStartingAttackValue
       resultStatus: 1
-      duration: 0.0579996
+      duration: 0.0776754
       messages: 
       output: 
       stacktrace: 
@@ -649,12 +697,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1003
       parentUniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
-    - id: 1008
+    - id: 1012
       uniqueId: PlayMode.dll/CharacterSheetTests/[PlayMode][CharacterSheetTests.ResetShouldSetDefenceToTheStartingDefenceValue]
       name: ResetShouldSetDefenceToTheStartingDefenceValue
       fullName: CharacterSheetTests.ResetShouldSetDefenceToTheStartingDefenceValue
       resultStatus: 1
-      duration: 0.0623727
+      duration: 0.1158267
       messages: 
       output: 
       stacktrace: 
@@ -671,7 +719,7 @@ MonoBehaviour:
       name: ResetShouldSetExperiencePointsToZero
       fullName: CharacterSheetTests.ResetShouldSetExperiencePointsToZero
       resultStatus: 1
-      duration: 0.0665417
+      duration: 0.0708784
       messages: 
       output: 
       stacktrace: 
@@ -683,13 +731,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1003
       parentUniqueId: PlayMode.dll/[PlayMode][CharacterSheetTests][suite]
-    - id: 1001
+    - id: 1014
       uniqueId: PlayMode.dll/[PlayMode][CharacterTests][suite]
       name: CharacterTests
       fullName: CharacterTests
-      resultStatus: 1
-      duration: 5.252429
-      messages: 
+      resultStatus: 2
+      duration: 5.199831
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -697,31 +745,59 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1004
+      parentId: 1047
       parentUniqueId: '[PlayMode][C:/Dev/Game/DeathIsOnlyTheBeginning/Library/ScriptAssemblies/PlayMode.dll][suite]'
-    - id: 1007
+    - id: 1019
       uniqueId: PlayMode.dll/CharacterTests/[PlayMode][CharacterTests.CharacterSchouldDealDamageWhenAttackingMonster]
       name: CharacterSchouldDealDamageWhenAttackingMonster
       fullName: CharacterTests.CharacterSchouldDealDamageWhenAttackingMonster
-      resultStatus: 1
-      duration: 0.2142239
-      messages: 
-      output: 
-      stacktrace: 
+      resultStatus: 2
+      duration: 0.2213463
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
+
+'
+      stacktrace: 'DeathIsOnlyTheBeginning.Monster.Start () (at Assets/Scripts/Monster.cs:35)
+
+        
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1003
+      parentId: 1014
       parentUniqueId: PlayMode.dll/[PlayMode][CharacterTests][suite]
     - id: 1021
       uniqueId: PlayMode.dll/CharacterTests/[PlayMode][CharacterTests.CharacterShouldDealAmountOfDamageEqualToItsAttackValue]
       name: CharacterShouldDealAmountOfDamageEqualToItsAttackValue
       fullName: CharacterTests.CharacterShouldDealAmountOfDamageEqualToItsAttackValue
       resultStatus: 1
-      duration: 0.0607523
+      duration: 0.0902596
+      messages: 
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1014
+      parentUniqueId: PlayMode.dll/[PlayMode][CharacterTests][suite]
+    - id: 1018
+      uniqueId: PlayMode.dll/CharacterTests/[PlayMode][CharacterTests.CharacterShouldDieWhenHpIsZeroOrLess]
+      name: CharacterShouldDieWhenHpIsZeroOrLess
+      fullName: CharacterTests.CharacterShouldDieWhenHpIsZeroOrLess
+      resultStatus: 1
+      duration: 0.1004911
       messages: 
       output: 
       stacktrace: 
@@ -733,29 +809,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1014
       parentUniqueId: PlayMode.dll/[PlayMode][CharacterTests][suite]
-    - id: 1003
-      uniqueId: PlayMode.dll/CharacterTests/[PlayMode][CharacterTests.CharacterShouldDieWhenHpIsZeroOrLess]
-      name: CharacterShouldDieWhenHpIsZeroOrLess
-      fullName: CharacterTests.CharacterShouldDieWhenHpIsZeroOrLess
-      resultStatus: 1
-      duration: 0.1101782
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: PlayMode.dll/[PlayMode][CharacterTests][suite]
-    - id: 1002
+    - id: 1015
       uniqueId: PlayMode.dll/CharacterTests/[PlayMode][CharacterTests.CharacterShouldDieWhenTimeIsUp]
       name: CharacterShouldDieWhenTimeIsUp
       fullName: CharacterTests.CharacterShouldDieWhenTimeIsUp
       resultStatus: 1
-      duration: 2.0767145
+      duration: 2.117117
       messages: 
       output: 
       stacktrace: 
@@ -765,17 +824,25 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
+      parentId: 1014
       parentUniqueId: PlayMode.dll/[PlayMode][CharacterTests][suite]
     - id: 1022
       uniqueId: PlayMode.dll/CharacterTests/[PlayMode][CharacterTests.CharacterShouldNotBeAbleToAttackForAPeriodOfTimeAfterAttacking]
       name: CharacterShouldNotBeAbleToAttackForAPeriodOfTimeAfterAttacking
       fullName: CharacterTests.CharacterShouldNotBeAbleToAttackForAPeriodOfTimeAfterAttacking
-      resultStatus: 1
-      duration: 0.2504976
-      messages: 
-      output: 
-      stacktrace: 
+      resultStatus: 2
+      duration: 0.2215959
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
+
+'
+      stacktrace: 'DeathIsOnlyTheBeginning.Monster.Start () (at Assets/Scripts/Monster.cs:35)
+
+        
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -784,29 +851,37 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1014
       parentUniqueId: PlayMode.dll/[PlayMode][CharacterTests][suite]
-    - id: 1008
+    - id: 1020
       uniqueId: PlayMode.dll/CharacterTests/[PlayMode][CharacterTests.CharacterShouldNotDealDamageWhenAttackingMonsterIsOutOfRange]
       name: CharacterShouldNotDealDamageWhenAttackingMonsterIsOutOfRange
       fullName: CharacterTests.CharacterShouldNotDealDamageWhenAttackingMonsterIsOutOfRange
-      resultStatus: 1
-      duration: 0.3400348
-      messages: 
-      output: 
-      stacktrace: 
+      resultStatus: 2
+      duration: 0.2102929
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
+
+'
+      stacktrace: 'DeathIsOnlyTheBeginning.Monster.Start () (at Assets/Scripts/Monster.cs:35)
+
+        
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1003
+      parentId: 1014
       parentUniqueId: PlayMode.dll/[PlayMode][CharacterTests][suite]
     - id: 1016
       uniqueId: PlayMode.dll/CharacterTests/[PlayMode][CharacterTests.WhenCharacterDiesItShouldFireDieEvent]
       name: WhenCharacterDiesItShouldFireDieEvent
       fullName: CharacterTests.WhenCharacterDiesItShouldFireDieEvent
       resultStatus: 1
-      duration: 2.1041336
+      duration: 2.134976
       messages: 
       output: 
       stacktrace: 
@@ -818,12 +893,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1014
       parentUniqueId: PlayMode.dll/[PlayMode][CharacterTests][suite]
-    - id: 1003
+    - id: 1017
       uniqueId: PlayMode.dll/CharacterTests/[PlayMode][CharacterTests.WhenCharacterReceivesDamageItsHitpointsShouldDeclineWithTheGivenAmount]
       name: WhenCharacterReceivesDamageItsHitpointsShouldDeclineWithTheGivenAmount
       fullName: CharacterTests.WhenCharacterReceivesDamageItsHitpointsShouldDeclineWithTheGivenAmount
       resultStatus: 1
-      duration: 0.05843
+      duration: 0.0777906
       messages: 
       output: 
       stacktrace: 
@@ -833,14 +908,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
+      parentId: 1014
       parentUniqueId: PlayMode.dll/[PlayMode][CharacterTests][suite]
-    - id: 1007
+    - id: 1023
       uniqueId: PlayMode.dll/[PlayMode][DoorTests][suite]
       name: DoorTests
       fullName: DoorTests
       resultStatus: 1
-      duration: 1.2943543
+      duration: 1.3107641
       messages: 
       output: 
       stacktrace: 
@@ -849,14 +924,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1013
+      parentId: 1047
       parentUniqueId: '[PlayMode][C:/Dev/Game/DeathIsOnlyTheBeginning/Library/ScriptAssemblies/PlayMode.dll][suite]'
-    - id: 1009
+    - id: 1025
       uniqueId: PlayMode.dll/DoorTests/[PlayMode][DoorTests.DoorShouldOnlyOpenOnce]
       name: DoorShouldOnlyOpenOnce
       fullName: DoorTests.DoorShouldOnlyOpenOnce
       resultStatus: 1
-      duration: 0.5268983
+      duration: 0.5171124
       messages: 
       output: 
       stacktrace: 
@@ -866,14 +941,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1007
+      parentId: 1023
       parentUniqueId: PlayMode.dll/[PlayMode][DoorTests][suite]
-    - id: 1008
+    - id: 1024
       uniqueId: PlayMode.dll/DoorTests/[PlayMode][DoorTests.DoorShouldOnlyOpenWhenPlayerIsNear]
       name: DoorShouldOnlyOpenWhenPlayerIsNear
       fullName: DoorTests.DoorShouldOnlyOpenWhenPlayerIsNear
       resultStatus: 1
-      duration: 0.7273729
+      duration: 0.7705809
       messages: 
       output: 
       stacktrace: 
@@ -883,15 +958,15 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1007
+      parentId: 1023
       parentUniqueId: PlayMode.dll/[PlayMode][DoorTests][suite]
-    - id: 1023
+    - id: 1026
       uniqueId: PlayMode.dll/[PlayMode][GameManagerTests][suite]
       name: GameManagerTests
       fullName: GameManagerTests
-      resultStatus: 1
-      duration: 2.8150835
-      messages: 
+      resultStatus: 2
+      duration: 1.3940982
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -899,14 +974,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1035
+      parentId: 1047
       parentUniqueId: '[PlayMode][C:/Dev/Game/DeathIsOnlyTheBeginning/Library/ScriptAssemblies/PlayMode.dll][suite]'
-    - id: 1027
+    - id: 1030
       uniqueId: PlayMode.dll/GameManagerTests/[PlayMode][GameManagerTests.GameManagerShouldDisableSkillScreenOnAwak]
       name: GameManagerShouldDisableSkillScreenOnAwak
       fullName: GameManagerTests.GameManagerShouldDisableSkillScreenOnAwak
       resultStatus: 1
-      duration: 0.2851466
+      duration: 0.133351
       messages: 
       output: 
       stacktrace: 
@@ -916,65 +991,83 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1023
+      parentId: 1026
       parentUniqueId: PlayMode.dll/[PlayMode][GameManagerTests][suite]
-    - id: 1032
+    - id: 1035
       uniqueId: PlayMode.dll/GameManagerTests/[PlayMode][GameManagerTests.GameManagerShouldDisableSkillScreenOnRespawn]
       name: GameManagerShouldDisableSkillScreenOnRespawn
       fullName: GameManagerTests.GameManagerShouldDisableSkillScreenOnRespawn
-      resultStatus: 1
-      duration: 0.4260884
-      messages: 
+      resultStatus: 2
+      duration: 0.2761452
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
       output: 
-      stacktrace: 
+      stacktrace: "  at GameManager.InstantiateCharacter () [0x00022] in C:\\Dev\\Game\\DeathIsOnlyTheBeginning\\Assets\\Scripts\\GameManager.cs:70
+        \r\n  at GameManager.RespawnCharacter () [0x0000e] in C:\\Dev\\Game\\DeathIsOnlyTheBeginning\\Assets\\Scripts\\GameManager.cs:63
+        \r\n  at GameManagerTests+<GameManagerShouldDisableSkillScreenOnRespawn>d__9.MoveNext
+        () [0x00094] in C:\\Dev\\Game\\DeathIsOnlyTheBeginning\\Assets\\Tests\\PlayMode\\GameManagerTest.cs:105
+        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in C:\\Dev\\Game\\DeathIsOnlyTheBeginning\\Library\\PackageCache\\com.unity.test-framework@1.1.31\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:46 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1023
+      parentId: 1026
       parentUniqueId: PlayMode.dll/[PlayMode][GameManagerTests][suite]
-    - id: 1025
+    - id: 1032
       uniqueId: PlayMode.dll/GameManagerTests/[PlayMode][GameManagerTests.GamemanagerShouldDisableTitleScreenOnStartGame]
       name: GamemanagerShouldDisableTitleScreenOnStartGame
       fullName: GameManagerTests.GamemanagerShouldDisableTitleScreenOnStartGame
-      resultStatus: 1
-      duration: 1.1127995
-      messages: 
+      resultStatus: 2
+      duration: 0.1035951
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
       output: 
-      stacktrace: 
+      stacktrace: "  at GameManager.InstantiateCharacter () [0x00022] in C:\\Dev\\Game\\DeathIsOnlyTheBeginning\\Assets\\Scripts\\GameManager.cs:70
+        \r\n  at GameManager.StartGame () [0x0001a] in C:\\Dev\\Game\\DeathIsOnlyTheBeginning\\Assets\\Scripts\\GameManager.cs:36
+        \r\n  at GameManagerTests+<GamemanagerShouldDisableTitleScreenOnStartGame>d__6.MoveNext
+        () [0x00074] in C:\\Dev\\Game\\DeathIsOnlyTheBeginning\\Assets\\Tests\\PlayMode\\GameManagerTest.cs:66
+        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in C:\\Dev\\Game\\DeathIsOnlyTheBeginning\\Library\\PackageCache\\com.unity.test-framework@1.1.31\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:46 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1023
+      parentId: 1026
       parentUniqueId: PlayMode.dll/[PlayMode][GameManagerTests][suite]
-    - id: 1028
+    - id: 1033
       uniqueId: PlayMode.dll/GameManagerTests/[PlayMode][GameManagerTests.GameManagerShouldInstantiatCharacterOnStartGame]
       name: GameManagerShouldInstantiatCharacterOnStartGame
       fullName: GameManagerTests.GameManagerShouldInstantiatCharacterOnStartGame
-      resultStatus: 1
-      duration: 0.0646469
-      messages: 
+      resultStatus: 2
+      duration: 0.0802485
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
       output: 
-      stacktrace: 
+      stacktrace: "  at GameManager.InstantiateCharacter () [0x00022] in C:\\Dev\\Game\\DeathIsOnlyTheBeginning\\Assets\\Scripts\\GameManager.cs:70
+        \r\n  at GameManager.StartGame () [0x0001a] in C:\\Dev\\Game\\DeathIsOnlyTheBeginning\\Assets\\Scripts\\GameManager.cs:36
+        \r\n  at GameManagerTests+<GameManagerShouldInstantiatCharacterOnStartGame>d__7.MoveNext
+        () [0x00053] in C:\\Dev\\Game\\DeathIsOnlyTheBeginning\\Assets\\Tests\\PlayMode\\GameManagerTest.cs:76
+        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in C:\\Dev\\Game\\DeathIsOnlyTheBeginning\\Library\\PackageCache\\com.unity.test-framework@1.1.31\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:46 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1023
+      parentId: 1026
       parentUniqueId: PlayMode.dll/[PlayMode][GameManagerTests][suite]
-    - id: 1026
+    - id: 1029
       uniqueId: PlayMode.dll/GameManagerTests/[PlayMode][GameManagerTests.GameManagerShouldInstantiateSkillScreenOnAwake]
       name: GameManagerShouldInstantiateSkillScreenOnAwake
       fullName: GameManagerTests.GameManagerShouldInstantiateSkillScreenOnAwake
       resultStatus: 1
-      duration: 0.094326
+      duration: 0.0827966
       messages: 
       output: 
       stacktrace: 
@@ -984,48 +1077,60 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1023
+      parentId: 1026
       parentUniqueId: PlayMode.dll/[PlayMode][GameManagerTests][suite]
-    - id: 1034
+    - id: 1036
       uniqueId: PlayMode.dll/GameManagerTests/[PlayMode][GameManagerTests.GameManagerShouldRespawnCharacterOnRespawn]
       name: GameManagerShouldRespawnCharacterOnRespawn
       fullName: GameManagerTests.GameManagerShouldRespawnCharacterOnRespawn
-      resultStatus: 1
-      duration: 0.3463729
-      messages: 
+      resultStatus: 2
+      duration: 0.2325692
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
       output: 
-      stacktrace: 
+      stacktrace: "  at GameManager.InstantiateCharacter () [0x00022] in C:\\Dev\\Game\\DeathIsOnlyTheBeginning\\Assets\\Scripts\\GameManager.cs:70
+        \r\n  at GameManager.RespawnCharacter () [0x0000e] in C:\\Dev\\Game\\DeathIsOnlyTheBeginning\\Assets\\Scripts\\GameManager.cs:63
+        \r\n  at GameManagerTests+<GameManagerShouldRespawnCharacterOnRespawn>d__10.MoveNext
+        () [0x00094] in C:\\Dev\\Game\\DeathIsOnlyTheBeginning\\Assets\\Tests\\PlayMode\\GameManagerTest.cs:119
+        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in C:\\Dev\\Game\\DeathIsOnlyTheBeginning\\Library\\PackageCache\\com.unity.test-framework@1.1.31\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:46 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1024
+      parentId: 1026
       parentUniqueId: PlayMode.dll/[PlayMode][GameManagerTests][suite]
-    - id: 1024
+    - id: 1031
       uniqueId: PlayMode.dll/GameManagerTests/[PlayMode][GameManagerTests.GameManagerShouldShouldResetTheCharacterSheetOnStartGame]
       name: GameManagerShouldShouldResetTheCharacterSheetOnStartGame
       fullName: GameManagerTests.GameManagerShouldShouldResetTheCharacterSheetOnStartGame
-      resultStatus: 1
-      duration: 0.0655778
-      messages: 
+      resultStatus: 2
+      duration: 0.0840751
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
       output: 
-      stacktrace: 
+      stacktrace: "  at GameManager.InstantiateCharacter () [0x00022] in C:\\Dev\\Game\\DeathIsOnlyTheBeginning\\Assets\\Scripts\\GameManager.cs:70
+        \r\n  at GameManager.StartGame () [0x0001a] in C:\\Dev\\Game\\DeathIsOnlyTheBeginning\\Assets\\Scripts\\GameManager.cs:36
+        \r\n  at GameManagerTests+<GameManagerShouldShouldResetTheCharacterSheetOnStartGame>d__5.MoveNext
+        () [0x000a0] in C:\\Dev\\Game\\DeathIsOnlyTheBeginning\\Assets\\Tests\\PlayMode\\GameManagerTest.cs:52
+        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in C:\\Dev\\Game\\DeathIsOnlyTheBeginning\\Library\\PackageCache\\com.unity.test-framework@1.1.31\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:46 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1023
+      parentId: 1026
       parentUniqueId: PlayMode.dll/[PlayMode][GameManagerTests][suite]
-    - id: 1031
+    - id: 1034
       uniqueId: PlayMode.dll/GameManagerTests/[PlayMode][GameManagerTests.GameManagerShouldShowSkillScreenWhenCharacterDies]
       name: GameManagerShouldShowSkillScreenWhenCharacterDies
       fullName: GameManagerTests.GameManagerShouldShowSkillScreenWhenCharacterDies
       resultStatus: 1
-      duration: 0.2419884
+      duration: 0.2349819
       messages: 
       output: 
       stacktrace: 
@@ -1035,49 +1140,63 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1023
+      parentId: 1026
       parentUniqueId: PlayMode.dll/[PlayMode][GameManagerTests][suite]
-    - id: 1026
+    - id: 1027
       uniqueId: PlayMode.dll/GameManagerTests/[PlayMode][GameManagerTests.OnAwakeGameManagerShouldInstantiateDungeon]
       name: OnAwakeGameManagerShouldInstantiateDungeon
       fullName: GameManagerTests.OnAwakeGameManagerShouldInstantiateDungeon
-      resultStatus: 1
-      duration: 0.0602361
-      messages: 
+      resultStatus: 2
+      duration: 0.0791084
+      messages: "  Dungeon not instatiated\r\n  Expected: True\r\n  But was:  False\r\n"
       output: 
-      stacktrace: 
+      stacktrace: 'at GameManagerTests+<AssertObjectWithTagIsInstantiatedAtAwake>d__11.MoveNext
+        () [0x00042] in C:\Dev\Game\DeathIsOnlyTheBeginning\Assets\Tests\PlayMode\GameManagerTest.cs:130
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in C:\Dev\Game\DeathIsOnlyTheBeginning\Library\PackageCache\com.unity.test-framework@1.1.31\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1023
+      parentId: 1026
       parentUniqueId: PlayMode.dll/[PlayMode][GameManagerTests][suite]
-    - id: 1025
+    - id: 1028
       uniqueId: PlayMode.dll/GameManagerTests/[PlayMode][GameManagerTests.OnAwakeGameManagerShouldInstantiateTitleScreen]
       name: OnAwakeGameManagerShouldInstantiateTitleScreen
       fullName: GameManagerTests.OnAwakeGameManagerShouldInstantiateTitleScreen
-      resultStatus: 1
-      duration: 0.097571
-      messages: 
+      resultStatus: 2
+      duration: 0.065595
+      messages: "  Dungeon not instatiated\r\n  Expected: True\r\n  But was:  False\r\n"
       output: 
-      stacktrace: 
+      stacktrace: 'at GameManagerTests+<AssertObjectWithTagIsInstantiatedAtAwake>d__11.MoveNext
+        () [0x00042] in C:\Dev\Game\DeathIsOnlyTheBeginning\Assets\Tests\PlayMode\GameManagerTest.cs:130
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in C:\Dev\Game\DeathIsOnlyTheBeginning\Library\PackageCache\com.unity.test-framework@1.1.31\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1023
+      parentId: 1026
       parentUniqueId: PlayMode.dll/[PlayMode][GameManagerTests][suite]
-    - id: 1005
+    - id: 1037
       uniqueId: PlayMode.dll/[PlayMode][MonsterTests][suite]
       name: MonsterTests
       fullName: MonsterTests
-      resultStatus: 1
-      duration: 1.3191274
-      messages: 
+      resultStatus: 2
+      duration: 4.851916
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1085,168 +1204,302 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1008
+      parentId: 1047
       parentUniqueId: '[PlayMode][C:/Dev/Game/DeathIsOnlyTheBeginning/Library/ScriptAssemblies/PlayMode.dll][suite]'
-    - id: 1017
+    - id: 1045
       uniqueId: PlayMode.dll/MonsterTests/[PlayMode][MonsterTests.MonstersAttackShouldBeSperatedByAttackTime]
       name: MonstersAttackShouldBeSperatedByAttackTime
       fullName: MonsterTests.MonstersAttackShouldBeSperatedByAttackTime
-      resultStatus: 1
-      duration: 1.2796074
-      messages: 
-      output: 
-      stacktrace: 
+      resultStatus: 2
+      duration: 1.1245526
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
+
+'
+      stacktrace: 'DeathIsOnlyTheBeginning.Monster.Start () (at Assets/Scripts/Monster.cs:35)
+
+        
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1010
+      parentId: 1037
       parentUniqueId: PlayMode.dll/[PlayMode][MonsterTests][suite]
-    - id: 1016
+    - id: 1043
       uniqueId: PlayMode.dll/MonsterTests/[PlayMode][MonsterTests.MonsterShouldAttackPlayerWhenInAttackingDistance]
       name: MonsterShouldAttackPlayerWhenInAttackingDistance
       fullName: MonsterTests.MonsterShouldAttackPlayerWhenInAttackingDistance
-      resultStatus: 1
-      duration: 1.135454
-      messages: 
-      output: 
-      stacktrace: 
+      resultStatus: 2
+      duration: 1.1168585
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
+
+'
+      stacktrace: 'DeathIsOnlyTheBeginning.Monster.Start () (at Assets/Scripts/Monster.cs:35)
+
+        
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1010
+      parentId: 1037
       parentUniqueId: PlayMode.dll/[PlayMode][MonsterTests][suite]
-    - id: 1007
+    - id: 1039
       uniqueId: PlayMode.dll/MonsterTests/[PlayMode][MonsterTests.MonsterShouldDieWhenHpIsZeroOrLess]
       name: MonsterShouldDieWhenHpIsZeroOrLess
       fullName: MonsterTests.MonsterShouldDieWhenHpIsZeroOrLess
-      resultStatus: 1
-      duration: 0.1121804
-      messages: 
-      output: 
-      stacktrace: 
+      resultStatus: 2
+      duration: 0.0806447
+      messages: "  Subject Under Test was never initiated\r\n  Expected: not null\r\n 
+        But was:  null\r\n"
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
+
+'
+      stacktrace: 'at TestsBase.GetSut () [0x0000c] in C:\Dev\Game\DeathIsOnlyTheBeginning\Assets\Tests\PlayMode\TestsBase.cs:19
+
+        at
+        MonsterTests+<MonsterShouldDieWhenHpIsZeroOrLess>d__6.MoveNext () [0x0004d]
+        in C:\Dev\Game\DeathIsOnlyTheBeginning\Assets\Tests\PlayMode\MonsterTests.cs:34
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in C:\Dev\Game\DeathIsOnlyTheBeginning\Library\PackageCache\com.unity.test-framework@1.1.31\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1005
+      parentId: 1037
       parentUniqueId: PlayMode.dll/[PlayMode][MonsterTests][suite]
-    - id: 1008
+    - id: 1040
       uniqueId: PlayMode.dll/MonsterTests/[PlayMode][MonsterTests.MonsterShouldDropLootOnItsLocationWhenItDies]
       name: MonsterShouldDropLootOnItsLocationWhenItDies
       fullName: MonsterTests.MonsterShouldDropLootOnItsLocationWhenItDies
-      resultStatus: 1
-      duration: 0.1154837
-      messages: 
-      output: 
-      stacktrace: 
+      resultStatus: 2
+      duration: 0.0652867
+      messages: "  Subject Under Test was never initiated\r\n  Expected: not null\r\n 
+        But was:  null\r\n"
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
+
+'
+      stacktrace: 'at TestsBase.GetSut () [0x0000c] in C:\Dev\Game\DeathIsOnlyTheBeginning\Assets\Tests\PlayMode\TestsBase.cs:19
+
+        at
+        TestsBase.GetSutComponent[T] () [0x00001] in C:\Dev\Game\DeathIsOnlyTheBeginning\Assets\Tests\PlayMode\TestsBase.cs:25
+
+        at
+        MonsterTests+<MonsterShouldDropLootOnItsLocationWhenItDies>d__7.MoveNext
+        () [0x0004d] in C:\Dev\Game\DeathIsOnlyTheBeginning\Assets\Tests\PlayMode\MonsterTests.cs:45
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in C:\Dev\Game\DeathIsOnlyTheBeginning\Library\PackageCache\com.unity.test-framework@1.1.31\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1005
+      parentId: 1037
       parentUniqueId: PlayMode.dll/[PlayMode][MonsterTests][suite]
-    - id: 1014
+    - id: 1041
       uniqueId: PlayMode.dll/MonsterTests/[PlayMode][MonsterTests.MonsterShouldMoveTowardsPlayerWhenDoorIsOpenend]
       name: MonsterShouldMoveTowardsPlayerWhenDoorIsOpenend
       fullName: MonsterTests.MonsterShouldMoveTowardsPlayerWhenDoorIsOpenend
-      resultStatus: 1
-      duration: 0.3494522
-      messages: 
-      output: 
-      stacktrace: 
+      resultStatus: 2
+      duration: 0.0709817
+      messages: "  Subject Under Test was never initiated\r\n  Expected: not null\r\n 
+        But was:  null\r\n"
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
+
+'
+      stacktrace: 'at TestsBase.GetSut () [0x0000c] in C:\Dev\Game\DeathIsOnlyTheBeginning\Assets\Tests\PlayMode\TestsBase.cs:19
+
+        at
+        MonsterTests+<MonsterShouldMoveTowardsPlayerWhenDoorIsOpenend>d__8.MoveNext
+        () [0x00059] in C:\Dev\Game\DeathIsOnlyTheBeginning\Assets\Tests\PlayMode\MonsterTests.cs:61
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in C:\Dev\Game\DeathIsOnlyTheBeginning\Library\PackageCache\com.unity.test-framework@1.1.31\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1010
+      parentId: 1037
       parentUniqueId: PlayMode.dll/[PlayMode][MonsterTests][suite]
-    - id: 1017
+    - id: 1044
       uniqueId: PlayMode.dll/MonsterTests/[PlayMode][MonsterTests.MonsterShouldNoLongerAttackPlayerWhenPlayerGetOutOfReach]
       name: MonsterShouldNoLongerAttackPlayerWhenPlayerGetOutOfReach
       fullName: MonsterTests.MonsterShouldNoLongerAttackPlayerWhenPlayerGetOutOfReach
-      resultStatus: 1
-      duration: 4.2305713
-      messages: 
-      output: 
-      stacktrace: 
+      resultStatus: 2
+      duration: 2.122704
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
+
+'
+      stacktrace: 'DeathIsOnlyTheBeginning.Monster.Start () (at Assets/Scripts/Monster.cs:35)
+
+        
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1010
+      parentId: 1037
       parentUniqueId: PlayMode.dll/[PlayMode][MonsterTests][suite]
-    - id: 1015
+    - id: 1042
       uniqueId: PlayMode.dll/MonsterTests/[PlayMode][MonsterTests.MonsterShouldStayInPositionBeforeDoorIsOpenend]
       name: MonsterShouldStayInPositionBeforeDoorIsOpenend
       fullName: MonsterTests.MonsterShouldStayInPositionBeforeDoorIsOpenend
-      resultStatus: 1
-      duration: 0.225939
-      messages: 
-      output: 
-      stacktrace: 
+      resultStatus: 2
+      duration: 0.1041048
+      messages: "  Subject Under Test was never initiated\r\n  Expected: not null\r\n 
+        But was:  null\r\n"
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
+
+'
+      stacktrace: 'at TestsBase.GetSut () [0x0000c] in C:\Dev\Game\DeathIsOnlyTheBeginning\Assets\Tests\PlayMode\TestsBase.cs:19
+
+        at
+        MonsterTests+<MonsterShouldStayInPositionBeforeDoorIsOpenend>d__9.MoveNext
+        () [0x0004d] in C:\Dev\Game\DeathIsOnlyTheBeginning\Assets\Tests\PlayMode\MonsterTests.cs:82
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in C:\Dev\Game\DeathIsOnlyTheBeginning\Library\PackageCache\com.unity.test-framework@1.1.31\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1010
+      parentId: 1037
       parentUniqueId: PlayMode.dll/[PlayMode][MonsterTests][suite]
-    - id: 1021
+    - id: 1046
       uniqueId: PlayMode.dll/MonsterTests/[PlayMode][MonsterTests.WhenMonsterDiesItShouldAddExperiencePointsToCharactersTotal]
       name: WhenMonsterDiesItShouldAddExperiencePointsToCharactersTotal
       fullName: MonsterTests.WhenMonsterDiesItShouldAddExperiencePointsToCharactersTotal
-      resultStatus: 1
-      duration: 0.2160559
-      messages: 
-      output: 
-      stacktrace: 
+      resultStatus: 2
+      duration: 0.0685327
+      messages: "  Subject Under Test was never initiated\r\n  Expected: not null\r\n 
+        But was:  null\r\n"
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
+
+'
+      stacktrace: 'at TestsBase.GetSut () [0x0000c] in C:\Dev\Game\DeathIsOnlyTheBeginning\Assets\Tests\PlayMode\TestsBase.cs:19
+
+        at
+        MonsterTests+<WhenMonsterDiesItShouldAddExperiencePointsToCharactersTotal>d__13.MoveNext
+        () [0x00077] in C:\Dev\Game\DeathIsOnlyTheBeginning\Assets\Tests\PlayMode\MonsterTests.cs:131
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in C:\Dev\Game\DeathIsOnlyTheBeginning\Library\PackageCache\com.unity.test-framework@1.1.31\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1012
+      parentId: 1037
       parentUniqueId: PlayMode.dll/[PlayMode][MonsterTests][suite]
-    - id: 1006
+    - id: 1038
       uniqueId: PlayMode.dll/MonsterTests/[PlayMode][MonsterTests.WhenMonsterReceivesDamageItsHitpointsShouldDeclineWithTheGivenAmount]
       name: WhenMonsterReceivesDamageItsHitpointsShouldDeclineWithTheGivenAmount
       fullName: MonsterTests.WhenMonsterReceivesDamageItsHitpointsShouldDeclineWithTheGivenAmount
-      resultStatus: 1
-      duration: 0.0767676
-      messages: 
-      output: 
-      stacktrace: 
+      resultStatus: 2
+      duration: 0.067235
+      messages: "  Subject Under Test was never initiated\r\n  Expected: not null\r\n 
+        But was:  null\r\n"
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
+
+'
+      stacktrace: 'at TestsBase.GetSut () [0x0000c] in C:\Dev\Game\DeathIsOnlyTheBeginning\Assets\Tests\PlayMode\TestsBase.cs:19
+
+        at
+        TestsBase.GetSutComponent[T] () [0x00001] in C:\Dev\Game\DeathIsOnlyTheBeginning\Assets\Tests\PlayMode\TestsBase.cs:25
+
+        at
+        MonsterTests+<WhenMonsterReceivesDamageItsHitpointsShouldDeclineWithTheGivenAmount>d__5.MoveNext
+        () [0x00042] in C:\Dev\Game\DeathIsOnlyTheBeginning\Assets\Tests\PlayMode\MonsterTests.cs:23
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in C:\Dev\Game\DeathIsOnlyTheBeginning\Library\PackageCache\com.unity.test-framework@1.1.31\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1005
+      parentId: 1037
       parentUniqueId: PlayMode.dll/[PlayMode][MonsterTests][suite]
-    m_ResultText: MonstersAttackShouldBeSperatedByAttackTime (1.280s)
-    m_ResultStacktrace: 
+    m_ResultText: 'CharacterSchouldDealDamageWhenAttackingMonster (0.221s)
+
+      ---
+
+      Unhandled
+      log message: ''[Exception] NullReferenceException: Object reference not set
+      to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect
+
+      ---
+
+      DeathIsOnlyTheBeginning.Monster.Start
+      () (at Assets/Scripts/Monster.cs:35)
+
+      ---
+
+      NullReferenceException:
+      Object reference not set to an instance of an object'
+    m_ResultStacktrace: 'DeathIsOnlyTheBeginning.Monster.Start () (at Assets/Scripts/Monster.cs:35)
+
+      
+
+'
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 4f363047
-      m_LastClickedID: 1194341967
-      m_ExpandedIDs: 58f80e33d7a1566effffff7f
+      m_SelectedIDs: 6a1857bf
+      m_LastClickedID: -1084811158
+      m_ExpandedIDs: 26d4879ac130d19dcde102d18e785d07f591ee3058f80e33d7a1566effffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1274,7 +1527,7 @@ MonoBehaviour:
       - Uncategorized
     m_SelectedOption: 0
   m_EditModeTestListGUI:
-    m_Window: {fileID: 16}
+    m_Window: {fileID: 15}
     m_NewResultList:
     - id: 1000
       uniqueId: '[DeathIsOnlyTheBeinning][suite]'
@@ -1324,7 +1577,7 @@ MonoBehaviour:
       selectedCategoryMask: 0
       availableCategories:
       - Uncategorized
---- !u!114 &17
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1346,8 +1599,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 504
-    height: 779
+    width: 371
+    height: 776
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1355,9 +1608,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 920c0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: ea66f8ff4469f8ffc06af8ff3476f8ff6a8df8ff768df8fff28ef8ff428ff8ffc096f8ff849df8ffd49df8ffe625f9ffec2ff9ff3c30f9ffb837f9ff4441f9ff9441f9ff1049f9ff1255f9ff6255f9ffde5cf9ff8082f9ffd082f9ff4c8af9ff8a93f9ffda93f9ff5c9bf9ffbea1f9ff0ea2f9ff40c1f9ffbec7f9ff0ec8f9ff90cff9ff64dff9ffb4dff9fface7f9ff66f0f9ffb6f0f9ffa8f8f9ff06fff9ff56fff9ffc200faff980afaffe80afaff6812faff261dfaff761dfafff024faff2632faff7632faffea39faffb044faffe445faff3446faffa84dfaff5465faff5e65faff6a68faff9269faffe269faff2670faff7a72faffca72faffda77faff4e79faff9e79faffae7efaffc094faff3ab8faff3cb8faffecb9fafffec1fafff4d0faff44d1faff66d5faff6ad7faffbad7faffdadbfaffc2f6fafffaf6faff720dfbff0e0efbff220efbff7c13fbff9013fbff4c41fbff7647fbff8847fbff6e51fbffa05afbfff05afbff6662fbffbe68fbff0e69fbffd6dafbffbce3fbff0ce4fbff06e9fbff8cf0fbffdcf0fbffd6f5fbffcc01fcff1c02fcff1607fcff6c0efcffbc0efcffb613fcffb21dfcff021efcff703cfcff8a46fcffda46fcff4865fcff466dfcff966dfcff048cfcff0494fcff5494fcff4e99fcff28a2fcff78a2fcff72a7fcff08affcff58affcff52b4fcff28befcff78befcff72c3fcff4ccdfcff9ccdfcff38cffcff54d7fcffa4d7fcff1cdcfcfff0e9fcff40eafcffb8eefcff48f5fcff98f5fcff560dfdff9a1dfdffea1dfdffe833fdff123dfdfff23dfdff423efdffb645fdff0446fdff5446fdffc84dfdff224efdff724efdffe855fdff5a56fdffaa56fdff58b7fdff6eb8fdffbeb8fdff5acdfdfff2d3fdff42d4fdffb8d8fdff2ed9fdff7ed9fdfff4ddfdff08e1fdff58e1fdffcee5fdfff6e6fdff46e7fdffbcebfdffc402feff1403feff8a07feff3c0bfeff8c0bfeff6a19feffbc19feff0c1afeff4021feff7a22feffca22feffa830fefffa30feff4a31feffc235feff6a3bfeffba3bfeff004bfeff884cfeffd84cfeffaa51feff6453feffb453fefffa62feff886bfeffd86bfeffa46dfeff9a71feffea71feff6276feffbc76feff0c77feff827efeffd47efeff247ffeff08d9feff7ed9feffced9feff46defefff2dffeff42e0feff90e4feff86e7feffd6e7feff24ecfeffa8f4fefff8f4feff6ef9feff7003ffffc003ffff5a05ffff122cffffe23affff8a5effff6269ffffb269ffff4a6bffffca73ffff1a74ffffb675ffff5c7affffa47affff747bffff1c7dffff6c7dffffde7efffffaa6ffff2ea8ffff38a8ffffa2b9ffffe6beffff86c3ffff1ec8ffff6ec8ffffdac9ffff74ccffffc4ccffff30ceffff7acfffffcacfffff36d1ffffa0d3fffff0d3ffff5cd5ffff14d9ffff64d9ffffc0daffff60ddffffb0ddffff0cdfffff80e3ffffd0e3ffff2ce5ffffb8e9ffff08eaffff68ebffff8aedffffd2edffff46eeffff38fbffff5a67000026e3000098e40000
+      m_ExpandedIDs: c015f9fff415f9ff1818f9ff5818f9ff5c18f9ff6218f9ff3220f9ff6224f9ffac24f9fff025f9ffee29f9ff382af9ff462ef9ff9e33f9ffe833f9fff637f9fff83cf9ff4645f9ff9045f9ff98b8f9ff44bef9ff8ebef9ff2238fafff440faff3e41faffd2bafaff9abffaffea27fbff3a28fbffd2aafbffe0b0fbff2ab1fbffae33fcff4c3afcff963afcffd2c4fcff8ccafcffd6cafcffe4d2fcffa8d9fcffe8e1fcff32e2fcff40eafcffe8f0fcff32f1fcff40f9fcff4601fdff9001fdff9e09fdff1e10fdff6810fdff7618fdff461ffdff901ffdff9e27fdff2030fdff6a30fdff7838fdffe03efdff2a3ffdff0e48fdff644efdff984efdff0451fdff2053fdff6a53fdff4e5cfdffea60fdff5663fdff7265fdffbc65fdff2e7dfdff0c84fdff9084fdffa28cfdff5a93fdffa493fdffd2b5fdff0ebcfdff58bcfdff8ec4fdff48cafdff92cafdffa6d2fdffa0d8fdffead8fdfffee0fdff90e7fdffdae7fdffeeeffdff84f6fdffcef6fdffde1ffefff427feff3e28feff3c51feff9858feffe258fefff87bfefff082feff4083feff86a6feffd0b2feff1ab3feffe8cffeff4cd5feff7edbfeff6ee0feffb8e0feff74fdfeff0805ffff5205ffff3839ffff8640ffffd040ffffba49ffffd450ffff1e51ffff085affff1e62ffff6862ffff526bffff4476ffff8e76ffff727fffffd886ffff1e87ffff8e87ffff888effffd28effffb697ffff649fffffae9fffff2aa7ffffceb5ffff18b6ffff8ebdffff86c5ffff42c6ffff8cc6ffffd4f5ffff0ef7ffff58f7ffff2efaffff38fbffff6a7f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1373,7 +1626,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 12}
+        m_ClientGUIView: {fileID: 9}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -1381,7 +1634,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &18
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1401,10 +1654,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 505
+    x: 372
     y: 73
-    width: 1039
-    height: 779
+    width: 1086
+    height: 776
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1491,7 +1744,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 0
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Camera
@@ -1524,7 +1777,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 0
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Navmesh Display
@@ -1590,14 +1843,14 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 0
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Particles
       index: 10
       layout: 4
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
-  m_Gizmos: 1
+  m_Gizmos: 0
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
@@ -1606,9 +1859,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 8.718745, y: -0.71494865, z: 11.9827175}
+    m_Target: {x: 10.499049, y: -30.00671, z: 35.836235}
     speed: 2
-    m_Value: {x: 8.718745, y: -0.71494865, z: 11.9827175}
+    m_Value: {x: 10.499049, y: -30.00671, z: 35.836235}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1655,20 +1908,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.13983938, y: -0.8576809, z: 0.3128927, w: 0.38331646}
+    m_Target: {x: 0.44994646, y: -0.021421771, z: 0.010838082, w: 0.8928232}
     speed: 2
-    m_Value: {x: 0.13983905, y: -0.8576789, z: 0.31289196, w: 0.38331553}
+    m_Value: {x: 0.44991016, y: -0.021420043, z: 0.010837208, w: 0.89275116}
   m_Size:
-    m_Target: 10.114224
+    m_Target: 30.92162
     speed: 2
-    m_Value: 10.114224
+    m_Value: 30.92162
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 0.76062
-    m_SpeedNormalized: 0.38
+    m_Speed: 1.3003497
+    m_SpeedNormalized: 0.64999986
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -1679,106 +1932,14 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0.39980698, y: 0.0041202777, z: -0.0017976108, w: 0.9165911}
+  m_LastSceneViewRotation: {x: 0.28800422, y: -0.61888677, z: 0.26120523, w: 0.6826042}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &19
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Game
-    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 2560
-    y: 197
-    width: 1920
-    height: 1011
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-  m_SerializedViewNames: []
-  m_SerializedViewValues: []
-  m_PlayModeViewName: GameView
-  m_ShowGizmos: 0
-  m_TargetDisplay: 0
-  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1920, y: 1080}
-  m_TextureFilterMode: 0
-  m_TextureHideFlags: 61
-  m_RenderIMGUI: 1
-  m_EnterPlayModeBehavior: 0
-  m_UseMipMap: 0
-  m_VSyncEnabled: 0
-  m_Gizmos: 0
-  m_Stats: 0
-  m_SelectedSizes: 03000000000000000000000000000000000000000000000000000000000000000000000000000000
-  m_ZoomArea:
-    m_HRangeLocked: 0
-    m_VRangeLocked: 0
-    hZoomLockedByDefault: 0
-    vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -960
-    m_HBaseRangeMax: 960
-    m_VBaseRangeMin: -540
-    m_VBaseRangeMax: 540
-    m_HAllowExceedBaseRangeMin: 1
-    m_HAllowExceedBaseRangeMax: 1
-    m_VAllowExceedBaseRangeMin: 1
-    m_VAllowExceedBaseRangeMax: 1
-    m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
-    m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
-    m_EnableSliderZoomHorizontal: 0
-    m_EnableSliderZoomVertical: 0
-    m_UniformScale: 1
-    m_UpDirection: 1
-    m_DrawArea:
-      serializedVersion: 2
-      x: 0
-      y: 21
-      width: 1920
-      height: 990
-    m_Scale: {x: 1.092727, y: 1.092727}
-    m_Translation: {x: 945.9983, y: 512.57153}
-    m_MarginLeft: 0
-    m_MarginRight: 0
-    m_MarginTop: 0
-    m_MarginBottom: 0
-    m_LastShownAreaInsideMargins:
-      serializedVersion: 2
-      x: -865.7225
-      y: -469.0756
-      width: 1757.072
-      height: 905.9903
-    m_MinimalGUI: 1
-  m_defaultScale: 0.9166667
-  m_LastWindowPixelSize: {x: 1920, y: 1011}
-  m_ClearInEditMode: 1
-  m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000000000000000000
-  m_XRRenderMode: 0
-  m_RenderTexture: {fileID: 0}
---- !u!114 &20
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1799,9 +1960,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 873
-    width: 1545
-    height: 478
+    y: 870
+    width: 1459
+    height: 481
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1819,38 +1980,38 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Control
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/Control
+  - Assets/Prefabs
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Dev\Game\DeathIsOnlyTheBeginning
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d44c0000
-    m_LastClickedID: 19668
-    m_ExpandedIDs: 000000003c4c00003e4c0000404c0000424c0000444c0000464c00004a4c00004c4c00004e4c0000504c0000524c0000544c0000564c0000bc4c0000c84c0000d4530000e8530000b054000000ca9a3b
+    scrollPos: {x: 0, y: 55}
+    m_SelectedIDs: ca5a0000
+    m_LastClickedID: 23242
+    m_ExpandedIDs: 00000000ca500000cc500000ce500000d0500000d2500000d4500000d6500000d8500000da500000dc500000de500000e0500000e2500000e4500000e6500000e8500000ea500000ec500000ee500000f0500000f2500000c25a0000cc5a0000d05a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Prefabs
-      m_OriginalName: Prefabs
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 19652
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 14}
+      m_ClientGUIView: {fileID: 11}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -1862,7 +2023,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003c4c00003e4c0000404c0000424c0000444c0000464c0000484c00004a4c00004c4c00004e4c0000504c0000524c0000544c0000564c0000
+    m_ExpandedIDs: 00000000ca500000cc500000ce500000d0500000d2500000d4500000d6500000d8500000da500000dc500000de500000e0500000e2500000e4500000e6500000e8500000ea500000ec500000ee500000f0500000f2500000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1893,20 +2054,20 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c62300009aee0000a8ee00003807010072540100fa170200d8530000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: CharacterController
-      m_OriginalName: CharacterController
+      m_Name: WallPieceWithDoor
+      m_OriginalName: WallPieceWithDoor
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 3218
+      m_UserData: 21380
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 14}
+      m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1918,7 +2079,7 @@ MonoBehaviour:
     m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &21
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1939,14 +2100,14 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 873
-    width: 1545
-    height: 478
+    y: 870
+    width: 1459
+    height: 481
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
---- !u!114 &22
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1968,7 +2129,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 873
-    width: 1545
+    width: 1969
     height: 478
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1982,14 +2143,14 @@ MonoBehaviour:
     - {fileID: -4221736508000427073, guid: f0420361b77306a4a998cc49f796d1fa, type: 2}
     - {fileID: -8373946582444007337, guid: f0420361b77306a4a998cc49f796d1fa, type: 2}
     m_ValueSerializationHelper:
-    - e00: 0.11868898
+    - e00: 0.1
       e01: 0
       e02: 0
-      e03: 325.0637
+      e03: -40
       e10: 0
-      e11: 0.11868898
+      e11: 0.1
       e12: 0
-      e13: 166.50153
+      e13: 582
       e20: 0
       e21: 0
       e22: 1
@@ -1998,14 +2159,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.9925284
+    - e00: 0.6095365
       e01: 0
       e02: 0
-      e03: 347.52753
+      e03: 368.93298
       e10: 0
-      e11: 0.9925284
+      e11: 0.6095365
       e12: 0
-      e13: 166.86446
+      e13: 165.75912
       e20: 0
       e21: 0
       e22: 1
@@ -2030,14 +2191,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.9370198
+    - e00: 0.1
       e01: 0
       e02: 0
-      e03: -224.11487
+      e03: -43
       e10: 0
-      e11: 0.9370198
+      e11: 0.1
       e12: 0
-      e13: 49.692352
+      e13: 603.5
       e20: 0
       e21: 0
       e22: 1
@@ -2078,7 +2239,7 @@ MonoBehaviour:
   m_CurrentEditor: 0
   m_LayerEditor:
     m_SelectedLayerIndex: 0
---- !u!114 &23
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2098,9 +2259,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1546
+    x: 1460
     y: 73
-    width: 1013
+    width: 1099
     height: 1278
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -2119,7 +2280,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &24
+--- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2139,9 +2300,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1608
+    x: 1460
     y: 73
-    width: 951
+    width: 1099
     height: 1278
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:

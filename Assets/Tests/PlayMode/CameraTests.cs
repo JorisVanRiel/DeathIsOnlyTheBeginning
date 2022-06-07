@@ -13,9 +13,11 @@ public class CameraTests : TestsBase
     {
         yield return LoadScene(cameraTestScene);
         GameObject camera = GetSut();
-        GameObject objectFollowedByCamera = GetSutComponent<CameraController>().ObjectToFollow;
-
+        GameObject objectFollowedByCamera = GetObjectWithTag("Character");
+        GetSutComponent<CameraController>().ObjectToFollow = objectFollowedByCamera;
         Assert.IsNotNull(objectFollowedByCamera, "Camera does not follow an object.");
+        yield return Wait();
+
         Vector3 startDistance = camera.transform.position - objectFollowedByCamera.transform.position;
         yield return null;
         objectFollowedByCamera.transform.position = new Vector3(

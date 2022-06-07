@@ -8,18 +8,8 @@ using UnityEngine.TestTools;
 public class GameManagerTests : TestsBase
 {
     private const int gameManagerTestScene = 8;
-
-    [UnityTest]
-    public IEnumerator OnAwakeGameManagerShouldInstantiateDungeon()
-    {
-        yield return AssertObjectWithTagIsInstantiatedAtAwake("Dungeon");
-    }
-
-    [UnityTest]
-    public IEnumerator OnAwakeGameManagerShouldInstantiateTitleScreen()
-    {
-        yield return AssertObjectWithTagIsInstantiatedAtAwake("Dungeon");
-    }
+    
+   
 
     [UnityTest]
     public IEnumerator GameManagerShouldInstantiateSkillScreenOnAwake()
