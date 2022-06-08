@@ -2,21 +2,29 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class CameraController : MonoBehaviour
 {
     private GameObject objectToFollow;
+    private CinemachineVirtualCamera virtualCamera;
 
     [SerializeField] Vector3 distance;
 
     public GameObject ObjectToFollow { 
-        get { return this.objectToFollow; }
-        set { this.objectToFollow = value;}
+        get 
+        { 
+            return virtualCamera.Follow.gameObject; 
+        }
+        set 
+        { 
+            virtualCamera.Follow = value.transform;
+        }
     }
 
-    private void Start()
+    private void Awake()
     {
-        if (objectToFollow == null) return;
+        this.virtualCamera = GetComponent<CinemachineVirtualCamera>();
     }
 
     private void Update()
